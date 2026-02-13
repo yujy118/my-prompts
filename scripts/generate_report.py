@@ -3,9 +3,11 @@
 Runs on weekdays at 10:00 KST via GitHub Actions.
 1. Holiday check -> skip
 2. Day check -> daily (Mon-Thu) / weekly (Fri)
-3. Fetch Slack history + thread replies
-4. Generate report via Claude API
-5. Post to Slack + Save to Notion
+3. Fetch previous report feedback from thread
+4. Fetch Slack history + thread replies
+5. Generate report via Claude API (with feedback context)
+6. Post to Slack + Save to Notion
+7. Save report ts for next feedback collection
 """
 
 import os
@@ -35,6 +37,7 @@ slack_client = WebClient(token=SLACK_BOT_TOKEN)
 claude_client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
 DAY_NAMES = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+STATE_FILE = Path(__file__).parent / "last_report.json"
 
 
 def get_today_kst():
@@ -49,6 +52,74 @@ def load_guide():
     return ""
 
 
+# -- Feedback System --
+
+def load_last_report_state():
+    """Load previous report's ts and channel for feedback collection."""
+    if STATE_FILE.exists():
+        try:
+            data = json.loads(STATE_FILE.read_text())
+            return data.get("ts"), data.get("channel")
+        except Exception:
+            pass
+    return None, None
+
+
+def save_report_state(ts, channel):
+    """Save current report's ts for next run's feedback collection."""
+    STATE_FILE.write_text(json.dumps({
+        "ts": ts,
+        "channel": channel,
+        "posted_at": datetime.now(KST).isoformat(),
+    }))
+    print(f"State saved: ts={ts}")
+
+
+def fetch_feedback_from_previous_report():
+    """Fetch thread replies from the previous report message."""
+    prev_ts, prev_channel = load_last_report_state()
+    if not prev_ts:
+        print("No previous report state found, skipping feedback")
+        return []
+
+    channel = prev_channel or SLACK_CHANNEL_ID
+    try:
+        result = slack_client.conversations_replies(
+            channel=channel,
+            ts=prev_ts,
+            limit=100,
+        )
+        # Skip the first message (the report itself), get only replies
+        replies = result.get("messages", [])[1:]
+        print(f"Feedback collected: {len(replies)} replies from previous report")
+        return replies
+    except SlackApiError as e:
+        print(f"WARNING: feedback fetch failed: {e.response['error']}")
+        return []
+
+
+def format_feedback(feedback_messages):
+    """Format feedback replies for Claude prompt."""
+    if not feedback_messages:
+        return ""
+
+    lines = []
+    for msg in feedback_messages:
+        ts = datetime.fromtimestamp(float(msg["ts"]), tz=KST)
+        time_str = ts.strftime("%m/%d %H:%M")
+        text = msg.get("text", "").strip()
+        user = msg.get("user", "unknown")
+        if text:
+            lines.append(f"[{time_str}] <@{user}>: {text}")
+
+    if not lines:
+        return ""
+
+    return "\n".join(lines)
+
+
+# -- Slack History --
+
 def fetch_slack_history(start_dt, end_dt):
     """Fetch channel messages + all thread replies."""
     messages = []
@@ -56,7 +127,6 @@ def fetch_slack_history(start_dt, end_dt):
     latest = str(end_dt.timestamp())
     cursor = None
 
-    # 1. Get top-level messages
     while True:
         try:
             kwargs = {
@@ -80,7 +150,7 @@ def fetch_slack_history(start_dt, end_dt):
             print(f"ERROR Slack API: {e.response['error']}")
             sys.exit(1)
 
-    # 2. Fetch thread replies for messages that have threads
+    # Fetch thread replies
     all_messages = []
     for msg in messages:
         all_messages.append(msg)
@@ -117,6 +187,8 @@ def format_slack_messages(messages):
     return "\n".join(lines)
 
 
+# -- Report Logic --
+
 def determine_report_type(today):
     if FORCE_TYPE in ("daily", "weekly"):
         return FORCE_TYPE
@@ -132,7 +204,6 @@ def get_date_range(today, report_type):
         end = datetime(yesterday.year, yesterday.month, yesterday.day, 23, 59, 59, tzinfo=KST)
         return start, end, yesterday.strftime("%Y-%m-%d")
     else:
-        # Weekly: this week Mon ~ Thu
         this_monday = today - timedelta(days=today.weekday())
         this_thursday = today - timedelta(days=1)
         start = datetime(this_monday.year, this_monday.month, this_monday.day, 0, 0, 0, tzinfo=KST)
@@ -153,7 +224,7 @@ def convert_to_slack_mrkdwn(text):
     return '\n'.join(result)
 
 
-def generate_report_with_claude(slack_text, report_type, date_label, guide):
+def generate_report_with_claude(slack_text, report_type, date_label, guide, feedback_text):
     if report_type == "daily":
         case_instruction = "[Case A] daily quick report format"
     else:
@@ -170,6 +241,10 @@ def generate_report_with_claude(slack_text, report_type, date_label, guide):
         "- If something is unclear, say '확인 필요' rather than guessing\n"
         "- Do NOT add background context or history that is not in the messages\n"
         "- Numbers must exactly match what appears in the messages\n"
+        "- CRITICAL: When citing any number or count, ALWAYS show the source list\n"
+        "  Example: '주간 총 유입: 5건 (02/10 호텔A, 02/10 호텔B, 02/11 펜션C, 02/11 호텔D, 02/12 모텔E)'\n"
+        "  This way readers can verify every number against the actual messages\n"
+        "- When categorizing issues (기술이슈, 입점, etc), show which messages led to that categorization\n"
         "- Include specific names (venues, staff) ONLY if they appear in messages\n"
         "- Provide root cause analysis based ONLY on evidence in messages\n"
         "- Suggest improvements only when patterns are clearly visible in the data\n"
@@ -183,10 +258,22 @@ def generate_report_with_claude(slack_text, report_type, date_label, guide):
         "- Example section header: *section title here*\n"
     )
 
+    # Build user prompt with optional feedback section
+    feedback_section = ""
+    if feedback_text:
+        feedback_section = (
+            "\n\n---PREVIOUS REPORT FEEDBACK---\n"
+            "The following feedback was left on the previous report by team members.\n"
+            "Consider this feedback when writing today's report (correct mistakes, adjust focus areas, etc):\n\n"
+            f"{feedback_text}\n"
+            "---FEEDBACK END---\n"
+        )
+
     user_prompt = (
         f"Below are Slack messages from #system-vcms-noti for {date_label}.\n"
         f"Messages marked [reply] are thread replies.\n"
-        f"Please write the report in {case_instruction}.\n\n"
+        f"Please write the report in {case_instruction}.\n"
+        f"{feedback_section}\n"
         f"---SLACK MESSAGES START---\n"
         f"{slack_text}\n"
         f"---SLACK MESSAGES END---"
@@ -208,7 +295,10 @@ def post_to_slack(report_text, report_type, date_label):
     else:
         type_label = "Weekly Diagnosis Report"
 
-    full_message = f"*{type_label}*  |  {date_label}\n───\n\n{report_text}"
+    # Add feedback CTA at the bottom
+    feedback_cta = "\n\n───\n💬 _이 스레드에 피드백을 남겨주세요. 다음 리포트에 반영됩니다._"
+
+    full_message = f"*{type_label}*  |  {date_label}\n───\n\n{report_text}{feedback_cta}"
 
     try:
         result = slack_client.chat_postMessage(
@@ -287,6 +377,16 @@ def main():
     report_type = determine_report_type(today)
     print(f"Report type: {report_type}")
 
+    # 1. Collect feedback from previous report thread
+    print("Checking for feedback on previous report...")
+    feedback_msgs = fetch_feedback_from_previous_report()
+    feedback_text = format_feedback(feedback_msgs)
+    if feedback_text:
+        print(f"Feedback found ({len(feedback_msgs)} messages)")
+    else:
+        print("No feedback found")
+
+    # 2. Collect Slack messages for date range
     start_dt, end_dt, date_label = get_date_range(today, report_type)
     print(f"Collecting: {date_label}")
 
@@ -300,14 +400,20 @@ def main():
     slack_text = format_slack_messages(messages)
     print(f"Formatted text: {len(slack_text)} chars")
 
+    # 3. Generate report with Claude (including feedback)
     guide = load_guide()
     print("Calling Claude API...")
-    report = generate_report_with_claude(slack_text, report_type, date_label, guide)
+    report = generate_report_with_claude(slack_text, report_type, date_label, guide, feedback_text)
     report = convert_to_slack_mrkdwn(report)
     print(f"Report generated ({len(report)} chars)")
 
-    post_to_slack(report, report_type, date_label)
+    # 4. Post & save
+    posted_ts = post_to_slack(report, report_type, date_label)
     save_to_notion(report, report_type, date_label, today)
+
+    # 5. Save report ts for next run's feedback collection
+    if posted_ts:
+        save_report_state(posted_ts, SLACK_CHANNEL_ID)
 
     print("All done!")
 
