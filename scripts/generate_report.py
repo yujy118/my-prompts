@@ -98,7 +98,7 @@ def format_slack_messages(messages):
 def determine_report_type(today):
     if FORCE_TYPE in ("daily", "weekly"):
         return FORCE_TYPE
-    if today.weekday() == 0:
+    if today.weekday() == 4:
         return "weekly"
     return "daily"
 
