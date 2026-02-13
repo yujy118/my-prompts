@@ -1,10 +1,9 @@
-
 """VCMS Slack Auto Report Generator
 
 Runs on weekdays at 10:00 KST via GitHub Actions.
 1. Holiday check -> skip
-2. Day check -> daily (Tue-Fri) / weekly (Mon)
-3. Fetch Slack history
+2. Day check -> daily (Mon-Thu) / weekly (Fri)
+3. Fetch Slack history + thread replies
 4. Generate report via Claude API
 5. Post to Slack + Save to Notion
 """
@@ -51,11 +50,13 @@ def load_guide():
 
 
 def fetch_slack_history(start_dt, end_dt):
+    """Fetch channel messages + all thread replies."""
     messages = []
     oldest = str(start_dt.timestamp())
     latest = str(end_dt.timestamp())
     cursor = None
 
+    # 1. Get top-level messages
     while True:
         try:
             kwargs = {
@@ -79,19 +80,40 @@ def fetch_slack_history(start_dt, end_dt):
             print(f"ERROR Slack API: {e.response['error']}")
             sys.exit(1)
 
-    messages.sort(key=lambda m: float(m["ts"]))
-    return messages
+    # 2. Fetch thread replies for messages that have threads
+    all_messages = []
+    for msg in messages:
+        all_messages.append(msg)
+        if msg.get("reply_count", 0) > 0:
+            try:
+                thread_result = slack_client.conversations_replies(
+                    channel=SLACK_CHANNEL_ID,
+                    ts=msg["ts"],
+                    oldest=oldest,
+                    latest=latest,
+                    limit=200,
+                )
+                replies = thread_result.get("messages", [])[1:]
+                all_messages.extend(replies)
+            except SlackApiError as e:
+                print(f"WARNING: thread fetch failed: {e.response['error']}")
+
+    all_messages.sort(key=lambda m: float(m["ts"]))
+    print(f"  Top-level: {len(messages)}, With threads: {len(all_messages)}")
+    return all_messages
 
 
 def format_slack_messages(messages):
     lines = []
     for msg in messages:
         ts = datetime.fromtimestamp(float(msg["ts"]), tz=KST)
-        time_str = ts.strftime("%H:%M")
+        time_str = ts.strftime("%m/%d %H:%M")
         text = msg.get("text", "").strip()
         if not text:
             continue
-        lines.append(f"[{time_str}] {text}")
+        is_reply = "thread_ts" in msg and msg.get("thread_ts") != msg.get("ts")
+        prefix = "  [reply] " if is_reply else ""
+        lines.append(f"[{time_str}] {prefix}{text}")
     return "\n".join(lines)
 
 
@@ -110,11 +132,12 @@ def get_date_range(today, report_type):
         end = datetime(yesterday.year, yesterday.month, yesterday.day, 23, 59, 59, tzinfo=KST)
         return start, end, yesterday.strftime("%Y-%m-%d")
     else:
-        last_friday = today - timedelta(days=3)
-        last_monday = today - timedelta(days=7)
-        start = datetime(last_monday.year, last_monday.month, last_monday.day, 0, 0, 0, tzinfo=KST)
-        end = datetime(last_friday.year, last_friday.month, last_friday.day, 23, 59, 59, tzinfo=KST)
-        return start, end, f"{last_monday.strftime('%m/%d')}~{last_friday.strftime('%m/%d')}"
+        # Weekly: this week Mon ~ Thu
+        this_monday = today - timedelta(days=today.weekday())
+        this_thursday = today - timedelta(days=1)
+        start = datetime(this_monday.year, this_monday.month, this_monday.day, 0, 0, 0, tzinfo=KST)
+        end = datetime(this_thursday.year, this_thursday.month, this_thursday.day, 23, 59, 59, tzinfo=KST)
+        return start, end, f"{this_monday.strftime('%m/%d')}~{this_thursday.strftime('%m/%d')}"
 
 
 def convert_to_slack_mrkdwn(text):
@@ -122,11 +145,8 @@ def convert_to_slack_mrkdwn(text):
     lines = text.split('\n')
     result = []
     for line in lines:
-        # Strip markdown headers (####, ###, ##, #)
         line = re.sub(r'^#{1,6}\s+', '', line)
-        # **bold** -> *bold*
         line = line.replace('**', '*')
-        # Horizontal rules
         if re.match(r'^-{3,}$', line.strip()):
             line = '───'
         result.append(line)
@@ -161,6 +181,7 @@ def generate_report_with_claude(slack_text, report_type, date_label, guide):
 
     user_prompt = (
         f"Below are Slack messages from #system-vcms-noti for {date_label}.\n"
+        f"Messages marked [reply] are thread replies.\n"
         f"Please write the report in {case_instruction}.\n\n"
         f"---SLACK MESSAGES START---\n"
         f"{slack_text}\n"
