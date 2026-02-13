@@ -219,10 +219,11 @@ def generate_report_with_claude(slack_text, report_type, date_label, guide, feed
         "- If something is unclear, say '확인 필요' rather than guessing\n"
         "- Do NOT add background context or history that is not in the messages\n"
         "- Numbers must exactly match what appears in the messages\n"
-        "- CRITICAL: When citing any number or count, ALWAYS show the source list\n"
-        "  Example: '주간 총 유입: 5건 (02/10 호텔A, 02/10 호텔B, 02/11 펜션C, 02/11 호텔D, 02/12 모텔E)'\n"
-        "  This way readers can verify every number against the actual messages\n"
-        "- When categorizing issues (기술이슈, 입점, etc), show which messages led to that categorization\n"
+        "- CRITICAL: When citing any number, show the CRITERIA used to count, not individual items\n"
+        "  Good: '주간 총 유입: 13건 (기준: 신규 숙박업소 정보 전송 메시지)'\n"
+        "  Bad: '주간 총 유입: 13건 (02/10 호텔A, 02/10 호텔B, 02/11 펜션C...)'\n"
+        "  The reader needs to know HOW you counted, not every single item\n"
+        "- Keep the report compact and scannable. No unnecessary repetition\n"
         "- Include specific names (venues, staff) ONLY if they appear in messages\n"
         "- Provide root cause analysis based ONLY on evidence in messages\n"
         "- Suggest improvements only when patterns are clearly visible in the data\n"
@@ -378,4 +379,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
