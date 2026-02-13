@@ -1,13 +1,12 @@
 """VCMS Slack Auto Report Generator
 
-Runs on weekdays at 10:00 KST via GitHub Actions.
-1. Holiday check -> skip
-2. Day check -> daily (Mon-Thu) / weekly (Fri)
-3. Fetch previous report feedback from thread
-4. Fetch Slack history + thread replies
-5. Generate report via Claude API (with feedback context)
-6. Post to Slack + Save to Notion
-7. Save report ts for next feedback collection
+Flow:
+1. Holiday/business day check
+2. Fetch accumulated feedback from Cloudflare Worker
+3. Fetch Slack channel messages + thread replies
+4. Generate report via Claude API (with feedback)
+5. Post to Slack with '피드백 하기' button
+6. Save to Notion
 """
 
 import os
@@ -29,16 +28,14 @@ KST = timezone(timedelta(hours=9))
 SLACK_BOT_TOKEN = os.environ["SLACK_BOT_TOKEN"]
 SLACK_CHANNEL_ID = os.environ.get("SLACK_CHANNEL_ID", "C0884BV1KNV")
 ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
-NOTION_API_TOKEN = os.environ.get("NOTION_API_TOKEN", "")
-NOTION_DATABASE_ID = os.environ.get("NOTION_DATABASE_ID", "")
+
 FORCE_TYPE = os.environ.get("FORCE_TYPE", "auto")
+FEEDBACK_WORKER_URL = os.environ.get("FEEDBACK_WORKER_URL", "")
 
 slack_client = WebClient(token=SLACK_BOT_TOKEN)
 claude_client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
 DAY_NAMES = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-STATE_FILE = Path(__file__).parent / "last_report.json"
-FEEDBACK_FILE = Path(__file__).parent / "feedback_history.json"
 
 
 def get_today_kst():
@@ -53,92 +50,46 @@ def load_guide():
     return ""
 
 
-# -- Feedback System --
+# -- Feedback from Cloudflare Worker --
 
-def load_last_report_state():
-    """Load previous report's ts and channel for feedback collection."""
-    if STATE_FILE.exists():
-        try:
-            data = json.loads(STATE_FILE.read_text())
-            return data.get("ts"), data.get("channel")
-        except Exception:
-            pass
-    return None, None
+def fetch_accumulated_feedback():
+    """Fetch all accumulated feedback from Cloudflare Worker API."""
+    if not FEEDBACK_WORKER_URL:
+        print("WARNING: FEEDBACK_WORKER_URL not set, skipping feedback")
+        return []
 
-
-def save_report_state(ts, channel):
-    """Save current report's ts for next run's feedback collection."""
-    STATE_FILE.write_text(json.dumps({
-        "ts": ts,
-        "channel": channel,
-        "posted_at": datetime.now(KST).isoformat(),
-    }))
-    print(f"State saved: ts={ts}")
-
-
-def load_feedback_history():
-    """Load accumulated feedback history."""
-    if FEEDBACK_FILE.exists():
-        try:
-            return json.loads(FEEDBACK_FILE.read_text())
-        except Exception:
-            pass
-    return []
-
-
-def save_feedback_history(history):
-    """Save accumulated feedback history."""
-    FEEDBACK_FILE.write_text(json.dumps(history, ensure_ascii=False, indent=2))
-
-
-def fetch_and_accumulate_feedback():
-    """Fetch new feedback from previous report thread, accumulate to history."""
-    history = load_feedback_history()
-
-    prev_ts, prev_channel = load_last_report_state()
-    if not prev_ts:
-        print("No previous report state found, skipping feedback collection")
-        return history
-
-    channel = prev_channel or SLACK_CHANNEL_ID
     try:
-        result = slack_client.conversations_replies(
-            channel=channel,
-            ts=prev_ts,
-            limit=100,
-        )
-        replies = result.get("messages", [])[1:]
-        print(f"New feedback collected: {len(replies)} replies")
-
-        for msg in replies:
-            ts = datetime.fromtimestamp(float(msg["ts"]), tz=KST)
-            feedback_entry = {
-                "date": ts.strftime("%Y-%m-%d"),
-                "time": ts.strftime("%H:%M"),
-                "user": msg.get("user", "unknown"),
-                "text": msg.get("text", "").strip(),
-                "report_ts": prev_ts,
-            }
-            # Avoid duplicates by checking ts
-            if not any(f.get("report_ts") == prev_ts and f.get("text") == feedback_entry["text"] for f in history):
-                history.append(feedback_entry)
-
-        save_feedback_history(history)
-        return history
-
-    except SlackApiError as e:
-        print(f"WARNING: feedback fetch failed: {e.response['error']}")
-        return history
+        resp = requests.get(f"{FEEDBACK_WORKER_URL}/feedback", timeout=10)
+        if resp.status_code == 200:
+            feedback = resp.json()
+            print(f"Accumulated feedback loaded: {len(feedback)} entries")
+            return feedback
+        else:
+            print(f"WARNING: feedback fetch failed ({resp.status_code})")
+            return []
+    except Exception as e:
+        print(f"WARNING: feedback fetch error: {e}")
+        return []
 
 
-def format_feedback_history(history):
+def format_feedback_for_prompt(feedback_list):
     """Format accumulated feedback for Claude prompt."""
-    if not history:
+    if not feedback_list:
         return ""
 
+    category_labels = {
+        "correction": "사실 오류 수정",
+        "categorization": "분류 기준 변경",
+        "format": "포맷/형식 변경",
+        "general": "기타 의견",
+    }
+
     lines = []
-    for entry in history:
-        lines.append(f"[{entry['date']}] <@{entry['user']}>: {entry['text']}")
+    for entry in feedback_list:
+        cat = category_labels.get(entry.get("category", ""), entry.get("category", ""))
+        date = entry.get("date", "")
+        text = entry.get("text", "")
+        lines.append(f"[{date}] [{cat}] {text}")
 
     return "\n".join(lines)
 
@@ -249,6 +200,8 @@ def convert_to_slack_mrkdwn(text):
     return '\n'.join(result)
 
 
+# -- Claude API --
+
 def generate_report_with_claude(slack_text, report_type, date_label, guide, feedback_text):
     if report_type == "daily":
         case_instruction = "[Case A] daily quick report format"
@@ -283,7 +236,6 @@ def generate_report_with_claude(slack_text, report_type, date_label, guide, feed
         "- Example section header: *section title here*\n"
     )
 
-    # Build user prompt with optional feedback section
     feedback_section = ""
     if feedback_text:
         feedback_section = (
@@ -317,21 +269,58 @@ def generate_report_with_claude(slack_text, report_type, date_label, guide, feed
     return response.content[0].text
 
 
+# -- Slack Posting with Block Kit --
+
 def post_to_slack(report_text, report_type, date_label):
     if report_type == "daily":
         type_label = "Daily Quick Report"
     else:
         type_label = "Weekly Diagnosis Report"
 
-    # Add feedback CTA at the bottom
-    feedback_cta = "\n\n───\n💬 _이 스레드에 피드백을 남겨주세요. 다음 리포트에 반영됩니다._"
+    header_text = f"*{type_label}*  |  {date_label}"
 
-    full_message = f"*{type_label}*  |  {date_label}\n───\n\n{report_text}{feedback_cta}"
+    blocks = [
+        {
+            "type": "section",
+            "text": {
+                "type": "mrkdwn",
+                "text": header_text,
+            },
+        },
+        {"type": "divider"},
+        {
+            "type": "section",
+            "text": {
+                "type": "mrkdwn",
+                "text": report_text,
+            },
+        },
+        {"type": "divider"},
+        {
+            "type": "actions",
+            "elements": [
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "💬 피드백 하기",
+                        "emoji": True,
+                    },
+                    "action_id": "feedback_button",
+                    "style": "primary",
+                },
+            ],
+        },
+    ]
+
+    # Fallback text for notifications
+    fallback_text = f"{type_label} | {date_label}"
 
     try:
         result = slack_client.chat_postMessage(
             channel=SLACK_CHANNEL_ID,
-            text=full_message,
+            text=fallback_text,
+            blocks=blocks,
             mrkdwn=True,
         )
         print(f"OK Slack posted: ts={result['ts']}")
@@ -341,53 +330,10 @@ def post_to_slack(report_text, report_type, date_label):
         return None
 
 
-def save_to_notion(report_text, report_type, date_label, today):
-    if not NOTION_API_TOKEN or not NOTION_DATABASE_ID:
-        print("WARNING: Notion not configured, skipping")
-        return
 
-    type_label = "daily" if report_type == "daily" else "weekly"
-    title = f"[{type_label}] {date_label} VCMS Report"
 
-    chunks = [report_text[i:i+2000] for i in range(0, len(report_text), 2000)]
-    children = []
-    for chunk in chunks:
-        children.append({
-            "object": "block",
-            "type": "paragraph",
-            "paragraph": {
-                "rich_text": [{"type": "text", "text": {"content": chunk}}]
-            }
-        })
 
-    payload = {
-        "parent": {"database_id": NOTION_DATABASE_ID},
-        "properties": {
-            "Name": {"title": [{"text": {"content": title}}]},
-            "Date": {"date": {"start": today.isoformat()}},
-            "Type": {"select": {"name": type_label}},
-        },
-        "children": children,
-    }
-
-    headers = {
-        "Authorization": f"Bearer {NOTION_API_TOKEN}",
-        "Content-Type": "application/json",
-        "Notion-Version": "2022-06-28",
-    }
-
-    resp = requests.post(
-        "https://api.notion.com/v1/pages",
-        headers=headers,
-        json=payload,
-    )
-
-    if resp.status_code == 200:
-        page_id = resp.json()["id"]
-        print(f"OK Notion saved: {page_id}")
-    else:
-        print(f"WARNING Notion save failed ({resp.status_code}): {resp.text}")
-
+# -- Main --
 
 def main():
     today = get_today_kst()
@@ -405,16 +351,14 @@ def main():
     report_type = determine_report_type(today)
     print(f"Report type: {report_type}")
 
-    # 1. Collect feedback from previous report thread (accumulate)
-    print("Checking for feedback on previous report...")
-    feedback_history = fetch_and_accumulate_feedback()
-    feedback_text = format_feedback_history(feedback_history)
-    if feedback_history:
-        print(f"Total accumulated feedback: {len(feedback_history)} entries")
-    else:
-        print("No feedback history")
+    # 1. Fetch accumulated feedback from Worker
+    print("Fetching accumulated feedback...")
+    feedback_list = fetch_accumulated_feedback()
+    feedback_text = format_feedback_for_prompt(feedback_list)
+    if feedback_list:
+        print(f"Total feedback entries: {len(feedback_list)}")
 
-    # 2. Collect Slack messages for date range
+    # 2. Collect Slack messages
     start_dt, end_dt, date_label = get_date_range(today, report_type)
     print(f"Collecting: {date_label}")
 
@@ -428,20 +372,15 @@ def main():
     slack_text = format_slack_messages(messages)
     print(f"Formatted text: {len(slack_text)} chars")
 
-    # 3. Generate report with Claude (including feedback)
+    # 3. Generate report with Claude
     guide = load_guide()
     print("Calling Claude API...")
     report = generate_report_with_claude(slack_text, report_type, date_label, guide, feedback_text)
     report = convert_to_slack_mrkdwn(report)
     print(f"Report generated ({len(report)} chars)")
 
-    # 4. Post & save
-    posted_ts = post_to_slack(report, report_type, date_label)
-    save_to_notion(report, report_type, date_label, today)
-
-    # 5. Save report ts for next run's feedback collection
-    if posted_ts:
-        save_report_state(posted_ts, SLACK_CHANNEL_ID)
+    # 4. Post to Slack
+    post_to_slack(report, report_type, date_label)
 
     print("All done!")
 
