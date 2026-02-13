@@ -38,6 +38,7 @@ claude_client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
 DAY_NAMES = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 STATE_FILE = Path(__file__).parent / "last_report.json"
+FEEDBACK_FILE = Path(__file__).parent / "feedback_history.json"
 
 
 def get_today_kst():
@@ -75,12 +76,29 @@ def save_report_state(ts, channel):
     print(f"State saved: ts={ts}")
 
 
-def fetch_feedback_from_previous_report():
-    """Fetch thread replies from the previous report message."""
+def load_feedback_history():
+    """Load accumulated feedback history."""
+    if FEEDBACK_FILE.exists():
+        try:
+            return json.loads(FEEDBACK_FILE.read_text())
+        except Exception:
+            pass
+    return []
+
+
+def save_feedback_history(history):
+    """Save accumulated feedback history."""
+    FEEDBACK_FILE.write_text(json.dumps(history, ensure_ascii=False, indent=2))
+
+
+def fetch_and_accumulate_feedback():
+    """Fetch new feedback from previous report thread, accumulate to history."""
+    history = load_feedback_history()
+
     prev_ts, prev_channel = load_last_report_state()
     if not prev_ts:
-        print("No previous report state found, skipping feedback")
-        return []
+        print("No previous report state found, skipping feedback collection")
+        return history
 
     channel = prev_channel or SLACK_CHANNEL_ID
     try:
@@ -89,31 +107,38 @@ def fetch_feedback_from_previous_report():
             ts=prev_ts,
             limit=100,
         )
-        # Skip the first message (the report itself), get only replies
         replies = result.get("messages", [])[1:]
-        print(f"Feedback collected: {len(replies)} replies from previous report")
-        return replies
+        print(f"New feedback collected: {len(replies)} replies")
+
+        for msg in replies:
+            ts = datetime.fromtimestamp(float(msg["ts"]), tz=KST)
+            feedback_entry = {
+                "date": ts.strftime("%Y-%m-%d"),
+                "time": ts.strftime("%H:%M"),
+                "user": msg.get("user", "unknown"),
+                "text": msg.get("text", "").strip(),
+                "report_ts": prev_ts,
+            }
+            # Avoid duplicates by checking ts
+            if not any(f.get("report_ts") == prev_ts and f.get("text") == feedback_entry["text"] for f in history):
+                history.append(feedback_entry)
+
+        save_feedback_history(history)
+        return history
+
     except SlackApiError as e:
         print(f"WARNING: feedback fetch failed: {e.response['error']}")
-        return []
+        return history
 
 
-def format_feedback(feedback_messages):
-    """Format feedback replies for Claude prompt."""
-    if not feedback_messages:
+def format_feedback_history(history):
+    """Format accumulated feedback for Claude prompt."""
+    if not history:
         return ""
 
     lines = []
-    for msg in feedback_messages:
-        ts = datetime.fromtimestamp(float(msg["ts"]), tz=KST)
-        time_str = ts.strftime("%m/%d %H:%M")
-        text = msg.get("text", "").strip()
-        user = msg.get("user", "unknown")
-        if text:
-            lines.append(f"[{time_str}] <@{user}>: {text}")
-
-    if not lines:
-        return ""
+    for entry in history:
+        lines.append(f"[{entry['date']}] <@{entry['user']}>: {entry['text']}")
 
     return "\n".join(lines)
 
@@ -262,9 +287,12 @@ def generate_report_with_claude(slack_text, report_type, date_label, guide, feed
     feedback_section = ""
     if feedback_text:
         feedback_section = (
-            "\n\n---PREVIOUS REPORT FEEDBACK---\n"
-            "The following feedback was left on the previous report by team members.\n"
-            "Consider this feedback when writing today's report (correct mistakes, adjust focus areas, etc):\n\n"
+            "\n\n---ACCUMULATED TEAM FEEDBACK---\n"
+            "Below is accumulated feedback from team members across all previous reports.\n"
+            "These are PERMANENT corrections and preferences. ALWAYS apply them:\n"
+            "- If feedback says something is NOT a certain category, never categorize it that way\n"
+            "- If feedback corrects a factual error, always use the corrected version\n"
+            "- If feedback requests a format change, always apply it\n\n"
             f"{feedback_text}\n"
             "---FEEDBACK END---\n"
         )
@@ -377,14 +405,14 @@ def main():
     report_type = determine_report_type(today)
     print(f"Report type: {report_type}")
 
-    # 1. Collect feedback from previous report thread
+    # 1. Collect feedback from previous report thread (accumulate)
     print("Checking for feedback on previous report...")
-    feedback_msgs = fetch_feedback_from_previous_report()
-    feedback_text = format_feedback(feedback_msgs)
-    if feedback_text:
-        print(f"Feedback found ({len(feedback_msgs)} messages)")
+    feedback_history = fetch_and_accumulate_feedback()
+    feedback_text = format_feedback_history(feedback_history)
+    if feedback_history:
+        print(f"Total accumulated feedback: {len(feedback_history)} entries")
     else:
-        print("No feedback found")
+        print("No feedback history")
 
     # 2. Collect Slack messages for date range
     start_dt, end_dt, date_label = get_date_range(today, report_type)
