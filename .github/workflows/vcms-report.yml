@@ -1,3 +1,4 @@
+
 name: VCMS Daily/Weekly Report
 
 on:
@@ -34,12 +35,10 @@ jobs:
           FORCE_TYPE: ${{ github.event.inputs.force_type || 'auto' }}
           TZ: Asia/Seoul
         run: python scripts/generate_report.py
-      - name: Save report state
+      - name: Save report state and feedback
         run: |
-          if [ -f scripts/last_report.json ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add scripts/last_report.json
-            git diff --cached --quiet || git commit -m "chore: update last_report state [skip ci]"
-            git push
-          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add scripts/last_report.json scripts/feedback_history.json 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "chore: update report state [skip ci]"
+          git push || true
