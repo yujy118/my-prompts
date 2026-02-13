@@ -122,10 +122,18 @@ def get_date_range(today, report_type):
 def convert_to_slack_mrkdwn(text):
     """Convert Markdown to Slack mrkdwn format."""
     import re
-    text = re.sub(r'#{1,4}\s*(.+)', r'*\1*', text)
-    text = re.sub(r'\*\*(.+?)\*\*', r'*\1*', text)
-    text = re.sub(r'^-{3,}$', '───────────────────', flags=re.MULTILINE)
-    return text
+    lines = text.split('\n')
+    result = []
+    for line in lines:
+        # Remove # headers, keep text
+        line = re.sub(r'^#{1,6}\s+', '', line)
+        # **bold** -> *bold* (simple replace)
+        line = line.replace('**', '*')
+        # --- divider
+        if re.match(r'^-{3,}$', line.strip()):
+            line = '───────────────────'
+        result.append(line)
+    return '\n'.join(result)
 
 def generate_report_with_claude(slack_text, report_type, date_label, guide):
     """Generate report using Claude API."""
