@@ -173,12 +173,38 @@ def determine_report_type(today):
     return "daily"
 
 
+def find_last_business_day(before_date):
+    """Find the most recent business day before the given date."""
+    d = before_date - timedelta(days=1)
+    while True:
+        holiday, _ = is_korean_holiday(d)
+        if is_business_day(d) and not holiday:
+            return d
+        d -= timedelta(days=1)
+
+
 def get_date_range(today, report_type):
     if report_type == "daily":
+        # Cover from (last business day + 1) to yesterday
+        # e.g. Monday → covers Sat, Sun (last biz day = Fri)
+        # e.g. after 3-day holiday → covers all skipped days
         yesterday = today - timedelta(days=1)
-        start = datetime(yesterday.year, yesterday.month, yesterday.day, 0, 0, 0, tzinfo=KST)
+        last_biz = find_last_business_day(today)
+        start_date = last_biz + timedelta(days=1)  # day after last report
+
+        # If start == today (no gap), just use yesterday
+        if start_date >= today:
+            start_date = yesterday
+
+        start = datetime(start_date.year, start_date.month, start_date.day, 0, 0, 0, tzinfo=KST)
         end = datetime(yesterday.year, yesterday.month, yesterday.day, 23, 59, 59, tzinfo=KST)
-        return start, end, yesterday.strftime("%Y-%m-%d")
+
+        if start_date == yesterday:
+            label = yesterday.strftime("%Y-%m-%d")
+        else:
+            label = f"{start_date.strftime('%m/%d')}~{yesterday.strftime('%m/%d')}"
+
+        return start, end, label
     else:
         this_monday = today - timedelta(days=today.weekday())
         this_thursday = today - timedelta(days=1)
@@ -204,9 +230,9 @@ def convert_to_slack_mrkdwn(text):
 
 def generate_report_with_claude(slack_text, report_type, date_label, guide, feedback_text):
     if report_type == "daily":
-        case_instruction = "[Case A] VCMS daily quick report format"
+        case_instruction = "[Case A] daily quick report format"
     else:
-        case_instruction = "[Case B] VCMS weekly operation report format"
+        case_instruction = "[Case B] weekly operation diagnosis report format"
 
     system_prompt = (
         "You are a senior manager of VCMS (accommodation channel manager) operations team.\n"
@@ -229,6 +255,7 @@ def generate_report_with_claude(slack_text, report_type, date_label, guide, feed
         "  Bad: '주간 총 유입: 13건 (02/10 호텔A, 02/10 호텔B...)'\n"
         "- Keep the report compact and scannable. No unnecessary repetition\n"
         "- Include specific names (venues, staff) ONLY if they appear in messages\n"
+        "- '기술 이슈' 대신 '교육간 특이사항'이라는 용어를 사용할 것\n"
         "- Provide root cause analysis based ONLY on evidence in messages\n"
         "- Suggest improvements only when patterns are clearly visible in the data\n"
         "- Write in Korean\n"
@@ -278,9 +305,9 @@ def generate_report_with_claude(slack_text, report_type, date_label, guide, feed
 
 def post_to_slack(report_text, report_type, date_label):
     if report_type == "daily":
-        type_label = "VCMS 일간 리포트"
+        type_label = "일간 리포트"
     else:
-        type_label = "VCMS 주간 리포트"
+        type_label = "주간 리포트"
 
     full_message = f"*{type_label}*  |  {date_label}\n───\n\n{report_text}"
 
@@ -362,7 +389,9 @@ def main():
     print(f"Messages collected: {len(messages)}")
 
     if len(messages) == 0:
-        print("No messages found. Skipping.")
+        print("No messages found. Posting null report.")
+        null_report = "해당 기간 채널에 기록된 메시지가 없습니다. 추가 보고 사항이 있으면 스레드에 남겨주세요."
+        post_to_slack(null_report, report_type, date_label)
         return
 
     slack_text = format_slack_messages(messages)
