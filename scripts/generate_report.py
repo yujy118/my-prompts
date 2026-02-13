@@ -119,6 +119,13 @@ def get_date_range(today, report_type):
         end = datetime(last_friday.year, last_friday.month, last_friday.day, 23, 59, 59, tzinfo=KST)
         return start, end, f"{last_monday.strftime('%m/%d')}~{last_friday.strftime('%m/%d')}"
 
+def convert_to_slack_mrkdwn(text):
+    """Convert Markdown to Slack mrkdwn format."""
+    import re
+    text = re.sub(r'#{1,4}\s*(.+)', r'*\1*', text)
+    text = re.sub(r'\*\*(.+?)\*\*', r'*\1*', text)
+    text = re.sub(r'^-{3,}$', '───────────────────', flags=re.MULTILINE)
+    return text
 
 def generate_report_with_claude(slack_text, report_type, date_label, guide):
     """Generate report using Claude API."""
@@ -282,6 +289,7 @@ def main():
     guide = load_guide()
     print("Calling Claude API...")
     report = generate_report_with_claude(slack_text, report_type, date_label, guide)
+    report = convert_to_slack_mrkdwn(report)
     print(f"Report generated ({len(report)} chars)")
 
     # 5. Post to Slack
