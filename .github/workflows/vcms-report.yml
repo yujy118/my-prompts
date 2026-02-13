@@ -1,1 +1,35 @@
 
+name: VCMS Daily/Weekly Report
+
+on:
+  schedule:
+    - cron: '0 1 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      force_type:
+        description: 'Report type (daily/weekly/auto)'
+        required: false
+        default: 'auto'
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+      - name: Generate and post report
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CHANNEL_ID: 'C0884BV1KNV'
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          FORCE_TYPE: ${{ github.event.inputs.force_type || 'auto' }}
+          TZ: Asia/Seoul
+        run: python scripts/generate_report.py
