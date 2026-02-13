@@ -188,7 +188,7 @@ def post_to_slack(report_text, report_type, date_label):
         type_label = "Weekly Diagnosis Report"
 
     header = f"*{type_label}* -- {date_label}\n{'=' * 40}"
-    full_message = f"{header}\n\n{report_text}\n\n_This report was auto-generated._"
+    full_message = f"{header}\n\n{report_text}"
 
     try:
         result = slack_client.chat_postMessage(
