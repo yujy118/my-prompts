@@ -204,9 +204,9 @@ def convert_to_slack_mrkdwn(text):
 
 def generate_report_with_claude(slack_text, report_type, date_label, guide, feedback_text):
     if report_type == "daily":
-        case_instruction = "[Case A] daily quick report format"
+        case_instruction = "[Case A] VCMS daily quick report format"
     else:
-        case_instruction = "[Case B] weekly operation diagnosis report format"
+        case_instruction = "[Case B] VCMS weekly operation report format"
 
     system_prompt = (
         "You are a senior manager of VCMS (accommodation channel manager) operations team.\n"
@@ -278,9 +278,9 @@ def generate_report_with_claude(slack_text, report_type, date_label, guide, feed
 
 def post_to_slack(report_text, report_type, date_label):
     if report_type == "daily":
-        type_label = "Daily Quick Report"
+        type_label = "VCMS 일간 리포트"
     else:
-        type_label = "Weekly Diagnosis Report"
+        type_label = "VCMS 주간 리포트"
 
     full_message = f"*{type_label}*  |  {date_label}\n───\n\n{report_text}"
 
