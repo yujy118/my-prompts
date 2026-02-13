@@ -277,54 +277,45 @@ def post_to_slack(report_text, report_type, date_label):
     else:
         type_label = "Weekly Diagnosis Report"
 
-    header_text = f"*{type_label}*  |  {date_label}"
-
-    blocks = [
-        {
-            "type": "section",
-            "text": {
-                "type": "mrkdwn",
-                "text": header_text,
-            },
-        },
-        {"type": "divider"},
-        {
-            "type": "section",
-            "text": {
-                "type": "mrkdwn",
-                "text": report_text,
-            },
-        },
-        {"type": "divider"},
-        {
-            "type": "actions",
-            "elements": [
-                {
-                    "type": "button",
-                    "text": {
-                        "type": "plain_text",
-                        "text": "💬 피드백 하기",
-                        "emoji": True,
-                    },
-                    "action_id": "feedback_button",
-                    "style": "primary",
-                },
-            ],
-        },
-    ]
-
-    # Fallback text for notifications
-    fallback_text = f"{type_label} | {date_label}"
+    full_message = f"*{type_label}*  |  {date_label}\n───\n\n{report_text}"
 
     try:
+        # 1. Post report as main message
         result = slack_client.chat_postMessage(
             channel=SLACK_CHANNEL_ID,
-            text=fallback_text,
-            blocks=blocks,
+            text=full_message,
             mrkdwn=True,
         )
-        print(f"OK Slack posted: ts={result['ts']}")
-        return result["ts"]
+        report_ts = result["ts"]
+        print(f"OK Slack posted: ts={report_ts}")
+
+        # 2. Post feedback button as thread reply
+        feedback_blocks = [
+            {
+                "type": "actions",
+                "elements": [
+                    {
+                        "type": "button",
+                        "text": {
+                            "type": "plain_text",
+                            "text": "💬 피드백 하기",
+                            "emoji": True,
+                        },
+                        "action_id": "feedback_button",
+                        "style": "primary",
+                    },
+                ],
+            },
+        ]
+        slack_client.chat_postMessage(
+            channel=SLACK_CHANNEL_ID,
+            thread_ts=report_ts,
+            text="피드백을 남겨주세요",
+            blocks=feedback_blocks,
+        )
+        print("OK Feedback button posted in thread")
+
+        return report_ts
     except SlackApiError as e:
         print(f"ERROR Slack post failed: {e.response['error']}")
         return None
@@ -387,3 +378,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
