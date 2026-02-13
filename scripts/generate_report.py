@@ -138,6 +138,12 @@ def generate_report_with_claude(slack_text, report_type, date_label, guide):
         "- Provide root cause analysis and concrete action items\n"
         "- Suggest systemic improvements for recurring patterns\n"
         "- Write in Korean\n"
+        "- IMPORTANT: Use Slack mrkdwn format, NOT standard Markdown\n"
+        "- Bold: use *single asterisk* not **double**\n"
+        "- No ### headers. Use *굵은 텍스트* with emoji for sections\n"
+        "- Italic: use _underscore_ not *single asterisk*\n"
+        "- Lists: use bullet • or numbered 1. 2. 3.\n"
+        "- Divider: use ─── not ---\n"
     )
 
     user_prompt = (
