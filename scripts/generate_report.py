@@ -149,9 +149,24 @@ def fetch_slack_history(start_dt, end_dt):
     return all_messages
 
 
+def get_bot_user_id():
+    """Get this bot's own user ID to filter out self-messages."""
+    try:
+        result = slack_client.auth_test()
+        return result.get("bot_id") or result.get("user_id")
+    except SlackApiError:
+        return None
+
+
+BOT_ID = None  # initialized in main()
+
+
 def format_slack_messages(messages):
     lines = []
     for msg in messages:
+        # Skip this bot's own messages (previous reports)
+        if BOT_ID and msg.get("bot_id") == BOT_ID:
+            continue
         ts = datetime.fromtimestamp(float(msg["ts"]), tz=KST)
         time_str = ts.strftime("%m/%d %H:%M")
         text = msg.get("text", "").strip()
@@ -373,6 +388,11 @@ def main():
 
     report_type = determine_report_type(today)
     print(f"Report type: {report_type}")
+
+    # Init bot ID for self-message filtering
+    global BOT_ID
+    BOT_ID = get_bot_user_id()
+    print(f"Bot ID: {BOT_ID}")
 
     # 1. Fetch accumulated feedback from Worker
     print("Fetching accumulated feedback...")
