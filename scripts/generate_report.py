@@ -5,8 +5,7 @@ Flow:
 2. Fetch accumulated feedback from Cloudflare Worker
 3. Fetch Slack channel messages + thread replies
 4. Generate report via Claude API (with feedback)
-5. Post to Slack with '피드백 하기' button
-6. Save to Notion
+5. Post to Slack with feedback button
 """
 
 import os
@@ -29,7 +28,6 @@ SLACK_BOT_TOKEN = os.environ["SLACK_BOT_TOKEN"]
 SLACK_CHANNEL_ID = os.environ.get("SLACK_CHANNEL_ID", "C0884BV1KNV")
 ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 
-FORCE_TYPE = os.environ.get("FORCE_TYPE", "auto")
 FEEDBACK_WORKER_URL = os.environ.get("FEEDBACK_WORKER_URL", "")
 
 slack_client = WebClient(token=SLACK_BOT_TOKEN)
@@ -78,10 +76,10 @@ def format_feedback_for_prompt(feedback_list):
         return ""
 
     category_labels = {
-        "correction": "사실 오류 수정",
-        "categorization": "분류 기준 변경",
-        "format": "포맷/형식 변경",
-        "general": "기타 의견",
+        "correction": "\uc0ac\uc2e4 \uc624\ub958 \uc218\uc815",
+        "categorization": "\ubd84\ub958 \uae30\uc900 \ubcc0\uacbd",
+        "format": "\ud3ec\ub9f7/\ud615\uc2dd \ubcc0\uacbd",
+        "general": "\uae30\ud0c0 \uc758\uacac",
     }
 
     lines = []
@@ -180,52 +178,13 @@ def format_slack_messages(messages):
 
 # -- Report Logic --
 
-def determine_report_type(today):
-    if FORCE_TYPE in ("daily", "weekly"):
-        return FORCE_TYPE
-    if today.weekday() == 4:
-        return "weekly"
-    return "daily"
-
-
-def find_last_business_day(before_date):
-    """Find the most recent business day before the given date."""
-    d = before_date - timedelta(days=1)
-    while True:
-        holiday, _ = is_korean_holiday(d)
-        if is_business_day(d) and not holiday:
-            return d
-        d -= timedelta(days=1)
-
-
-def get_date_range(today, report_type):
-    if report_type == "daily":
-        # Cover from (last business day + 1) to yesterday
-        # e.g. Monday → covers Sat, Sun (last biz day = Fri)
-        # e.g. after 3-day holiday → covers all skipped days
-        yesterday = today - timedelta(days=1)
-        last_biz = find_last_business_day(today)
-        start_date = last_biz + timedelta(days=1)  # day after last report
-
-        # If start == today (no gap), just use yesterday
-        if start_date >= today:
-            start_date = yesterday
-
-        start = datetime(start_date.year, start_date.month, start_date.day, 0, 0, 0, tzinfo=KST)
-        end = datetime(yesterday.year, yesterday.month, yesterday.day, 23, 59, 59, tzinfo=KST)
-
-        if start_date == yesterday:
-            label = yesterday.strftime("%Y-%m-%d")
-        else:
-            label = f"{start_date.strftime('%m/%d')}~{yesterday.strftime('%m/%d')}"
-
-        return start, end, label
-    else:
-        this_monday = today - timedelta(days=today.weekday())
-        this_thursday = today - timedelta(days=1)
-        start = datetime(this_monday.year, this_monday.month, this_monday.day, 0, 0, 0, tzinfo=KST)
-        end = datetime(this_thursday.year, this_thursday.month, this_thursday.day, 23, 59, 59, tzinfo=KST)
-        return start, end, f"{this_monday.strftime('%m/%d')}~{this_thursday.strftime('%m/%d')}"
+def get_date_range(today):
+    """Weekly: previous Monday 00:00 ~ previous Sunday 23:59:59 KST."""
+    last_monday = today - timedelta(days=today.weekday() + 7)
+    last_sunday = last_monday + timedelta(days=6)
+    start = datetime(last_monday.year, last_monday.month, last_monday.day, 0, 0, 0, tzinfo=KST)
+    end = datetime(last_sunday.year, last_sunday.month, last_sunday.day, 23, 59, 59, tzinfo=KST)
+    return start, end, f"{last_monday.strftime('%m/%d')}~{last_sunday.strftime('%m/%d')}"
 
 
 def convert_to_slack_mrkdwn(text):
@@ -236,41 +195,36 @@ def convert_to_slack_mrkdwn(text):
         line = re.sub(r'^#{1,6}\s+', '', line)
         line = line.replace('**', '*')
         if re.match(r'^-{3,}$', line.strip()):
-            line = '───'
+            line = '\u2500\u2500\u2500'
         result.append(line)
     return '\n'.join(result)
 
 
 # -- Claude API --
 
-def generate_report_with_claude(slack_text, report_type, date_label, guide, feedback_text):
-    if report_type == "daily":
-        case_instruction = "[Case A] daily quick report format"
-    else:
-        case_instruction = "[Case B] weekly operation diagnosis report format"
-
+def generate_report_with_claude(slack_text, date_label, guide, feedback_text):
     system_prompt = (
         "You are a senior manager of VCMS (accommodation channel manager) operations team.\n"
-        "Analyze Slack channel messages and write a report.\n\n"
+        "Analyze Slack channel messages and write a weekly summary report.\n\n"
         "Follow this guide:\n\n"
         f"{guide}\n\n"
         "Additional instructions:\n"
         "- CRITICAL: ONLY state facts explicitly mentioned in the messages above\n"
         "- NEVER infer, assume, or fabricate information not in the messages\n"
-        "- If something is unclear, say '확인 필요' rather than guessing\n"
+        "- If something is unclear, say '\ud655\uc778 \ud544\uc694' rather than guessing\n"
         "- Do NOT add background context or history that is not in the messages\n"
         "- Numbers must exactly match what appears in the messages\n"
         "- CRITICAL COUNTING RULES:\n"
-        "  * 유입 건수: 신규 신청된 숙박업소 수. 동일 업소 중복 신청은 1건으로 카운트\n"
-        "  * 완료 건수: '교육완료' 또는 완료 이모지(✅ 등)가 명시된 건만 카운트. 해당 기간 유입 건에 한정하지 않음 (이전 주 유입 건 완료 포함)\n"
-        "  * 미결 건수: 단순히 '유입-완료'로 계산하지 마라. 채널에서 아직 완료 표시 안 된 진행 중인 건만 카운트\n"
-        "  * 교육예정: '예정', '스케줄', 날짜가 명시된 건만 카운트. 추측하지 마라\n"
+        "  * \uc720\uc785 \uac74\uc218: \uc2e0\uaddc \uc2e0\uccad\ub41c \uc219\ubc15\uc5c5\uc18c \uc218. \ub3d9\uc77c \uc5c5\uc18c \uc911\ubcf5 \uc2e0\uccad\uc740 1\uac74\uc73c\ub85c \uce74\uc6b4\ud2b8\n"
+        "  * \uc644\ub8cc \uac74\uc218: '\uad50\uc721\uc644\ub8cc' \ub610\ub294 \uc644\ub8cc \uc774\ubaa8\uc9c0(\u2705 \ub4f1)\uac00 \uba85\uc2dc\ub41c \uac74\ub9cc \uce74\uc6b4\ud2b8. \ud574\ub2f9 \uae30\uac04 \uc720\uc785 \uac74\uc5d0 \ud55c\uc815\ud558\uc9c0 \uc54a\uc74c (\uc774\uc804 \uc8fc \uc720\uc785 \uac74 \uc644\ub8cc \ud3ec\ud568)\n"
+        "  * \ubbf8\uacb0 \uac74\uc218: \ub2e8\uc21c\ud788 '\uc720\uc785-\uc644\ub8cc'\ub85c \uacc4\uc0b0\ud558\uc9c0 \ub9c8\ub77c. \ucc44\ub110\uc5d0\uc11c \uc544\uc9c1 \uc644\ub8cc \ud45c\uc2dc \uc548 \ub41c \uc9c4\ud589 \uc911\uc778 \uac74\ub9cc \uce74\uc6b4\ud2b8\n"
+        "  * \uad50\uc721\uc608\uc815: '\uc608\uc815', '\uc2a4\ucf00\uc904', \ub0a0\uc9dc\uac00 \uba85\uc2dc\ub41c \uac74\ub9cc \uce74\uc6b4\ud2b8. \ucd94\uce21\ud558\uc9c0 \ub9c8\ub77c\n"
         "- When citing any number, show the CRITERIA used to count, not individual items\n"
-        "  Good: '주간 신규 유입: 11건 (기준: 신규 신청 메시지, 중복 업소 2건 제외)'\n"
-        "  Bad: '주간 총 유입: 13건 (02/10 호텔A, 02/10 호텔B...)'\n"
+        "  Good: '\uc8fc\uac04 \uc2e0\uaddc \uc720\uc785: 11\uac74 (\uae30\uc900: \uc2e0\uaddc \uc2e0\uccad \uba54\uc2dc\uc9c0, \uc911\ubcf5 \uc5c5\uc18c 2\uac74 \uc81c\uc678)'\n"
+        "  Bad: '\uc8fc\uac04 \ucd1d \uc720\uc785: 13\uac74 (02/10 \ud638\ud154A, 02/10 \ud638\ud154B...)'\n"
         "- Keep the report compact and scannable. No unnecessary repetition\n"
         "- Include specific names (venues, staff) ONLY if they appear in messages\n"
-        "- '기술 이슈' 대신 '교육간 특이사항'이라는 용어를 사용할 것\n"
+        "- '\uae30\uc220 \uc774\uc288' \ub300\uc2e0 '\uad50\uc721\uac04 \ud2b9\uc774\uc0ac\ud56d'\uc774\ub77c\ub294 \uc6a9\uc5b4\ub97c \uc0ac\uc6a9\ud560 \uac83\n"
         "- Provide root cause analysis based ONLY on evidence in messages\n"
         "- Suggest improvements only when patterns are clearly visible in the data\n"
         "- Write in Korean\n"
@@ -299,7 +253,7 @@ def generate_report_with_claude(slack_text, report_type, date_label, guide, feed
     user_prompt = (
         f"Below are Slack messages from #system-vcms-noti for {date_label}.\n"
         f"Messages marked [reply] are thread replies.\n"
-        f"Please write the report in {case_instruction}.\n"
+        f"Please write the weekly summary report.\n"
         f"{feedback_section}\n"
         f"---SLACK MESSAGES START---\n"
         f"{slack_text}\n"
@@ -318,13 +272,8 @@ def generate_report_with_claude(slack_text, report_type, date_label, guide, feed
 
 # -- Slack Posting with Block Kit --
 
-def post_to_slack(report_text, report_type, date_label):
-    if report_type == "daily":
-        type_label = "일간 리포트"
-    else:
-        type_label = "주간 리포트"
-
-    full_message = f"*{type_label}*  |  {date_label}\n───\n\n{report_text}"
+def post_to_slack(report_text, date_label):
+    full_message = f"*\uc8fc\uac04 \ub9ac\ud3ec\ud2b8*  |  {date_label}\n\u2500\u2500\u2500\n\n{report_text}"
 
     try:
         # 1. Post report as main message
@@ -345,7 +294,7 @@ def post_to_slack(report_text, report_type, date_label):
                         "type": "button",
                         "text": {
                             "type": "plain_text",
-                            "text": "💬 피드백 하기",
+                            "text": "\ud83d\udcac \ud53c\ub4dc\ubc31 \ud558\uae30",
                             "emoji": True,
                         },
                         "action_id": "feedback_button",
@@ -357,7 +306,7 @@ def post_to_slack(report_text, report_type, date_label):
         slack_client.chat_postMessage(
             channel=SLACK_CHANNEL_ID,
             thread_ts=report_ts,
-            text="피드백을 남겨주세요",
+            text="\ud53c\ub4dc\ubc31\uc744 \ub0a8\uaca8\uc8fc\uc138\uc694",
             blocks=feedback_blocks,
         )
         print("OK Feedback button posted in thread")
@@ -366,9 +315,6 @@ def post_to_slack(report_text, report_type, date_label):
     except SlackApiError as e:
         print(f"ERROR Slack post failed: {e.response['error']}")
         return None
-
-
-
 
 
 # -- Main --
@@ -386,9 +332,6 @@ def main():
         print("Not a business day. Skipping.")
         return
 
-    report_type = determine_report_type(today)
-    print(f"Report type: {report_type}")
-
     # Init bot ID for self-message filtering
     global BOT_ID
     BOT_ID = get_bot_user_id()
@@ -401,8 +344,8 @@ def main():
     if feedback_list:
         print(f"Total feedback entries: {len(feedback_list)}")
 
-    # 2. Collect Slack messages
-    start_dt, end_dt, date_label = get_date_range(today, report_type)
+    # 2. Collect Slack messages (previous Mon~Sun)
+    start_dt, end_dt, date_label = get_date_range(today)
     print(f"Collecting: {date_label}")
 
     messages = fetch_slack_history(start_dt, end_dt)
@@ -410,8 +353,8 @@ def main():
 
     if len(messages) == 0:
         print("No messages found. Posting null report.")
-        null_report = "해당 기간 채널에 기록된 메시지가 없습니다. 추가 보고 사항이 있으면 스레드에 남겨주세요."
-        post_to_slack(null_report, report_type, date_label)
+        null_report = "\ud574\ub2f9 \uae30\uac04 \ucc44\ub110\uc5d0 \uae30\ub85d\ub41c \uba54\uc2dc\uc9c0\uac00 \uc5c6\uc2b5\ub2c8\ub2e4. \ucd94\uac00 \ubcf4\uace0 \uc0ac\ud56d\uc774 \uc788\uc73c\uba74 \uc2a4\ub808\ub4dc\uc5d0 \ub0a8\uaca8\uc8fc\uc138\uc694."
+        post_to_slack(null_report, date_label)
         return
 
     slack_text = format_slack_messages(messages)
@@ -420,12 +363,12 @@ def main():
     # 3. Generate report with Claude
     guide = load_guide()
     print("Calling Claude API...")
-    report = generate_report_with_claude(slack_text, report_type, date_label, guide, feedback_text)
+    report = generate_report_with_claude(slack_text, date_label, guide, feedback_text)
     report = convert_to_slack_mrkdwn(report)
     print(f"Report generated ({len(report)} chars)")
 
     # 4. Post to Slack
-    post_to_slack(report, report_type, date_label)
+    post_to_slack(report, date_label)
 
     print("All done!")
 
