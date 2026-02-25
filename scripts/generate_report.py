@@ -4,7 +4,7 @@ Flow:
 1. Holiday/business day check
 2. Fetch accumulated feedback from Cloudflare Worker
 3. Fetch Slack channel messages + thread replies
-4. Generate report via Claude API (with feedback)
+4. Generate report via Gemini API (with feedback)
 5. Post to Slack with feedback button
 """
 
@@ -15,7 +15,7 @@ import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-import anthropic
+import google.generativeai as genai
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 import requests
@@ -26,12 +26,12 @@ from korean_holidays import is_business_day, is_korean_holiday
 KST = timezone(timedelta(hours=9))
 SLACK_BOT_TOKEN = os.environ["SLACK_BOT_TOKEN"]
 SLACK_CHANNEL_ID = os.environ.get("SLACK_CHANNEL_ID", "C0884BV1KNV")
-ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
+GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 
 FEEDBACK_WORKER_URL = os.environ.get("FEEDBACK_WORKER_URL", "")
 
 slack_client = WebClient(token=SLACK_BOT_TOKEN)
-claude_client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+genai.configure(api_key=GEMINI_API_KEY)
 
 DAY_NAMES = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
@@ -71,7 +71,7 @@ def fetch_accumulated_feedback():
 
 
 def format_feedback_for_prompt(feedback_list):
-    """Format accumulated feedback for Claude prompt."""
+    """Format accumulated feedback for prompt."""
     if not feedback_list:
         return ""
 
@@ -200,10 +200,10 @@ def convert_to_slack_mrkdwn(text):
     return '\n'.join(result)
 
 
-# -- Claude API --
+# -- Gemini API --
 
-def generate_report_with_claude(slack_text, date_label, guide, feedback_text):
-    system_prompt = (
+def generate_report_with_gemini(slack_text, date_label, guide, feedback_text):
+    system_instruction = (
         "You are a senior manager of VCMS (accommodation channel manager) operations team.\n"
         "Analyze Slack channel messages and write a weekly summary report.\n\n"
         "Follow this guide:\n\n"
@@ -219,9 +219,13 @@ def generate_report_with_claude(slack_text, date_label, guide, feedback_text):
         "  * \uc644\ub8cc \uac74\uc218: '\uad50\uc721\uc644\ub8cc' \ub610\ub294 \uc644\ub8cc \uc774\ubaa8\uc9c0(\u2705 \ub4f1)\uac00 \uba85\uc2dc\ub41c \uac74\ub9cc \uce74\uc6b4\ud2b8. \ud574\ub2f9 \uae30\uac04 \uc720\uc785 \uac74\uc5d0 \ud55c\uc815\ud558\uc9c0 \uc54a\uc74c (\uc774\uc804 \uc8fc \uc720\uc785 \uac74 \uc644\ub8cc \ud3ec\ud568)\n"
         "  * \ubbf8\uacb0 \uac74\uc218: \ub2e8\uc21c\ud788 '\uc720\uc785-\uc644\ub8cc'\ub85c \uacc4\uc0b0\ud558\uc9c0 \ub9c8\ub77c. \ucc44\ub110\uc5d0\uc11c \uc544\uc9c1 \uc644\ub8cc \ud45c\uc2dc \uc548 \ub41c \uc9c4\ud589 \uc911\uc778 \uac74\ub9cc \uce74\uc6b4\ud2b8\n"
         "  * \uad50\uc721\uc608\uc815: '\uc608\uc815', '\uc2a4\ucf00\uc904', \ub0a0\uc9dc\uac00 \uba85\uc2dc\ub41c \uac74\ub9cc \uce74\uc6b4\ud2b8. \ucd94\uce21\ud558\uc9c0 \ub9c8\ub77c\n"
-        "- When citing any number, show the CRITERIA used to count, not individual items\n"
-        "  Good: '\uc8fc\uac04 \uc2e0\uaddc \uc720\uc785: 11\uac74 (\uae30\uc900: \uc2e0\uaddc \uc2e0\uccad \uba54\uc2dc\uc9c0, \uc911\ubcf5 \uc5c5\uc18c 2\uac74 \uc81c\uc678)'\n"
-        "  Bad: '\uc8fc\uac04 \ucd1d \uc720\uc785: 13\uac74 (02/10 \ud638\ud154A, 02/10 \ud638\ud154B...)'\n"
+        "- IMPORTANT: When citing any number, ALWAYS show the CRITERIA used to count\n"
+        "  Good example: '\uc8fc\uac04 \uc2e0\uaddc \uc720\uc785: 7\uac74 (\uae30\uc900: \uc2e0\uaddc \uc2e0\uccad \uba54\uc2dc\uc9c0, \uc911\ubcf5 \uc5c5\uc18c 2\uac74 \uc81c\uc678)'\n"
+        "  Bad example: '\uc8fc\uac04 \ucd1d \uc720\uc785: 13\uac74'\n"
+        "- For each blocker/issue, ALWAYS include: what happened, how long it took, and suggested action\n"
+        "- Action items must be SPECIFIC: include venue name, responsible action, and deadline when available\n"
+        "  Good: '\uac15\ub989 \uc194\ubc14\ub78c \ud39c\uc158 \ub2f4\ub2f9\uc790 \ubc30\uc815 \ubc0f \uad50\uc721 \uc77c\uc815 \ud655\ubcf4'\n"
+        "  Bad: '\ubbf8\uc644\ub8cc \uac74 \ucc98\ub9ac'\n"
         "- Keep the report compact and scannable. No unnecessary repetition\n"
         "- Include specific names (venues, staff) ONLY if they appear in messages\n"
         "- '\uae30\uc220 \uc774\uc288' \ub300\uc2e0 '\uad50\uc721\uac04 \ud2b9\uc774\uc0ac\ud56d'\uc774\ub77c\ub294 \uc6a9\uc5b4\ub97c \uc0ac\uc6a9\ud560 \uac83\n"
@@ -260,14 +264,20 @@ def generate_report_with_claude(slack_text, date_label, guide, feedback_text):
         f"---SLACK MESSAGES END---"
     )
 
-    response = claude_client.messages.create(
-        model="claude-sonnet-4-20250514",
-        max_tokens=2000,
-        system=system_prompt,
-        messages=[{"role": "user", "content": user_prompt}],
+    model = genai.GenerativeModel(
+        "gemini-2.0-flash",
+        system_instruction=system_instruction,
     )
 
-    return response.content[0].text
+    response = model.generate_content(
+        user_prompt,
+        generation_config=genai.types.GenerationConfig(
+            max_output_tokens=2000,
+            temperature=0.3,
+        ),
+    )
+
+    return response.text
 
 
 # -- Slack Posting with Block Kit --
@@ -360,10 +370,10 @@ def main():
     slack_text = format_slack_messages(messages)
     print(f"Formatted text: {len(slack_text)} chars")
 
-    # 3. Generate report with Claude
+    # 3. Generate report with Gemini
     guide = load_guide()
-    print("Calling Claude API...")
-    report = generate_report_with_claude(slack_text, date_label, guide, feedback_text)
+    print("Calling Gemini API...")
+    report = generate_report_with_gemini(slack_text, date_label, guide, feedback_text)
     report = convert_to_slack_mrkdwn(report)
     print(f"Report generated ({len(report)} chars)")
 
