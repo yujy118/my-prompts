@@ -2,7 +2,7 @@ name: VCMS Weekly Report
 
 on:
   schedule:
-    - cron: '0 1 * * 1'
+    - cron: '0 1 * * 5'  # UTC Fri 01:00 = KST Fri 10:00
   workflow_dispatch:
 
 jobs:
