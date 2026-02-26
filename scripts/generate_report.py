@@ -3,10 +3,9 @@
 Flow:
 1. Holiday/business day check
 2. Fetch weekly feedback from Cloudflare Worker
-3. Fetch Slack channel messages (1-month parent window) + thread replies
-4. Filter to report period (prev Friday 00:00 ~ Thursday 23:59:59 KST)
-5. Generate report via Gemini API
-6. Post to Slack with feedback button
+3. Load messages from backup JSON (fallback: Slack API direct fetch)
+4. Generate report via Gemini API
+5. Post to Slack with feedback button
 """
 
 import os
@@ -34,6 +33,7 @@ FEEDBACK_WORKER_URL = os.environ.get("FEEDBACK_WORKER_URL", "")
 slack_client = WebClient(token=SLACK_BOT_TOKEN)
 genai.configure(api_key=GEMINI_API_KEY)
 
+BACKUP_DIR = Path(__file__).parent.parent / "backups"
 DAY_NAMES = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 
@@ -108,7 +108,71 @@ def format_feedback_for_prompt(feedback_list):
     return "\n".join(lines)
 
 
-# -- Slack History --
+# -- Backup File Reader --
+
+def load_from_backup(start_dt):
+    """Try to load messages from backup JSON file.
+
+    Returns (messages_text, success) tuple.
+    messages_text: formatted string ready for Gemini prompt
+    success: True if backup was used
+    """
+    filename = f"{start_dt.strftime('%Y-%m-%d')}.json"
+    filepath = BACKUP_DIR / filename
+
+    if not filepath.exists():
+        print(f"  Backup file not found: {filepath}")
+        return None, False
+
+    try:
+        data = json.loads(filepath.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, IOError) as e:
+        print(f"  Backup file read error: {e}")
+        return None, False
+
+    weekly = data.get("weekly_messages", [])
+    late = data.get("late_thread_replies", [])
+    all_msgs = weekly + late
+    all_msgs.sort(key=lambda m: m.get("ts", "0"))
+
+    stats = data.get("meta", {}).get("stats", {})
+    print(f"  Backup loaded: {filepath.name}")
+    print(f"    weekly={stats.get('weekly_messages', '?')}, "
+          f"late_threads={stats.get('late_thread_replies', '?')}")
+
+    # Format to same text format as format_slack_messages()
+    lines = []
+    for msg in all_msgs:
+        # Skip bot self-messages
+        if msg.get("is_self_bot") or msg.get("is_bot"):
+            continue
+        text = msg.get("text", "").strip()
+        if not text:
+            continue
+
+        dt_str = msg.get("datetime", "")
+        if dt_str:
+            # "2026-02-20 15:39:54" -> "02/20 15:39"
+            try:
+                dt = datetime.strptime(dt_str, "%Y-%m-%d %H:%M:%S")
+                time_str = dt.strftime("%m/%d %H:%M")
+            except ValueError:
+                time_str = dt_str[:16]
+        else:
+            time_str = "??/?? ??:??"
+
+        is_reply = msg.get("is_thread_reply", False)
+        prefix = "  [reply] " if is_reply else ""
+        user_name = msg.get("user_name", "")
+        user_tag = f"({user_name}) " if user_name else ""
+        lines.append(f"[{time_str}] {user_tag}{prefix}{text}")
+
+    formatted = "\n".join(lines)
+    print(f"    Formatted text: {len(formatted)} chars, {len(lines)} lines")
+    return formatted, True
+
+
+# -- Slack History (fallback) --
 
 def fetch_slack_history(start_dt, end_dt):
     """Fetch channel messages with 1-month parent window + thread replies.
@@ -430,18 +494,29 @@ def main():
     if feedback_list:
         print(f"Weekly feedback entries: {len(feedback_list)}")
 
-    # 3. Collect Slack messages (wide parent window + thread replies)
-    print("Collecting messages...")
-    messages = fetch_slack_history(start_dt, end_dt)
-    print(f"Messages collected: {len(messages)}")
+    # 3. Load messages: backup first, fallback to Slack API
+    print("Loading messages...")
+    slack_text, from_backup = load_from_backup(start_dt)
 
-    if len(messages) == 0:
-        print("No messages found. Posting null report.")
-        null_report = "해당 기간 채널에 기록된 메시지가 없습니다. 추가 보고 사항이 있으면 스레드에 남겨주세요."
-        post_to_slack(null_report, date_label)
-        return
+    if not from_backup:
+        print("  Backup not available, falling back to Slack API...")
+        messages = fetch_slack_history(start_dt, end_dt)
+        print(f"  Messages collected: {len(messages)}")
 
-    slack_text = format_slack_messages(messages)
+        if len(messages) == 0:
+            print("No messages found. Posting null report.")
+            null_report = "해당 기간 채널에 기록된 메시지가 없습니다. 추가 보고 사항이 있으면 스레드에 남겨주세요."
+            post_to_slack(null_report, date_label)
+            return
+
+        slack_text = format_slack_messages(messages)
+    else:
+        if not slack_text:
+            print("Backup loaded but no messages. Posting null report.")
+            null_report = "해당 기간 채널에 기록된 메시지가 없습니다. 추가 보고 사항이 있으면 스레드에 남겨주세요."
+            post_to_slack(null_report, date_label)
+            return
+
     print(f"Formatted text: {len(slack_text)} chars")
 
     # 4. Generate report with Gemini
