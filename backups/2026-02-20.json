@@ -1,0 +1,6022 @@
+{
+  "meta": {
+    "period": "2026-02-20 ~ 2026-02-26",
+    "start": "2026-02-20T00:00:00+09:00",
+    "end": "2026-02-26T23:59:59+09:00",
+    "generated_at": "2026-02-27T03:14:30.445215+09:00",
+    "channel_id": "C0884BV1KNV",
+    "stats": {
+      "weekly_messages": 148,
+      "late_thread_replies": 318,
+      "total_seen": 564
+    }
+  },
+  "weekly_messages": [
+    {
+      "ts": "1771569594.034659",
+      "datetime": "2026-02-20 15:39:54",
+      "date": "2026-02-20",
+      "text": ":mailbox_with_mail: *새로운 숙박업소 정보가 전송되었습니다.*\n\n\n:male_mage: _채널 관리 마법사는 숙박업소 정보를 확인해 주세요_ :magic_wand:\n&gt; ✓ *숙박업소*: 경기 가평군 | 경기 가평 킹덤키즈풀빌라리조트 | 53 객실  \n&gt; ✓ *신청자*: 최재혁 | 01052955344\n&gt; ✓ *VCLOUD 사용 여부*: 사용중, 연동 필요\n&gt; ✓ *채널*: 떠나요닷컴\n&gt; ✓ *한마디*: \n&gt; \n\n<https://airtable.com/appBPpvrpPOBVZNjN/tblpiaV9DLGGaeGm2/recRL6fCMwIqO7tLv?blocks=hide|상세 보기>",
+      "is_thread_reply": false,
+      "user_name": "VCMS 알림봇",
+      "is_bot": true
+    },
+    {
+      "ts": "1771579721.008869",
+      "datetime": "2026-02-20 18:28:41",
+      "date": "2026-02-20",
+      "text": "<https://venditinc.slack.com/archives/C0884BV1KNV/p1768184363362709>",
+      "is_thread_reply": true,
+      "parent_ts": "1771316242.264669",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX",
+      "has_attachments": true
+    },
+    {
+      "ts": "1771579750.763149",
+      "datetime": "2026-02-20 18:29:10",
+      "date": "2026-02-20",
+      "text": "<@U0A4WKB8A9L> 혜진님 여기 다음주에 제가 연락해볼게요!\n\n오늘할까 했는데, 금요일이라 위험할꺼 같아서 안헀숩니당",
+      "is_thread_reply": true,
+      "parent_ts": "1771316242.264669",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX"
+    },
+    {
+      "ts": "1771582437.004799",
+      "datetime": "2026-02-20 19:13:57",
+      "date": "2026-02-20",
+      "text": "넵!",
+      "is_thread_reply": true,
+      "parent_ts": "1771316242.264669",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1771641709.034819",
+      "datetime": "2026-02-21 11:41:49",
+      "date": "2026-02-21",
+      "text": ":mailbox_with_mail: *새로운 숙박업소 정보가 전송되었습니다.*\n\n\n:male_mage: _채널 관리 마법사는 숙박업소 정보를 확인해 주세요_ :magic_wand:\n&gt; ✓ *숙박업소*: 강원 고성군 | 고성한산마리나 호텔앤리조트 | 27 객실  \n&gt; ✓ *신청자*: 하조은 | 01098802250\n&gt; ✓ *VCLOUD 사용 여부*: 사용중, 연동 필요\n&gt; ✓ *채널*: 아고다, 여기어때 (모텔), 야놀자 (모텔/호텔/펜션/게스트하우스), 네이버, 익스피디아, 떠나요닷컴, 온다 플러스(펜션)\n&gt; ✓ *한마디*: CX박재윤 대리작성\n&gt; \n\n<https://airtable.com/appBPpvrpPOBVZNjN/tblpiaV9DLGGaeGm2/reclJmxcqkFqRvthR?blocks=hide|상세 보기>",
+      "is_thread_reply": false,
+      "user_name": "VCMS 알림봇",
+      "is_bot": true
+    },
+    {
+      "ts": "1771648835.568839",
+      "datetime": "2026-02-21 13:40:35",
+      "date": "2026-02-21",
+      "text": ":mailbox_with_mail: *새로운 숙박업소 정보가 전송되었습니다.*\n\n\n:male_mage: _채널 관리 마법사는 숙박업소 정보를 확인해 주세요_ :magic_wand:\n&gt; ✓ *숙박업소*: 경북 경주시 | 제이아이스테이 불국사점 | 32 객실  \n&gt; ✓ *신청자*: 이창수 | 01027748569\n&gt; ✓ *VCLOUD 사용 여부*: 사용중, 연동 필요\n&gt; ✓ *채널*: 아고다, 여기어때 (호텔/리조트/펜션/캠핑/글램핑), 부킹닷컴, 에어비앤비, 꿀스테이(모텔), 야놀자 (모텔/호텔/펜션/게스트하우스)\n&gt; ✓ *한마디*: CX 박재윤 대리 신청서 작\n&gt; \n\n<https://airtable.com/appBPpvrpPOBVZNjN/tblpiaV9DLGGaeGm2/recEPFHGaeKofGLuV?blocks=hide|상세 보기>",
+      "is_thread_reply": false,
+      "user_name": "VCMS 알림봇",
+      "is_bot": true
+    },
+    {
+      "ts": "1771653593.410289",
+      "datetime": "2026-02-21 14:59:53",
+      "date": "2026-02-21",
+      "text": ":mailbox_with_mail: *새로운 숙박업소 정보가 전송되었습니다.*\n\n\n:male_mage: _채널 관리 마법사는 숙박업소 정보를 확인해 주세요_ :magic_wand:\n&gt; ✓ *숙박업소*: 전북 전주시 | 호텔 어드밴스 | 32 객실  \n&gt; ✓ *신청자*: 업무폰 | 01056043663\n&gt; ✓ *VCLOUD 사용 여부*: 사용중, 연동 필요\n&gt; ✓ *채널*: 야놀자 (모텔/호텔/펜션/게스트하우스), 꿀스테이(모텔), 부킹닷컴, 트립닷컴, 여기어때 (호텔/리조트/펜션/캠핑/글램핑), 여기어때 (모텔)\n&gt; ✓ *한마디*: CX 박재윤 대리 접수\n&gt; \n\n<https://airtable.com/appBPpvrpPOBVZNjN/tblpiaV9DLGGaeGm2/recNVFOqlySIsvgby?blocks=hide|상세 보기>",
+      "is_thread_reply": false,
+      "user_name": "VCMS 알림봇",
+      "is_bot": true
+    },
+    {
+      "ts": "1771731141.405549",
+      "datetime": "2026-02-22 12:32:21",
+      "date": "2026-02-22",
+      "text": "해당 매장 부킹이 연동이 안되어 생각해보신다고 하시고 , 교육일정은 원하지 않으셨다고 합니다\n일정에서 제외 시켜두겠습니다 !",
+      "is_thread_reply": true,
+      "parent_ts": "1770969211.763739",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1771733521.450699",
+      "datetime": "2026-02-22 13:12:01",
+      "date": "2026-02-22",
+      "text": ":mailbox_with_mail: *새로운 숙박업소 정보가 전송되었습니다.*\n\n\n:male_mage: _채널 관리 마법사는 숙박업소 정보를 확인해 주세요_ :magic_wand:\n&gt; ✓ *숙박업소*: 경기 구리시 | 호텔옐로 | 37 객실  \n&gt; ✓ *신청자*: 이정희  | 01047185252\n&gt; ✓ *VCLOUD 사용 여부*: 사용중, 연동 필요\n&gt; ✓ *채널*: 여기어때 (모텔), 야놀자 (모텔/호텔/펜션/게스트하우스), 네이버, 꿀스테이(모텔), 아고다, 부킹닷컴, 에어비앤비\n&gt; ✓ *한마디*: \n&gt; \n\n<https://airtable.com/appBPpvrpPOBVZNjN/tblpiaV9DLGGaeGm2/reczEWbipjHqLjr9I?blocks=hide|상세 보기>",
+      "is_thread_reply": false,
+      "user_name": "VCMS 알림봇",
+      "is_bot": true
+    },
+    {
+      "ts": "1771733742.893319",
+      "datetime": "2026-02-22 13:15:42",
+      "date": "2026-02-22",
+      "text": "New submission for 의견 보내기",
+      "is_thread_reply": false,
+      "user_id": "U08883H9WAE",
+      "user_name": "Tally Forms"
+    },
+    {
+      "ts": "1771811378.778399",
+      "datetime": "2026-02-23 10:49:38",
+      "date": "2026-02-23",
+      "text": ":mailbox_with_mail: *새로운 숙박업소 정보가 전송되었습니다.*\n\n\n:male_mage: _채널 관리 마법사는 숙박업소 정보를 확인해 주세요_ :magic_wand:\n&gt; ✓ *숙박업소*: 서울 강동구 | 호텔 에이취 | 24 객실  \n&gt; ✓ *신청자*: 이도연 | 01089023988\n&gt; ✓ *VCLOUD 사용 여부*: 사용중, 연동 필요\n&gt; ✓ *채널*: 여기어때 (모텔), 야놀자 (모텔/호텔/펜션/게스트하우스), 아고다, 부킹닷컴, 온다 플러스(호텔)\n&gt; ✓ *한마디*: 금일 설치 업장\n&gt; \n\n<https://airtable.com/appBPpvrpPOBVZNjN/tblpiaV9DLGGaeGm2/rec6gX4eo8IDuD76F?blocks=hide|상세 보기>",
+      "is_thread_reply": false,
+      "user_name": "VCMS 알림봇",
+      "is_bot": true
+    },
+    {
+      "ts": "1771811394.073209",
+      "datetime": "2026-02-23 10:49:54",
+      "date": "2026-02-23",
+      "text": "<@U0A4WKB8A9L> 님\n여기는 오늘 오전에 말씀드린 업장입니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1771811378.778399",
+      "user_id": "U08DJPW6CCQ",
+      "user_name": "김은주 슈퍼바이저"
+    },
+    {
+      "ts": "1771815488.168559",
+      "datetime": "2026-02-23 11:58:08",
+      "date": "2026-02-23",
+      "text": "13:30교육 예정",
+      "is_thread_reply": true,
+      "parent_ts": "1771316242.264669",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX"
+    },
+    {
+      "ts": "1771817598.158649",
+      "datetime": "2026-02-23 12:33:18",
+      "date": "2026-02-23",
+      "text": "<@U0A4WKB8A9L>님 요기부터 일정 잡으면 되겠죠,,?",
+      "is_thread_reply": true,
+      "parent_ts": "1770690227.818429",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX"
+    },
+    {
+      "ts": "1771817855.037729",
+      "datetime": "2026-02-23 12:37:35",
+      "date": "2026-02-23",
+      "text": "여기에쓴다고제가볼순없습니다;; 지금봤네요.\n피드백기반으로 리포트를 쏘는것뿐이라;\n\n당장은 중복되는 내용안나오도록만 수정했었는데, 일간 리포트 제거하고 주간만쏘도록 개선해보겠습니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1771471908.309929",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771817866.965029",
+      "datetime": "2026-02-23 12:37:46",
+      "date": "2026-02-23",
+      "text": "새로운 VCLOUD 연동 신청이 접수되었습니다.\n확인 부탁드립니다! <@U044Z9ZG2AX>\n• 신청자 정보: <@U0A4WKB8A9L>\n--------------------------------------------------------\n*VCMS에 등록한 숙박업소 이름을 입력해 주세요.*\n통영 아름다운호텔름다운호텔\n*1. VCLOUD 숙박업소 ID를 입력해 주세요.*\n00ea8610-e92b-11ef-9181-0185339e6e32\n\n*2. 예약 연동 중인 서비스를 선택해 주세요!*\nVCMS\n\n*3. VCLOUD에서 VCMS가 아닌 다른 서비스로 예약을 연동하는 채널을 선택해 주세요.*\nVCMS 만 사용해요!\n\n*4. 전용 리피터를 사용하나요?*\n네, 전용 리피터 사용합니다.\n\n*5. 작성하지 못한 특이사항을 입력해 주세요.*\nvcms 에서 \n야,네,여 사용합니다 \n\ncloud 문자 꺼놨습니다 \ncloud 연동 해놨습니다 . \n이외 특이사항 없습니다",
+      "is_thread_reply": false,
+      "user_name": "VCLOUD 연동 알림봇",
+      "is_bot": true,
+      "reactions": [
+        {
+          "name": "완료",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1771817904.488509",
+      "datetime": "2026-02-23 12:38:24",
+      "date": "2026-02-23",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1771817866.965029",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1771817919.933089",
+      "datetime": "2026-02-23 12:38:39",
+      "date": "2026-02-23",
+      "text": "피드백 영구 반영된다고 해서 테스트용으로 작성해보았습니다!",
+      "is_thread_reply": true,
+      "parent_ts": "1771471908.309929",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인"
+    },
+    {
+      "ts": "1771817976.224819",
+      "datetime": "2026-02-23 12:39:36",
+      "date": "2026-02-23",
+      "text": "항상 사용자 내보내기(VCMS) 부탁드립니다.\n돌려둘게요",
+      "is_thread_reply": true,
+      "parent_ts": "1771817866.965029",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771819814.053339",
+      "datetime": "2026-02-23 13:10:14",
+      "date": "2026-02-23",
+      "text": "당일설치필요하면 미리말해주세요! 여기제가할게요 혜진님",
+      "is_thread_reply": true,
+      "parent_ts": "1771811378.778399",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771819826.797679",
+      "datetime": "2026-02-23 13:10:26",
+      "date": "2026-02-23",
+      "text": "네 감사하빈다 !",
+      "is_thread_reply": true,
+      "parent_ts": "1771811378.778399",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1771821173.853749",
+      "datetime": "2026-02-23 13:32:53",
+      "date": "2026-02-23",
+      "text": "<@U044Z9ZG2AX> 진영님 혹시 진행 중이신가요? 진행 안하셨으면 제가 해도 될거같아서요!",
+      "is_thread_reply": true,
+      "parent_ts": "1771811378.778399",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "reactions": [
+        {
+          "name": "넵",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1771821218.196059",
+      "datetime": "2026-02-23 13:33:38",
+      "date": "2026-02-23",
+      "text": "<@U044Z9ZG2AX> 진행중이시면 다른곳 컨택하겠습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1771811378.778399",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1771821670.571259",
+      "datetime": "2026-02-23 13:41:10",
+      "date": "2026-02-23",
+      "text": "-혜진진행-",
+      "is_thread_reply": true,
+      "parent_ts": "1771811378.778399",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1771828334.511969",
+      "datetime": "2026-02-23 15:32:14",
+      "date": "2026-02-23",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1771316242.264669",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX",
+      "has_files": true,
+      "file_names": [
+        "image.png",
+        "image.png",
+        "image.png",
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1771828983.989149",
+      "datetime": "2026-02-23 15:43:03",
+      "date": "2026-02-23",
+      "text": "자돔문자 껐움",
+      "is_thread_reply": true,
+      "parent_ts": "1771316242.264669",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX",
+      "has_files": true,
+      "file_names": [
+        "image.png",
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1771829089.260009",
+      "datetime": "2026-02-23 15:44:49",
+      "date": "2026-02-23",
+      "text": "새로운 VCLOUD 연동 신청이 접수되었습니다.\n확인 부탁드립니다! <@U044Z9ZG2AX>\n• 신청자 정보: <@U08D5T61VU0>\n--------------------------------------------------------\n*VCMS에 등록한 숙박업소 이름을 입력해 주세요.*\n호텔글로리엘\n*1. VCLOUD 숙박업소 ID를 입력해 주세요.*\nfdac04d0-b0bd-11ed-9aa2-99672dcf2944\n\n*2. 예약 연동 중인 서비스를 선택해 주세요!*\nVCMS\n\n*3. VCLOUD에서 VCMS가 아닌 다른 서비스로 예약을 연동하는 채널을 선택해 주세요.*\nVCMS 만 사용해요!\n\n*4. 전용 리피터를 사용하나요?*\n네, 전용 리피터 사용합니다.\n\n*5. 작성하지 못한 특이사항을 입력해 주세요.*\n야모 / 여모 이용 중",
+      "is_thread_reply": false,
+      "user_name": "VCLOUD 연동 알림봇",
+      "is_bot": true
+    },
+    {
+      "ts": "1771829100.296319",
+      "datetime": "2026-02-23 15:45:00",
+      "date": "2026-02-23",
+      "text": "<https://venditinc.slack.com/archives/C0884BV1KNV/p1771316242264669>",
+      "is_thread_reply": true,
+      "parent_ts": "1771829089.260009",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX",
+      "has_attachments": true
+    },
+    {
+      "ts": "1771829276.682489",
+      "datetime": "2026-02-23 15:47:56",
+      "date": "2026-02-23",
+      "text": "대실은 안써요?",
+      "is_thread_reply": true,
+      "parent_ts": "1771829089.260009",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771829343.113339",
+      "datetime": "2026-02-23 15:49:03",
+      "date": "2026-02-23",
+      "text": "넨 ! 숙박만 써요!",
+      "is_thread_reply": true,
+      "parent_ts": "1771829089.260009",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX"
+    },
+    {
+      "ts": "1771830557.551529",
+      "datetime": "2026-02-23 16:09:17",
+      "date": "2026-02-23",
+      "text": "새로운 VCLOUD 연동 신청이 접수되었습니다.\n확인 부탁드립니다! <@U044Z9ZG2AX>\n• 신청자 정보: <@U044Z9ZG2AX>\n--------------------------------------------------------\n*VCMS에 등록한 숙박업소 이름을 입력해 주세요.*\n광양 하버브릿지호텔\n*1. VCLOUD 숙박업소 ID를 입력해 주세요.*\n5430a440-f50c-11ed-9229-8dd7bcb14687\n\n*2. 예약 연동 중인 서비스를 선택해 주세요!*\nVCMS\n\n*3. VCLOUD에서 VCMS가 아닌 다른 서비스로 예약을 연동하는 채널을 선택해 주세요.*\nVCMS 만 사용해요!\n\n*4. 전용 리피터를 사용하나요?*\n네, 전용 리피터 사용합니다.\n\n*5. 작성하지 못한 특이사항을 입력해 주세요.*\n벤디트 직접 운영 호텔",
+      "is_thread_reply": false,
+      "user_name": "VCLOUD 연동 알림봇",
+      "is_bot": true,
+      "reactions": [
+        {
+          "name": "완료",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1771834251.401919",
+      "datetime": "2026-02-23 17:10:51",
+      "date": "2026-02-23",
+      "text": ":mailbox_with_mail: *새로운 숙박업소 정보가 전송되었습니다.*\n\n\n:male_mage: _채널 관리 마법사는 숙박업소 정보를 확인해 주세요_ :magic_wand:\n&gt; ✓ *숙박업소*: 경북 안동시 | 시그너스358호텔 | 30 객실  \n&gt; ✓ *신청자*: 이우석 | 01096960566\n&gt; ✓ *VCLOUD 사용 여부*: 미사용\n&gt; ✓ *요청 기능*: 예약 연동(앞으로도 무료 이용 가능)\n&gt; ✓ *메인 채널*: 여기어때 (호텔/리조트/펜션/캠핑/글램핑)\n&gt; ✓ *전체 채널*: 야놀자 (모텔/호텔/펜션/게스트하우스)\n&gt; ✓ *3개월 이내 공휴일 요금 유무*: 없음\n\n<https://airtable.com/appBPpvrpPOBVZNjN/tblpiaV9DLGGaeGm2/recltIRUUHDcF7Nu8?blocks=hide|상세 보기>",
+      "is_thread_reply": false,
+      "user_name": "VCMS 알림봇",
+      "is_bot": true
+    },
+    {
+      "ts": "1771841404.965549",
+      "datetime": "2026-02-23 19:10:04",
+      "date": "2026-02-23",
+      "text": "0223 교육특이사항\n\n오늘은 서귀포 : 동기화 완료 / ccu ,인터넷 사양 문제가 있었음\n아름다운 호텔 : 동기화 완료  / 카드 등록 이슈가 있었음\n어썸부띠크 : 방문교육이 아니여서 교육취소\n강동 에이치 : 교육 1시간반 진행 채널연결도중 야놀자 2차인증 발견 /vcms사용불가능, 구cms 사용\n경포 스카이베이 : 교육자 차단함\n\nvcms동기화 진행 : 2 업체\n구cms 진행 :1업체\n\n교육 취소 : 2업체",
+      "is_thread_reply": false,
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "reactions": [
+        {
+          "name": "+1",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1771841406.091779",
+      "datetime": "2026-02-23 19:10:06",
+      "date": "2026-02-23",
+      "text": "[구 CMS] 야놀자 2차 인증 필요 업장 조회 :point_right: <https://bit.ly/48o7c1e>",
+      "is_thread_reply": false,
+      "user_id": "USLACKBOT",
+      "user_name": "Slackbot"
+    },
+    {
+      "ts": "1771841489.297779",
+      "datetime": "2026-02-23 19:11:29",
+      "date": "2026-02-23",
+      "text": "교육자 차단이어떤거죠?",
+      "is_thread_reply": true,
+      "parent_ts": "1771841404.965549",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771841640.383269",
+      "datetime": "2026-02-23 19:14:00",
+      "date": "2026-02-23",
+      "text": "말 그대로 오전에 재확인하여 ,교육 받는다 하셨는데\n절 차단하셨습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1771841404.965549",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "reactions": [
+        {
+          "name": "sob",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "ts": "1771841660.563689",
+      "datetime": "2026-02-23 19:14:20",
+      "date": "2026-02-23",
+      "text": "<https://rul.kr/> 모든 링크를 이걸로줄여야겠네요 비틀리 광고에바네요",
+      "is_thread_reply": false,
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_attachments": true,
+      "reactions": [
+        {
+          "name": "+1::skin-tone-2",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1771841682.150229",
+      "datetime": "2026-02-23 19:14:42",
+      "date": "2026-02-23",
+      "text": "회피성향에 대표님들이 꽤있으시군요 안한다하면되는데",
+      "is_thread_reply": true,
+      "parent_ts": "1771841404.965549",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771841693.384419",
+      "datetime": "2026-02-23 19:14:53",
+      "date": "2026-02-23",
+      "text": "제가 나쁜사람도아닌데",
+      "is_thread_reply": true,
+      "parent_ts": "1771841404.965549",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1771843310.457359",
+      "datetime": "2026-02-23 19:41:50",
+      "date": "2026-02-23",
+      "text": "새로운 VCLOUD 연동 신청이 접수되었습니다.\n확인 부탁드립니다! <@U044Z9ZG2AX>\n• 신청자 정보: <@U044Z9ZG2AX>\n--------------------------------------------------------\n*VCMS에 등록한 숙박업소 이름을 입력해 주세요.*\n전주 교동살래\n*1. VCLOUD 숙박업소 ID를 입력해 주세요.*\ncec78920-73a7-11ee-8b1f-eb1f77f7a42f\n\n*2. 예약 연동 중인 서비스를 선택해 주세요!*\nVCMS\n\n*3. VCLOUD에서 VCMS가 아닌 다른 서비스로 예약을 연동하는 채널을 선택해 주세요.*\nVCMS 만 사용해요!\n\n*4. 전용 리피터를 사용하나요?*\n네, 전용 리피터 사용합니다.\n\n*5. 작성하지 못한 특이사항을 입력해 주세요.*\n구 CMS 사용업장인데, 에어비앤비가 주력 \nVCMS 에어비앤비 끊김으로 클라우드도 연동해서 구 CMS에 에어비앤비 연결 진행함.",
+      "is_thread_reply": false,
+      "user_name": "VCLOUD 연동 알림봇",
+      "is_bot": true,
+      "reactions": [
+        {
+          "name": "disappointed_relieved",
+          "count": 1
+        },
+        {
+          "name": "완료",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1771844905.450039",
+      "datetime": "2026-02-23 20:08:25",
+      "date": "2026-02-23",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1771843310.457359",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1771900113.590989",
+      "datetime": "2026-02-24 11:28:33",
+      "date": "2026-02-24",
+      "text": "선유스테이",
+      "is_thread_reply": false,
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771900213.755699",
+      "datetime": "2026-02-24 11:30:13",
+      "date": "2026-02-24",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1771900113.590989",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1771900596.832379",
+      "datetime": "2026-02-24 11:36:36",
+      "date": "2026-02-24",
+      "text": ":mailbox_with_mail: *새로운 숙박업소 정보가 전송되었습니다.*\n\n\n:male_mage: _채널 관리 마법사는 숙박업소 정보를 확인해 주세요_ :magic_wand:\n&gt; ✓ *숙박업소*: 경북 경주시 | H애비뉴시청점 | 37 객실  \n&gt; ✓ *신청자*: 김재훈  | 01062056477\n&gt; ✓ *VCLOUD 사용 여부*: 사용중, 연동 필요\n&gt; ✓ *채널*: 여기어때 (모텔), 여기어때 (호텔/리조트/펜션/캠핑/글램핑), 야놀자 (모텔/호텔/펜션/게스트하우스), 아고다\n&gt; ✓ *한마디*: \n&gt; \n\n<https://airtable.com/appBPpvrpPOBVZNjN/tblpiaV9DLGGaeGm2/recLAU6JUQ5V3hFmf?blocks=hide|상세 보기>",
+      "is_thread_reply": false,
+      "user_name": "VCMS 알림봇",
+      "is_bot": true,
+      "reactions": [
+        {
+          "name": "완료",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1771900647.996409",
+      "datetime": "2026-02-24 11:37:27",
+      "date": "2026-02-24",
+      "text": "여기 9월에 무료체험하시다가 야놀자 연동 지연으로 이탈한 업장입니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1771900596.832379",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인"
+    },
+    {
+      "ts": "1771900657.432639",
+      "datetime": "2026-02-24 11:37:37",
+      "date": "2026-02-24",
+      "text": "??",
+      "is_thread_reply": true,
+      "parent_ts": "1771900596.832379",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771900661.322149",
+      "datetime": "2026-02-24 11:37:41",
+      "date": "2026-02-24",
+      "text": "???",
+      "is_thread_reply": true,
+      "parent_ts": "1771900596.832379",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771900662.428799",
+      "datetime": "2026-02-24 11:37:42",
+      "date": "2026-02-24",
+      "text": "????",
+      "is_thread_reply": true,
+      "parent_ts": "1771900596.832379",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771900663.467739",
+      "datetime": "2026-02-24 11:37:43",
+      "date": "2026-02-24",
+      "text": "???",
+      "is_thread_reply": true,
+      "parent_ts": "1771900596.832379",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771900664.432699",
+      "datetime": "2026-02-24 11:37:44",
+      "date": "2026-02-24",
+      "text": "??",
+      "is_thread_reply": true,
+      "parent_ts": "1771900596.832379",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771900743.713459",
+      "datetime": "2026-02-24 11:39:03",
+      "date": "2026-02-24",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1771900596.832379",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "사랑은 돌아오는거야.gif"
+      ]
+    },
+    {
+      "ts": "1771900873.985609",
+      "datetime": "2026-02-24 11:41:13",
+      "date": "2026-02-24",
+      "text": "야놀자 때문에 마지못해 해지하셨는데 결국 돌아오셨군요..\n<https://venditinc.slack.com/archives/C04ACB66X7C/p1766396904011839?thread_ts=1766379513.023989&amp;cid=C04ACB66X7C>",
+      "is_thread_reply": true,
+      "parent_ts": "1771900596.832379",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인",
+      "has_attachments": true
+    },
+    {
+      "ts": "1771901160.615539",
+      "datetime": "2026-02-24 11:46:00",
+      "date": "2026-02-24",
+      "text": "업장에 이미 무료 체험을 진행하셨기 때문에 이후 사용은 결제 후 가능하다고 안내하겠습니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1771900596.832379",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인"
+    },
+    {
+      "ts": "1771901513.971609",
+      "datetime": "2026-02-24 11:51:53",
+      "date": "2026-02-24",
+      "text": "브라운도트 경주 시청점 연간결제로 돌아오셨습니다. <!subteam^S056DM1L56K> :slightly_smiling_face:",
+      "is_thread_reply": true,
+      "parent_ts": "1771900596.832379",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "+1::skin-tone-2",
+          "count": 1
+        },
+        {
+          "name": "+1",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "ts": "1771901530.560369",
+      "datetime": "2026-02-24 11:52:10",
+      "date": "2026-02-24",
+      "text": "에이치에비뉴와는 별개입니다",
+      "is_thread_reply": true,
+      "parent_ts": "1771900596.832379",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771901535.060329",
+      "datetime": "2026-02-24 11:52:15",
+      "date": "2026-02-24",
+      "text": "돌아와라 부메랑",
+      "is_thread_reply": true,
+      "parent_ts": "1771900596.832379",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771901666.186469",
+      "datetime": "2026-02-24 11:54:26",
+      "date": "2026-02-24",
+      "text": "이럇사이마셍",
+      "is_thread_reply": true,
+      "parent_ts": "1771900596.832379",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771901714.826049",
+      "datetime": "2026-02-24 11:55:14",
+      "date": "2026-02-24",
+      "text": "에이치에비뉴 경주 시청점 안내하였고\n3월 1일부터 결제하고 사용하신다고 합니다.\n결제일에 한번 더 안내드리겠습니다.\n&gt; 37객실 / 30% 할인 적용 / 월 구독료 284,900원 / 재고, 요금 사용",
+      "is_thread_reply": true,
+      "parent_ts": "1771900596.832379",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인"
+    },
+    {
+      "ts": "1771905325.135309",
+      "datetime": "2026-02-24 12:55:25",
+      "date": "2026-02-24",
+      "text": "새로운 VCLOUD 연동 신청이 접수되었습니다.\n확인 부탁드립니다! <@U044Z9ZG2AX>\n• 신청자 정보: <@U0A4WKB8A9L>\n--------------------------------------------------------\n*VCMS에 등록한 숙박업소 이름을 입력해 주세요.*\n제주 서귀피안 호텔\n*1. VCLOUD 숙박업소 ID를 입력해 주세요.*\na888d680-9d62-11ee-a819-3747373bf18a\n\n*2. 예약 연동 중인 서비스를 선택해 주세요!*\nVCMS\n\n*3. VCLOUD에서 VCMS가 아닌 다른 서비스로 예약을 연동하는 채널을 선택해 주세요.*\nVCMS 만 사용해요!\n\n*4. 전용 리피터를 사용하나요?*\n네, 전용 리피터 사용합니다.\n\n*5. 작성하지 못한 특이사항을 입력해 주세요.*\nvcms 에서 아,네,여 사용하고 \n구cms 에서 야,익,부 사용합니다 \n\n추후 산하 정리된 후에 야 vcms 이관예정 입니다 \n\ncloud 자동 문자 체크 완료 \nvcms 연동 완료했습니다",
+      "is_thread_reply": false,
+      "user_name": "VCLOUD 연동 알림봇",
+      "is_bot": true,
+      "reactions": [
+        {
+          "name": "완료",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1771905360.305909",
+      "datetime": "2026-02-24 12:56:00",
+      "date": "2026-02-24",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "has_files": true,
+      "file_names": [
+        "1000053471.jpg",
+        "1000053472.jpg",
+        "1000053473.jpg",
+        "1000053474.jpg"
+      ]
+    },
+    {
+      "ts": "1771905426.297759",
+      "datetime": "2026-02-24 12:57:06",
+      "date": "2026-02-24",
+      "text": "밥먹으로왓습니다 ㅠ",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771905446.090489",
+      "datetime": "2026-02-24 12:57:26",
+      "date": "2026-02-24",
+      "text": "앗그럼 우선 문자 켜놓고 안내하겠습니다 !",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1771905452.462249",
+      "datetime": "2026-02-24 12:57:32",
+      "date": "2026-02-24",
+      "text": "아 네 여가\n아고다\n네이버\n여파인가요 여모인가요",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771905553.936919",
+      "datetime": "2026-02-24 12:59:13",
+      "date": "2026-02-24",
+      "text": "여파 입니다 ! 여파 여모 여부도 같이 적어드리겠습니다!",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1771905558.761899",
+      "datetime": "2026-02-24 12:59:18",
+      "date": "2026-02-24",
+      "text": "스크립트 모든 채널 체크하고 vcms 에 연결한 채널만 체크해제해두면 되긴해서요",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771905589.387069",
+      "datetime": "2026-02-24 12:59:49",
+      "date": "2026-02-24",
+      "text": "네 그럼 들어가서 하겠습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771905643.944669",
+      "datetime": "2026-02-24 13:00:43",
+      "date": "2026-02-24",
+      "text": "앞으로는 설치잇으실땐 여쭤볼게요!",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771905671.269049",
+      "datetime": "2026-02-24 13:01:11",
+      "date": "2026-02-24",
+      "text": "아니면 제가 해보겠습니다 !",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1771905687.237019",
+      "datetime": "2026-02-24 13:01:27",
+      "date": "2026-02-24",
+      "text": "삭제전에 사진좀 버내주세요",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771905692.245899",
+      "datetime": "2026-02-24 13:01:32",
+      "date": "2026-02-24",
+      "text": "넵",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1771905886.613259",
+      "datetime": "2026-02-24 13:04:46",
+      "date": "2026-02-24",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1771905957.775779",
+      "datetime": "2026-02-24 13:05:57",
+      "date": "2026-02-24",
+      "text": "여기어때는 선택하고 hoteltime 선택해제해주세요",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771906022.412179",
+      "datetime": "2026-02-24 13:07:02",
+      "date": "2026-02-24",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "IMG_2343.jpg"
+      ]
+    },
+    {
+      "ts": "1771906037.830859",
+      "datetime": "2026-02-24 13:07:17",
+      "date": "2026-02-24",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1771906105.640569",
+      "datetime": "2026-02-24 13:08:25",
+      "date": "2026-02-24",
+      "text": "네맞습니다 하단 체크하시고 삭제 실행이요! 백업파일 받아지면 스레드올려주시고 예약들연동해주시면됩니다",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771906128.008129",
+      "datetime": "2026-02-24 13:08:48",
+      "date": "2026-02-24",
+      "text": "막히면 사진올려주세요",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771906220.720319",
+      "datetime": "2026-02-24 13:10:20",
+      "date": "2026-02-24",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "has_files": true,
+      "file_names": [
+        "destroyer-reservations-backup-1771906128702-73.json.gz"
+      ]
+    },
+    {
+      "ts": "1771906243.302119",
+      "datetime": "2026-02-24 13:10:43",
+      "date": "2026-02-24",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1771906248.272319",
+      "datetime": "2026-02-24 13:10:48",
+      "date": "2026-02-24",
+      "text": "전체 선택하고 동기화 누르면될까요?",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1771906315.260119",
+      "datetime": "2026-02-24 13:11:55",
+      "date": "2026-02-24",
+      "text": "네 근데 트립비토즈도 그럼연동하지 ㅋㅋㅋ",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771906368.881519",
+      "datetime": "2026-02-24 13:12:48",
+      "date": "2026-02-24",
+      "text": "우하우하 떨리네요 연동 진행중입니다",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1771906466.551299",
+      "datetime": "2026-02-24 13:14:26",
+      "date": "2026-02-24",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1771906480.163679",
+      "datetime": "2026-02-24 13:14:40",
+      "date": "2026-02-24",
+      "text": "스크립트 완료했습니다 !!",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1771906678.069759",
+      "datetime": "2026-02-24 13:17:58",
+      "date": "2026-02-24",
+      "text": "네 예약숫자한번확인해주세요 그리고 트립비토즈연동원하시면 가능하다고안내해주세요\n트립비토즈도 여파처럼 동시접솓안되서 계정하나 직접만들어라하면됩니다",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771907827.543269",
+      "datetime": "2026-02-24 13:37:07",
+      "date": "2026-02-24",
+      "text": "진영님 식사하고 오실때 4층한번만 들려주실수있나요?",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1771911521.352859",
+      "datetime": "2026-02-24 14:38:41",
+      "date": "2026-02-24",
+      "text": "루아호텔 에어비앤비 전환",
+      "is_thread_reply": false,
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771911547.229309",
+      "datetime": "2026-02-24 14:39:07",
+      "date": "2026-02-24",
+      "text": "데몬비번다나와",
+      "is_thread_reply": false,
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771911548.010819",
+      "datetime": "2026-02-24 14:39:08",
+      "date": "2026-02-24",
+      "text": "상단 메뉴 Tool &gt; Admin Mode &gt; 비밀번호 : vendit123!@###$%",
+      "is_thread_reply": false,
+      "user_id": "USLACKBOT",
+      "user_name": "Slackbot"
+    },
+    {
+      "ts": "1771911728.580419",
+      "datetime": "2026-02-24 14:42:08",
+      "date": "2026-02-24",
+      "text": "<@U044Z9ZG2AX> 진영님 산하 cms 전부 끊기로 했습니다 ! 하고 연락주신다고 하셨습니다 ! 교육 / 동기화 완료했습니다 !",
+      "is_thread_reply": true,
+      "parent_ts": "1771905325.135309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "reactions": [
+        {
+          "name": "pray",
+          "count": 2
+        },
+        {
+          "name": "넵",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1771913808.261729",
+      "datetime": "2026-02-24 15:16:48",
+      "date": "2026-02-24",
+      "text": "",
+      "is_thread_reply": false,
+      "user_id": "USLACKBOT",
+      "user_name": "Slackbot",
+      "has_files": true,
+      "file_names": [
+        "Connectivity activated for KAYLA HOTEL (ID: 127956322)"
+      ]
+    },
+    {
+      "ts": "1771913861.548249",
+      "datetime": "2026-02-24 15:17:41",
+      "date": "2026-02-24",
+      "text": "<@U0A4WKB8A9L> 트립닷컴 예약 많다면 아래 내용 안내부탁드립니당!\n<https://docs.vcms.io/ko/channels/tripdotcom>",
+      "is_thread_reply": true,
+      "parent_ts": "1771913808.261729",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_attachments": true
+    },
+    {
+      "ts": "1771917959.660029",
+      "datetime": "2026-02-24 16:25:59",
+      "date": "2026-02-24",
+      "text": ":mailbox_with_mail: *새로운 숙박업소 정보가 전송되었습니다.*\n\n\n:male_mage: _채널 관리 마법사는 숙박업소 정보를 확인해 주세요_ :magic_wand:\n&gt; ✓ *숙박업소*: 경남 창원시 | 쉬자호텔 | 21 객실  \n&gt; ✓ *신청자*: 하정은 | 01091857637\n&gt; ✓ *VCLOUD 사용 여부*: 미사용\n&gt; ✓ *요청 기능*: 예약 연동(앞으로도 무료 이용 가능), 재고 조절, 요금 조절\n&gt; ✓ *메인 채널*: 야놀자 (모텔/호텔/펜션/게스트하우스)\n&gt; ✓ *전체 채널*: 여기어때 (모텔), 여기어때 (호텔/리조트/펜션/캠핑/글램핑), 아고다\n&gt; ✓ *3개월 이내 공휴일 요금 유무*: 없음\n\n<https://airtable.com/appBPpvrpPOBVZNjN/tblpiaV9DLGGaeGm2/recgaITOPxX0X0LSo?blocks=hide|상세 보기>",
+      "is_thread_reply": false,
+      "user_name": "VCMS 알림봇",
+      "is_bot": true
+    },
+    {
+      "ts": "1771918134.282509",
+      "datetime": "2026-02-24 16:28:54",
+      "date": "2026-02-24",
+      "text": "여기 업주가 교육에 대한 두려움이 큽니다. 와이프도 관리를 도맡아하시는데 어려우면 어쩌냐하네요.. 귀찮음 max같고 사전 연락이 꼭 필요합니다",
+      "is_thread_reply": true,
+      "parent_ts": "1771917959.660029",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1771918199.321719",
+      "datetime": "2026-02-24 16:29:59",
+      "date": "2026-02-24",
+      "text": "야놀자를안쓰네?",
+      "is_thread_reply": true,
+      "parent_ts": "1771917959.660029",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771918203.556219",
+      "datetime": "2026-02-24 16:30:03",
+      "date": "2026-02-24",
+      "text": "굉장히특이하네요",
+      "is_thread_reply": true,
+      "parent_ts": "1771917959.660029",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771918217.648899",
+      "datetime": "2026-02-24 16:30:17",
+      "date": "2026-02-24",
+      "text": "엇 쓰네요 메인채널 전체채널은왜분리되어있어요?",
+      "is_thread_reply": true,
+      "parent_ts": "1771917959.660029",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771918239.006619",
+      "datetime": "2026-02-24 16:30:39",
+      "date": "2026-02-24",
+      "text": "아 저게 전체 채널이었네요",
+      "is_thread_reply": true,
+      "parent_ts": "1771917959.660029",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1771918254.907849",
+      "datetime": "2026-02-24 16:30:54",
+      "date": "2026-02-24",
+      "text": "헷갈리긴하네여 ㅋㅋ",
+      "is_thread_reply": true,
+      "parent_ts": "1771917959.660029",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1771918256.236999",
+      "datetime": "2026-02-24 16:30:56",
+      "date": "2026-02-24",
+      "text": "잘못 체킹했습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1771917959.660029",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1771918257.827289",
+      "datetime": "2026-02-24 16:30:57",
+      "date": "2026-02-24",
+      "text": "ㅠㅠ",
+      "is_thread_reply": true,
+      "parent_ts": "1771917959.660029",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1771922643.235069",
+      "datetime": "2026-02-24 17:44:03",
+      "date": "2026-02-24",
+      "text": "새로운 VCLOUD 연동 신청이 접수되었습니다.\n확인 부탁드립니다! <@U044Z9ZG2AX>\n• 신청자 정보: <@U0A4WKB8A9L>\n--------------------------------------------------------\n*VCMS에 등록한 숙박업소 이름을 입력해 주세요.*\n의정부 케일라 호텔\n*1. VCLOUD 숙박업소 ID를 입력해 주세요.*\na8eba680-47c5-11ef-aab6-2b10032da932\n\n*2. 예약 연동 중인 서비스를 선택해 주세요!*\nVCMS\n\n*3. VCLOUD에서 VCMS가 아닌 다른 서비스로 예약을 연동하는 채널을 선택해 주세요.*\nVCMS 만 사용해요!\n\n*4. 전용 리피터를 사용하나요?*\n네, 전용 리피터 사용합니다.\n\n*5. 작성하지 못한 특이사항을 입력해 주세요.*\nVCMS 에서 \n꿀, ,야 , 여마 사용하고 \n\n구CMS 에서 \n아,네,부,에,트,익 사용합니다 \n\n CLOUD 에서 문자 X 처리완료 \n      VCMS 연동 완료했습니다 \n\nVCMS 에서 연동된 채널 매핑중 객실랜덤배정으로 미지정으로 사용하여 강제배정으로 사용하신다고 합니다",
+      "is_thread_reply": false,
+      "user_name": "VCLOUD 연동 알림봇",
+      "is_bot": true
+    },
+    {
+      "ts": "1771922680.625959",
+      "datetime": "2026-02-24 17:44:40",
+      "date": "2026-02-24",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1771922643.235069",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "has_files": true,
+      "file_names": [
+        "1000053476.jpg",
+        "1000053477.jpg",
+        "1000053478.jpg",
+        "1000053479.jpg",
+        "1000053480.jpg"
+      ]
+    },
+    {
+      "ts": "1771923351.843239",
+      "datetime": "2026-02-24 17:55:51",
+      "date": "2026-02-24",
+      "text": ":mailbox_with_mail: *새로운 숙박업소 정보가 전송되었습니다.*\n\n\n:male_mage: _채널 관리 마법사는 숙박업소 정보를 확인해 주세요_ :magic_wand:\n&gt; ✓ *숙박업소*: 서울 은평구 | 불광마루호텔 | 53 객실  \n&gt; ✓ *신청자*: 이동헌 | 01053539748\n&gt; ✓ *VCLOUD 사용 여부*: 미사용\n&gt; ✓ *요청 기능*: 예약 연동(앞으로도 무료 이용 가능), 재고 조절, 요금 조절\n&gt; ✓ *메인 채널*: 야놀자 (모텔/호텔/펜션/게스트하우스)\n&gt; ✓ *전체 채널*: 아고다, 트립닷컴, 부킹닷컴, 여기어때 (호텔/리조트/펜션/캠핑/글램핑), 야놀자 (모텔/호텔/펜션/게스트하우스), 익스피디아\n&gt; ✓ *3개월 이내 공휴일 요금 유무*: 없음\n\n<https://airtable.com/appBPpvrpPOBVZNjN/tblpiaV9DLGGaeGm2/recMIs6tHUWbLlgZe?blocks=hide|상세 보기>",
+      "is_thread_reply": false,
+      "user_name": "VCMS 알림봇",
+      "is_bot": true
+    },
+    {
+      "ts": "1771923381.878829",
+      "datetime": "2026-02-24 17:56:21",
+      "date": "2026-02-24",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1771922643.235069",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "destroyer-reservations-backup-1771923365498-68.json"
+      ]
+    },
+    {
+      "ts": "1771923385.640869",
+      "datetime": "2026-02-24 17:56:25",
+      "date": "2026-02-24",
+      "text": "이동헌 대표, 교육은 상주하는 직원이 직접받는다하심. 익일 중으로 직원과 통화해서 캘박해두겠습니다 <@U0A4WKB8A9L>",
+      "is_thread_reply": true,
+      "parent_ts": "1771923351.843239",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1771923478.481099",
+      "datetime": "2026-02-24 17:57:58",
+      "date": "2026-02-24",
+      "text": "3월 중순 15일부터 사용하길 희망해서 그 즈음해서 캘박해둘게요",
+      "is_thread_reply": true,
+      "parent_ts": "1771923351.843239",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1771924143.580889",
+      "datetime": "2026-02-24 18:09:03",
+      "date": "2026-02-24",
+      "text": ":mailbox_with_mail: *새로운 숙박업소 정보가 전송되었습니다.*\n\n\n:male_mage: _채널 관리 마법사는 숙박업소 정보를 확인해 주세요_ :magic_wand:\n&gt; ✓ *숙박업소*: 부산 금정구 | 부산 TS호텔 -&gt; 라빌라포레 | 20 객실  \n&gt; ✓ *신청자*: 정봉우 | 01086673681\n&gt; ✓ *VCLOUD 사용 여부*: 사용중, 연동 필요\n&gt; ✓ *채널*: 여기어때 (모텔), 야놀자 (모텔/호텔/펜션/게스트하우스), 네이버, 꿀스테이(모텔)\n&gt; ✓ *한마디*: CX 박재윤 대리 신청\n&gt; \n\n<https://airtable.com/appBPpvrpPOBVZNjN/tblpiaV9DLGGaeGm2/recfjZnhUHiSP71bt?blocks=hide|상세 보기>",
+      "is_thread_reply": false,
+      "user_name": "VCMS 알림봇",
+      "is_bot": true
+    },
+    {
+      "ts": "1771926320.792749",
+      "datetime": "2026-02-24 18:45:20",
+      "date": "2026-02-24",
+      "text": "0224 교육진행\n\n태안히 동기화완료\n호텔 서귀피안 동기화 완료 카드등록완료\n의정부 케일라 동기화 완료 입니다\n\n특이사항 없습니다",
+      "is_thread_reply": false,
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "reactions": [
+        {
+          "name": "+1",
+          "count": 3
+        },
+        {
+          "name": "+1::skin-tone-2",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1771926962.887149",
+      "datetime": "2026-02-24 18:56:02",
+      "date": "2026-02-24",
+      "text": "케일라 102객실 :scream: 고생 많으셨습니다!",
+      "is_thread_reply": true,
+      "parent_ts": "1771926320.792749",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인",
+      "reactions": [
+        {
+          "name": "clappers",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1771930162.772729",
+      "datetime": "2026-02-24 19:49:22",
+      "date": "2026-02-24",
+      "text": "돈받는기준을 정해야할거같네요 요구사항이 선을넘네요",
+      "is_thread_reply": true,
+      "parent_ts": "1771926320.792749",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "+1",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "ts": "1771988354.905749",
+      "datetime": "2026-02-25 11:59:14",
+      "date": "2026-02-25",
+      "text": ":mailbox_with_mail: *새로운 숙박업소 정보가 전송되었습니다.*\n\n\n:male_mage: _채널 관리 마법사는 숙박업소 정보를 확인해 주세요_ :magic_wand:\n&gt; ✓ *숙박업소*: 경남 고성군 | 고성한산마리나 리조트 | 26 객실  \n&gt; ✓ *신청자*: 서정예 | 01054569517\n&gt; ✓ *VCLOUD 사용 여부*: 사용중, 연동 필요\n&gt; ✓ *채널*: 여기어때 (호텔/리조트/펜션/캠핑/글램핑), 야놀자 (모텔/호텔/펜션/게스트하우스), 네이버, 아고다, 익스피디아, 부킹닷컴, 에어비앤비, 떠나요닷컴, 온다 플러스(펜션)\n&gt; ✓ *한마디*: \n&gt; \n\n<https://airtable.com/appBPpvrpPOBVZNjN/tblpiaV9DLGGaeGm2/recw5firuaUPdVTRr?blocks=hide|상세 보기>",
+      "is_thread_reply": false,
+      "user_name": "VCMS 알림봇",
+      "is_bot": true
+    },
+    {
+      "ts": "1772005177.230939",
+      "datetime": "2026-02-25 16:39:37",
+      "date": "2026-02-25",
+      "text": "1차 부재 / 문자 남김",
+      "is_thread_reply": true,
+      "parent_ts": "1770690227.818429",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX"
+    },
+    {
+      "ts": "1772005255.185509",
+      "datetime": "2026-02-25 16:40:55",
+      "date": "2026-02-25",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770690227.818429",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1772005393.410969",
+      "datetime": "2026-02-25 16:43:13",
+      "date": "2026-02-25",
+      "text": "금요일(2/27) 오후 2시 교육",
+      "is_thread_reply": true,
+      "parent_ts": "1770696481.511429",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX"
+    },
+    {
+      "ts": "1772005508.407339",
+      "datetime": "2026-02-25 16:45:08",
+      "date": "2026-02-25",
+      "text": "<@U0A4WKB8A9L> 혜진님 요거 혹시 중복인가욤,,,?",
+      "is_thread_reply": true,
+      "parent_ts": "1770782957.428609",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX"
+    },
+    {
+      "ts": "1772005561.483049",
+      "datetime": "2026-02-25 16:46:01",
+      "date": "2026-02-25",
+      "text": "중복",
+      "is_thread_reply": true,
+      "parent_ts": "1770800597.881399",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX"
+    },
+    {
+      "ts": "1772007255.455639",
+      "datetime": "2026-02-25 17:14:15",
+      "date": "2026-02-25",
+      "text": "교육자 - 김태곤 01084084676",
+      "is_thread_reply": true,
+      "parent_ts": "1771923351.843239",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1772013975.292239",
+      "datetime": "2026-02-25 19:06:15",
+      "date": "2026-02-25",
+      "text": ":mailbox_with_mail: *새로운 숙박업소 정보가 전송되었습니다.*\n\n\n:male_mage: _채널 관리 마법사는 숙박업소 정보를 확인해 주세요_ :magic_wand:\n&gt; ✓ *숙박업소*: 서울 은평구 | 굿스테이 | 12 객실  \n&gt; ✓ *신청자*: 이동규 | 01093236505\n&gt; ✓ *VCLOUD 사용 여부*: 미사용\n&gt; ✓ *요청 기능*: 예약 연동(앞으로도 무료 이용 가능), 재고 조절, 요금 조절\n&gt; ✓ *메인 채널*: 여기어때 (호텔/리조트/펜션/캠핑/글램핑)\n&gt; ✓ *전체 채널*: 여기어때 (모텔), 여기어때 (호텔/리조트/펜션/캠핑/글램핑), 아고다, 트립닷컴\n&gt; ✓ *3개월 이내 공휴일 요금 유무*: 없음\n\n<https://airtable.com/appBPpvrpPOBVZNjN/tblpiaV9DLGGaeGm2/recSTn5YcLFys3V3H?blocks=hide|상세 보기>",
+      "is_thread_reply": false,
+      "user_name": "VCMS 알림봇",
+      "is_bot": true
+    },
+    {
+      "ts": "1772014001.284369",
+      "datetime": "2026-02-25 19:06:41",
+      "date": "2026-02-25",
+      "text": "직원분이 교육 받을 예정.\n이찬화 <tel:010-3877-1353|010-3877-1353>",
+      "is_thread_reply": true,
+      "parent_ts": "1772013975.292239",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1772014348.326089",
+      "datetime": "2026-02-25 19:12:28",
+      "date": "2026-02-25",
+      "text": "스테이히어 대표님이 새로 하시는 곳",
+      "is_thread_reply": true,
+      "parent_ts": "1772013975.292239",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1772014456.440859",
+      "datetime": "2026-02-25 19:14:16",
+      "date": "2026-02-25",
+      "text": "0225 교육\n청도 캠프스테이 : 동기화 완료카드등록 이번주 안으로 진행시 얼리버드 10% 안내 등록예정\n포항 칠포그린로즈 : 동기화완료 다점포로 슬로우 오션 히든 포레스트 다음주 구축예정\n\n동기화 완료 : 2개",
+      "is_thread_reply": false,
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1772015115.673169",
+      "datetime": "2026-02-25 19:25:15",
+      "date": "2026-02-25",
+      "text": "<@U0A4WKB8A9L> 엇 헤진님 케일라 VCMS 쓰는거 맞죠???\n부익에 외 OTA는 아직 일부러 안옮기신거죵??\n\n익스피디아 끊겼다는 문의 들어와서 구 CMS들어갔다가 요렇게 연결 목록 확인해서요!",
+      "is_thread_reply": true,
+      "parent_ts": "1771926320.792749",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX",
+      "has_files": true,
+      "file_names": [
+        "image.png",
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1772015221.245709",
+      "datetime": "2026-02-25 19:27:01",
+      "date": "2026-02-25",
+      "text": "<https://venditinc.slack.com/archives/C0884BV1KNV/p1771922643235069>\n\n앗 이력 찾았다!\n\ncx에 내부 공유 해두겠습니다!\n케일라 요주의 업장이라 실수할까봐 물어봤어여!",
+      "is_thread_reply": true,
+      "parent_ts": "1771926320.792749",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX",
+      "has_attachments": true
+    },
+    {
+      "ts": "1772015256.138729",
+      "datetime": "2026-02-25 19:27:36",
+      "date": "2026-02-25",
+      "text": "<@U0960DVABCH> 재윤님! 케일라 cms이용 목록 특이사항입니당\n문의 들어오면 VCMS / CMS 둘다 확인이 필요합니다",
+      "is_thread_reply": true,
+      "parent_ts": "1771922643.235069",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX",
+      "reactions": [
+        {
+          "name": "saluting_face",
+          "count": 1
+        },
+        {
+          "name": "넵",
+          "count": 1
+        },
+        {
+          "name": "exclamation",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1772017419.049299",
+      "datetime": "2026-02-25 20:03:39",
+      "date": "2026-02-25",
+      "text": "<@U08D5T61VU0> 네 일부러 안옯긴거고 상품처리되면 옮길 예정임다!",
+      "is_thread_reply": true,
+      "parent_ts": "1771926320.792749",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "reactions": [
+        {
+          "name": "+1",
+          "count": 2
+        },
+        {
+          "name": "kyuuchan_salute",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1772017761.411659",
+      "datetime": "2026-02-25 20:09:21",
+      "date": "2026-02-25",
+      "text": "<@U08D5T61VU0> 이슈있어서 진행 안했던곳같아요 ! 재컨택 필요해 보입니다 !",
+      "is_thread_reply": true,
+      "parent_ts": "1770782957.428609",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1772070836.035449",
+      "datetime": "2026-02-26 10:53:56",
+      "date": "2026-02-26",
+      "text": "부산 비에이치스토리 교육연기 2번 \n당일파토 2번 \n추후 프로모션 / 무료진행 어려움 안내완료",
+      "is_thread_reply": false,
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "reactions": [
+        {
+          "name": "face_with_symbols_on_mouth",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "ts": "1772070997.798819",
+      "datetime": "2026-02-26 10:56:37",
+      "date": "2026-02-26",
+      "text": "ㅓ어..는 진짜",
+      "is_thread_reply": true,
+      "parent_ts": "1772070836.035449",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1772071016.019909",
+      "datetime": "2026-02-26 10:56:56",
+      "date": "2026-02-26",
+      "text": "특이사항 메모에 남겨주세요",
+      "is_thread_reply": true,
+      "parent_ts": "1772070836.035449",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1772071026.986029",
+      "datetime": "2026-02-26 10:57:06",
+      "date": "2026-02-26",
+      "text": "나중에 뜯어먹을때 제외하던지 해야할듯요",
+      "is_thread_reply": true,
+      "parent_ts": "1772070836.035449",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1772071040.094959",
+      "datetime": "2026-02-26 10:57:20",
+      "date": "2026-02-26",
+      "text": "2월19일 교육 파토 (당일파토 , 연기 요청) \n2월26일 그냥 안할래요 시전 (당일파토)",
+      "is_thread_reply": true,
+      "parent_ts": "1772070836.035449",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1772071049.916849",
+      "datetime": "2026-02-26 10:57:29",
+      "date": "2026-02-26",
+      "text": "기억한다...비에치..",
+      "is_thread_reply": true,
+      "parent_ts": "1772070836.035449",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1772071051.504839",
+      "datetime": "2026-02-26 10:57:31",
+      "date": "2026-02-26",
+      "text": "파토인간이시네요",
+      "is_thread_reply": true,
+      "parent_ts": "1772070836.035449",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1772071126.760899",
+      "datetime": "2026-02-26 10:58:46",
+      "date": "2026-02-26",
+      "text": "아니 무슨 약속을 너무 쉽게 생각하시네요ㅠㅠ 혜진님 화이팅입니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1772070836.035449",
+      "user_id": "U08DJPW6CCQ",
+      "user_name": "김은주 슈퍼바이저",
+      "reactions": [
+        {
+          "name": "muscle",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1772071174.495529",
+      "datetime": "2026-02-26 10:59:34",
+      "date": "2026-02-26",
+      "text": "<@U08DJPW6CCQ>은주님 화이팅하고오셔요!",
+      "is_thread_reply": true,
+      "parent_ts": "1772070836.035449",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "reactions": [
+        {
+          "name": "saluting_face",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1772075534.769659",
+      "datetime": "2026-02-26 12:12:14",
+      "date": "2026-02-26",
+      "text": "새로운 VCLOUD 연동 신청이 접수되었습니다.\n확인 부탁드립니다! <@U044Z9ZG2AX>\n• 신청자 정보: <@U0A4WKB8A9L>\n--------------------------------------------------------\n*VCMS에 등록한 숙박업소 이름을 입력해 주세요.*\n종로 더스테이 호텔\n*1. VCLOUD 숙박업소 ID를 입력해 주세요.*\n0035fa20-eec9-11f0-b759-3775944664bd\n\n*2. 예약 연동 중인 서비스를 선택해 주세요!*\nVCMS\n\n*3. VCLOUD에서 VCMS가 아닌 다른 서비스로 예약을 연동하는 채널을 선택해 주세요.*\nVCMS 만 사용해요!\n\n*4. 전용 리피터를 사용하나요?*\n네, 전용 리피터 사용합니다.\n\n*5. 작성하지 못한 특이사항을 입력해 주세요.*\nvcms 에서 \n아,트만 사용합니다 \n\n이후 여기어때 , 야놀자 등록예정 \n\n문자기능x \n클라우드 연동 완료입니다",
+      "is_thread_reply": false,
+      "user_name": "VCLOUD 연동 알림봇",
+      "is_bot": true,
+      "reactions": [
+        {
+          "name": "완료",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1772079128.532519",
+      "datetime": "2026-02-26 13:12:08",
+      "date": "2026-02-26",
+      "text": "02/26 15시 교육",
+      "is_thread_reply": true,
+      "parent_ts": "1770690227.818429",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX"
+    },
+    {
+      "ts": "1772083141.334049",
+      "datetime": "2026-02-26 14:19:01",
+      "date": "2026-02-26",
+      "text": "",
+      "is_thread_reply": false,
+      "user_id": "USLACKBOT",
+      "user_name": "Slackbot",
+      "has_files": true,
+      "file_names": [
+        "Connectivity activated for goodstay (ID: 133475463)"
+      ]
+    },
+    {
+      "ts": "1772088182.701599",
+      "datetime": "2026-02-26 15:43:02",
+      "date": "2026-02-26",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770690227.818429",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX",
+      "has_files": true,
+      "file_names": [
+        "image.png",
+        "image.png",
+        "image.png",
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1772088376.223139",
+      "datetime": "2026-02-26 15:46:16",
+      "date": "2026-02-26",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770690227.818429",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX",
+      "has_files": true,
+      "file_names": [
+        "image.png",
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1772088569.175699",
+      "datetime": "2026-02-26 15:49:29",
+      "date": "2026-02-26",
+      "text": "새로운 VCLOUD 연동 신청이 접수되었습니다.\n확인 부탁드립니다! <@U044Z9ZG2AX>\n• 신청자 정보: <@U08D5T61VU0>\n--------------------------------------------------------\n*VCMS에 등록한 숙박업소 이름을 입력해 주세요.*\n화성 그린피아관광호텔\n*1. VCLOUD 숙박업소 ID를 입력해 주세요.*\n73584160-507a-11ee-b890-d1a322504aff\n\n*2. 예약 연동 중인 서비스를 선택해 주세요!*\nVCMS\n\n*3. VCLOUD에서 VCMS가 아닌 다른 서비스로 예약을 연동하는 채널을 선택해 주세요.*\nVCMS 만 사용해요!\n\n*4. 전용 리피터를 사용하나요?*\n네, 전용 리피터 사용합니다.\n\n*5. 작성하지 못한 특이사항을 입력해 주세요.*\n부킹엔진 이용 중",
+      "is_thread_reply": false,
+      "user_name": "VCLOUD 연동 알림봇",
+      "is_bot": true,
+      "reactions": [
+        {
+          "name": "완료",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1772088613.869669",
+      "datetime": "2026-02-26 15:50:13",
+      "date": "2026-02-26",
+      "text": "<https://venditinc.slack.com/archives/C0884BV1KNV/p1770690227818429>",
+      "is_thread_reply": true,
+      "parent_ts": "1772088569.175699",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX",
+      "has_attachments": true
+    },
+    {
+      "ts": "1772088802.483489",
+      "datetime": "2026-02-26 15:53:22",
+      "date": "2026-02-26",
+      "text": "야호, 여모, 꿀모, 네",
+      "is_thread_reply": true,
+      "parent_ts": "1772088569.175699",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1772088865.634719",
+      "datetime": "2026-02-26 15:54:25",
+      "date": "2026-02-26",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1772088569.175699",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "destroyer-reservations-backup-1772088824756-12.json.gz"
+      ]
+    },
+    {
+      "ts": "1772089055.573389",
+      "datetime": "2026-02-26 15:57:35",
+      "date": "2026-02-26",
+      "text": "V_BOOKING == 부킹엔진 인데, 부킹엔진 사용업장은 예약 삭제시 주의가 필요함. /cc <@U066X6B5AUF> <@U0A4WKB8A9L> 부킹엔진 사용하는 기존 업장은 주의부탁드립니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1772088569.175699",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "woman-gesturing-ok",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1772090413.648259",
+      "datetime": "2026-02-26 16:20:13",
+      "date": "2026-02-26",
+      "text": "시그너스 358  교육 연기 2번 0226 오전교육 -&gt; 오후교육\n당일파토 2번  0226\n사유 : 2시간동안 컴퓨터에 있을 자신이없다 , 벤디트가 관리하는거 아니냐 교육 못받겠다 시전\n추후 프로모션/ 무료진행 어려움 안내완료",
+      "is_thread_reply": false,
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "reactions": [
+        {
+          "name": "sadblob",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1772091335.088749",
+      "datetime": "2026-02-26 16:35:35",
+      "date": "2026-02-26",
+      "text": "스탠다드 더블10\n스탠다드 트윈 8\n디럭스 더블7\n디럭스 더블 테라스 3\n디럭스 트윈8\n트윈 테라스 2\n프리미엄 트윈6개",
+      "is_thread_reply": true,
+      "parent_ts": "1772088569.175699",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX"
+    },
+    {
+      "ts": "1772101489.130359",
+      "datetime": "2026-02-26 19:24:49",
+      "date": "2026-02-26",
+      "text": "0226교육\n종로 더스테이 : 동기화완료\n부산 굿스테이 : 동기화완료\n총 : 2\n특이사항 : 교육진행 x 시그너스 358",
+      "is_thread_reply": false,
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    }
+  ],
+  "late_thread_replies": [
+    {
+      "ts": "1769580028.431899",
+      "datetime": "2026-01-28 15:00:28",
+      "date": "2026-01-28",
+      "text": "부산 모과 호텔, 시연 및 교육 진행 > 아래 투두리스트 완료되면 동기화시작\n*아고다, 야놀자, 여기어때, 네이버 예약 연동 및 매핑\n*전용리피터 설치\n1. 에어비앤비 네이버 공동호스트 마무리작업 > 애플리케이션 암호는 발급받음. T8WPNT2GLGFP\n2. 비수기, 성수기 7월말~8월말이라서 7월 8월 전부다 높게 설정하고 판매관리에서 수정하도록 안내\n3. 도보특가 처리에 관한 운영정책 요청\n여긴 투두리스트다하시면 동기화진행하겠습니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1768359474.746779",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1769666703.343329",
+      "datetime": "2026-01-29 15:05:03",
+      "date": "2026-01-29",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1769666483.481289",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png",
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1769669567.290639",
+      "datetime": "2026-01-29 15:52:47",
+      "date": "2026-01-29",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1769666483.481289",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png",
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1769669582.191859",
+      "datetime": "2026-01-29 15:53:02",
+      "date": "2026-01-29",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1769666483.481289",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1769674595.775289",
+      "datetime": "2026-01-29 17:16:35",
+      "date": "2026-01-29",
+      "text": "```select createdBy, platform, max(createdAt) as '마지막예약연동시간'\nfrom vendit_reservation.reservations\nwhere accommodationId = 0x11EF16B981EE17809F782B5CFDDB2D7B\n  and (createdBy = 'TlLincoln' or createdBy = 'HotelStory')\ngroup by platform;```\n",
+      "is_thread_reply": true,
+      "parent_ts": "1769674520.524589",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1769674982.504889",
+      "datetime": "2026-01-29 17:23:02",
+      "date": "2026-01-29",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1769674520.524589",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png",
+        "image.png",
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1769681237.112509",
+      "datetime": "2026-01-29 19:07:17",
+      "date": "2026-01-29",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1769677162.875609",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png",
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1769681365.461199",
+      "datetime": "2026-01-29 19:09:25",
+      "date": "2026-01-29",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1769677162.875609",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "destroyer-reservations-backup-1769681359675-44.json.gz"
+      ]
+    },
+    {
+      "ts": "1769748710.908829",
+      "datetime": "2026-01-30 13:51:50",
+      "date": "2026-01-30",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1769745104.729579",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "destroyer-reservations-backup-1769745235979-115.json.gz"
+      ]
+    },
+    {
+      "ts": "1769758366.621189",
+      "datetime": "2026-01-30 16:32:46",
+      "date": "2026-01-30",
+      "text": "1월 30일 통화완료 / 로그인 정보 요청 다음주 3일 교육예정",
+      "is_thread_reply": true,
+      "parent_ts": "1769756848.830679",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1769761579.877739",
+      "datetime": "2026-01-30 17:26:19",
+      "date": "2026-01-30",
+      "text": "A동 원룸",
+      "is_thread_reply": true,
+      "parent_ts": "1769759429.096739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1769761604.195469",
+      "datetime": "2026-01-30 17:26:44",
+      "date": "2026-01-30",
+      "text": "A동 투룸",
+      "is_thread_reply": true,
+      "parent_ts": "1769759429.096739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1769761621.298769",
+      "datetime": "2026-01-30 17:27:01",
+      "date": "2026-01-30",
+      "text": "A동 VIP 원룸",
+      "is_thread_reply": true,
+      "parent_ts": "1769759429.096739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1769761637.634539",
+      "datetime": "2026-01-30 17:27:17",
+      "date": "2026-01-30",
+      "text": "A동 VIP 투룸",
+      "is_thread_reply": true,
+      "parent_ts": "1769759429.096739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1769761654.295109",
+      "datetime": "2026-01-30 17:27:34",
+      "date": "2026-01-30",
+      "text": "B동 원룸 취사불가",
+      "is_thread_reply": true,
+      "parent_ts": "1769759429.096739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1769761678.593619",
+      "datetime": "2026-01-30 17:27:58",
+      "date": "2026-01-30",
+      "text": "B동 원룸",
+      "is_thread_reply": true,
+      "parent_ts": "1769759429.096739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1769761693.732139",
+      "datetime": "2026-01-30 17:28:13",
+      "date": "2026-01-30",
+      "text": "B동 투룸",
+      "is_thread_reply": true,
+      "parent_ts": "1769759429.096739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1769763323.483929",
+      "datetime": "2026-01-30 17:55:23",
+      "date": "2026-01-30",
+      "text": "01K470340X67B2ETGG3AV9D101\n<@U07FU9LTJ9X> 님 고성 선샤인비치 업장 야펜, 떠나요를 객실별로쓰다가 타입으로 합치는 곳이라서 디비마이그레이션좀 부탁드릴수있을가요",
+      "is_thread_reply": true,
+      "parent_ts": "1769759429.096739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1769764111.787889",
+      "datetime": "2026-01-30 18:08:31",
+      "date": "2026-01-30",
+      "text": "<@U0A4WKB8A9L> 님 여기 말씀드린 카멜호텔입니다. 우선진행 부탁드려요!",
+      "is_thread_reply": true,
+      "parent_ts": "1769764091.686039",
+      "user_id": "U08DJPW6CCQ",
+      "user_name": "김은주 슈퍼바이저"
+    },
+    {
+      "ts": "1769764214.663649",
+      "datetime": "2026-01-30 18:10:14",
+      "date": "2026-01-30",
+      "text": "잠시만요!",
+      "is_thread_reply": true,
+      "parent_ts": "1769759429.096739",
+      "user_id": "U07FU9LTJ9X",
+      "user_name": "김윤후 개발"
+    },
+    {
+      "ts": "1769764446.165139",
+      "datetime": "2026-01-30 18:14:06",
+      "date": "2026-01-30",
+      "text": "완료했습니다!",
+      "is_thread_reply": true,
+      "parent_ts": "1769759429.096739",
+      "user_id": "U07FU9LTJ9X",
+      "user_name": "김윤후 개발",
+      "reactions": [
+        {
+          "name": "pray",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1769991821.904999",
+      "datetime": "2026-02-02 09:23:41",
+      "date": "2026-02-02",
+      "text": "<@U0A4WKB8A9L>님 업장에서 계정정보 수취되어 공유드립니다",
+      "is_thread_reply": true,
+      "parent_ts": "1769756848.830679",
+      "user_id": "U08DJPW6CCQ",
+      "user_name": "김은주 슈퍼바이저",
+      "has_files": true,
+      "file_names": [
+        "1769991771082.jpg",
+        "1769991772586.jpg"
+      ]
+    },
+    {
+      "ts": "1770009611.685429",
+      "datetime": "2026-02-02 14:20:11",
+      "date": "2026-02-02",
+      "text": "넵! 점주께서 야놀자 숙소 미노출 상태 해결하고 다시 vcms에 연결하신다고 오전에 연락 주셨습니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770009243.713349",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인",
+      "reactions": [
+        {
+          "name": "+1",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770022303.791949",
+      "datetime": "2026-02-02 17:51:43",
+      "date": "2026-02-02",
+      "text": "에어비앤비 캡차가 뜨면 연결이 되지 않는 특이사항이 오늘발견되어서 브릭스호텔 구 CMS 다시 깔았습니다;",
+      "is_thread_reply": true,
+      "parent_ts": "1770022256.895529",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "sob",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "ts": "1770023138.124919",
+      "datetime": "2026-02-02 18:05:38",
+      "date": "2026-02-02",
+      "text": "에어비앤비하고나서 상황이 쉽지않아졌네요",
+      "is_thread_reply": true,
+      "parent_ts": "1770023006.289529",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "crying_cat_face",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770023568.150889",
+      "datetime": "2026-02-02 18:12:48",
+      "date": "2026-02-02",
+      "text": "충북 단밤 호텔\nVCMS 계정 정보 for 리피터\n<mailto:pshtkdgur2@naver.com|pshtkdgur2@naver.com>\npshtkdgur2!!\n\n에어비앤비 전용 네이버 계정\n<mailto:poloatrrr@naver.com|poloatrrr@naver.com>\nS6YVJG94FZJN",
+      "is_thread_reply": true,
+      "parent_ts": "1770023534.288769",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770026402.078849",
+      "datetime": "2026-02-02 19:00:02",
+      "date": "2026-02-02",
+      "text": "연동하면서 요금날아가서 2달치 평일/주말 요금 한개상품 설정완료~!",
+      "is_thread_reply": true,
+      "parent_ts": "1770025353.127129",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770026408.507339",
+      "datetime": "2026-02-02 19:00:08",
+      "date": "2026-02-02",
+      "text": "교육은 목요일 2/5",
+      "is_thread_reply": true,
+      "parent_ts": "1770025353.127129",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770080259.361129",
+      "datetime": "2026-02-03 09:57:39",
+      "date": "2026-02-03",
+      "text": "통화완료 / 공동대표라 목요일에 저녁시간 ( 추후 다시 알려준다함) 진행예정",
+      "is_thread_reply": true,
+      "parent_ts": "1769764091.686039",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "reactions": [
+        {
+          "name": "+1",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770085377.994059",
+      "datetime": "2026-02-03 11:22:57",
+      "date": "2026-02-03",
+      "text": "<mailto:hsmyr@naver.com|hsmyr@naver.com>(검증완료)\nekaks326\n온다\n\n<mailto:hsmyr@naver.com|hsmyr@naver.com>\nekaks326\n캠핏\n\n네이버는 직접 연동 희망하심(계정정보 주기 부담스러워함)\n무리하게 받다가 이탈될까봐 네이버는 온보딩하면서 진행하는게 좋아 보임.\n\n내일 해외 출국하셔 2.12부터 과정 진행했으면 좋겠다고하심(02.03)\n\n<@U0A4WKB8A9L> 일정잡고 진행 부탁드립니당\n\n<@U044Z9ZG2AX> 캠핏이라는 ota는 연동 안되는거죵??",
+      "is_thread_reply": true,
+      "parent_ts": "1770083699.568179",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1770085803.017369",
+      "datetime": "2026-02-03 11:30:03",
+      "date": "2026-02-03",
+      "text": "• 청주 브릭, 브릭료칸 &gt; 고객 안내 완료, 동일증상 발생 시 구 cms로 롤백 진행 예정",
+      "is_thread_reply": true,
+      "parent_ts": "1770085664.214829",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인"
+    },
+    {
+      "ts": "1770085911.548159",
+      "datetime": "2026-02-03 11:31:51",
+      "date": "2026-02-03",
+      "text": "네 거절이에요 캠핏한번 까볼까요?",
+      "is_thread_reply": true,
+      "parent_ts": "1770083699.568179",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770085917.191569",
+      "datetime": "2026-02-03 11:31:57",
+      "date": "2026-02-03",
+      "text": "사이트주소가어떻게되죠?",
+      "is_thread_reply": true,
+      "parent_ts": "1770083699.568179",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770085958.230539",
+      "datetime": "2026-02-03 11:32:38",
+      "date": "2026-02-03",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770083699.568179",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770086085.477349",
+      "datetime": "2026-02-03 11:34:45",
+      "date": "2026-02-03",
+      "text": "캠핏예약이하나도없네요",
+      "is_thread_reply": true,
+      "parent_ts": "1770083699.568179",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770086151.703959",
+      "datetime": "2026-02-03 11:35:51",
+      "date": "2026-02-03",
+      "text": "<https://admin.camfit.co.kr/#/auth/login?returnUrl=%2Fdashboard>",
+      "is_thread_reply": true,
+      "parent_ts": "1770083699.568179",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1770086152.744899",
+      "datetime": "2026-02-03 11:35:52",
+      "date": "2026-02-03",
+      "text": "여기요!",
+      "is_thread_reply": true,
+      "parent_ts": "1770083699.568179",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1770086159.749239",
+      "datetime": "2026-02-03 11:35:59",
+      "date": "2026-02-03",
+      "text": "들어가서보고있습니당~",
+      "is_thread_reply": true,
+      "parent_ts": "1770083699.568179",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770086183.914799",
+      "datetime": "2026-02-03 11:36:23",
+      "date": "2026-02-03",
+      "text": "일단 예약이없어서 굳이해야하나싶네요",
+      "is_thread_reply": true,
+      "parent_ts": "1770083699.568179",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770086875.429849",
+      "datetime": "2026-02-03 11:47:55",
+      "date": "2026-02-03",
+      "text": "넵 캠핏 관련된 내용 결정되면 공유주세용",
+      "is_thread_reply": true,
+      "parent_ts": "1770083699.568179",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1770087512.512019",
+      "datetime": "2026-02-03 11:58:32",
+      "date": "2026-02-03",
+      "text": "20개정도모이면모를까현재는하지않겠습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770083699.568179",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "white_check_mark",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770090663.796159",
+      "datetime": "2026-02-03 12:51:03",
+      "date": "2026-02-03",
+      "text": "혹시 한두개라도 이거만있으면 할수있다는 업장있으면 알려주세요!",
+      "is_thread_reply": true,
+      "parent_ts": "1770083699.568179",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770091180.859529",
+      "datetime": "2026-02-03 12:59:40",
+      "date": "2026-02-03",
+      "text": "체크인 시간 지나고 5시쯤 연락해볼게용",
+      "is_thread_reply": true,
+      "parent_ts": "1770090707.156109",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅",
+      "reactions": [
+        {
+          "name": "+1",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770097730.472209",
+      "datetime": "2026-02-03 14:48:50",
+      "date": "2026-02-03",
+      "text": "잠시만여",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770097799.872499",
+      "datetime": "2026-02-03 14:49:59",
+      "date": "2026-02-03",
+      "text": "넵",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770097810.116849",
+      "datetime": "2026-02-03 14:50:10",
+      "date": "2026-02-03",
+      "text": "여파끊겨있는데 이슈있나요?",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770097822.730329",
+      "datetime": "2026-02-03 14:50:22",
+      "date": "2026-02-03",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770097846.994359",
+      "datetime": "2026-02-03 14:50:46",
+      "date": "2026-02-03",
+      "text": "전용 리피터에요 쉐어드리피터에요 항목도 이제추가할게요",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770097904.016519",
+      "datetime": "2026-02-03 14:51:44",
+      "date": "2026-02-03",
+      "text": "전용리피터입니다 , 여파사용 x 입니다 사장님앱이랑 헷갈려하셨습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770097926.098449",
+      "datetime": "2026-02-03 14:52:06",
+      "date": "2026-02-03",
+      "text": "아삭제하께여!",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770097935.325059",
+      "datetime": "2026-02-03 14:52:15",
+      "date": "2026-02-03",
+      "text": "넵!",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770097940.341159",
+      "datetime": "2026-02-03 14:52:20",
+      "date": "2026-02-03",
+      "text": "여모, 야모, 꿀모, 네",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770097966.767869",
+      "datetime": "2026-02-03 14:52:46",
+      "date": "2026-02-03",
+      "text": "VCMS 아이디는 안써도되서 빼도록하겠습니당!",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770098000.593209",
+      "datetime": "2026-02-03 14:53:20",
+      "date": "2026-02-03",
+      "text": "이거눌러주세요! 그러면",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770098033.588609",
+      "datetime": "2026-02-03 14:53:53",
+      "date": "2026-02-03",
+      "text": "클라우드 대시보드에 VCMS 로그인 바로가기도 생겨서좋습니당!",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png",
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770098040.931199",
+      "datetime": "2026-02-03 14:54:00",
+      "date": "2026-02-03",
+      "text": "그리고 저거 연동을 안누르면 연결이안되어요 ㅋㅋ",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770098067.928439",
+      "datetime": "2026-02-03 14:54:27",
+      "date": "2026-02-03",
+      "text": "앗 아까 여쭤봤던게 이건데 그럼 이것까지 진행하고 스크립트 요청드리며 되는거죠!",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770098083.030309",
+      "datetime": "2026-02-03 14:54:43",
+      "date": "2026-02-03",
+      "text": "하면좋은거고아니면 매번제가확인은해요!",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770098094.270249",
+      "datetime": "2026-02-03 14:54:54",
+      "date": "2026-02-03",
+      "text": "네네 ! 앞으로는 해서 넘겨드리겠습니다!",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770098131.578029",
+      "datetime": "2026-02-03 14:55:31",
+      "date": "2026-02-03",
+      "text": "끝났습니다! 숫자맞춰보고말씀드릴게용",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "destroyer-reservations-backup-1770098096112-0.json.gz"
+      ]
+    },
+    {
+      "ts": "1770098135.501469",
+      "datetime": "2026-02-03 14:55:35",
+      "date": "2026-02-03",
+      "text": "*참고로 해당매장 오버부킹 잡아서 업그레이드 진행하는매장입니다 ! 네넵",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770098146.078679",
+      "datetime": "2026-02-03 14:55:46",
+      "date": "2026-02-03",
+      "text": "사실상 버튼딸깍이라 누가해도되는데, 연동스크립트에서 실수할까봐 제한하는것이라 ㅠ",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770098166.103079",
+      "datetime": "2026-02-03 14:56:06",
+      "date": "2026-02-03",
+      "text": "예약 다꼽혔네요",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770098176.333619",
+      "datetime": "2026-02-03 14:56:16",
+      "date": "2026-02-03",
+      "text": "네넵 동기화진행할까요?",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770098184.222649",
+      "datetime": "2026-02-03 14:56:24",
+      "date": "2026-02-03",
+      "text": "아니여",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770098187.603019",
+      "datetime": "2026-02-03 14:56:27",
+      "date": "2026-02-03",
+      "text": "숫자는 맞추고하셔야;;ㅋㅋ",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770098235.293899",
+      "datetime": "2026-02-03 14:57:15",
+      "date": "2026-02-03",
+      "text": "하핰ㅋㅋ 꼽혔다고하셔서 숫자 다맞다고하시는줄 알았습니다 ..ㅎㅎㅎ !",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770098253.233839",
+      "datetime": "2026-02-03 14:57:33",
+      "date": "2026-02-03",
+      "text": "앞으로 용어를 통일해서쓸게요 ㅠ",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770098273.612109",
+      "datetime": "2026-02-03 14:57:53",
+      "date": "2026-02-03",
+      "text": "배려해주셔서 감사합니다 :slightly_smiling_face:",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770098306.853759",
+      "datetime": "2026-02-03 14:58:26",
+      "date": "2026-02-03",
+      "text": "여기어때 대실 매핑안된게있어요",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770098315.558459",
+      "datetime": "2026-02-03 14:58:35",
+      "date": "2026-02-03",
+      "text": "이거 사장님이 안하신거같은데 연결을 좀해야할거같아요",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770098333.406179",
+      "datetime": "2026-02-03 14:58:53",
+      "date": "2026-02-03",
+      "text": "꿀도 여도 대실 매핑안된것들",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770098342.449339",
+      "datetime": "2026-02-03 14:59:02",
+      "date": "2026-02-03",
+      "text": "우리안쓰는데요하시지만 쓰는거같습니다 ㅋㅋ",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770098351.396969",
+      "datetime": "2026-02-03 14:59:11",
+      "date": "2026-02-03",
+      "text": "ㅋㅋㅋㅋㅋㅋㅋㅋ ㅠㅠㅠㅠ 증말 .",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770098421.589189",
+      "datetime": "2026-02-03 15:00:21",
+      "date": "2026-02-03",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png",
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770098434.853789",
+      "datetime": "2026-02-03 15:00:34",
+      "date": "2026-02-03",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770098445.660309",
+      "datetime": "2026-02-03 15:00:45",
+      "date": "2026-02-03",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770098458.842869",
+      "datetime": "2026-02-03 15:00:58",
+      "date": "2026-02-03",
+      "text": "이거그냥 제가 매핑할게여 랜덤객실이 어떤 타입으로 예약생성되면 좋겠는지만물어봐주세요",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770098475.787419",
+      "datetime": "2026-02-03 15:01:15",
+      "date": "2026-02-03",
+      "text": "전부 스탠다드타입으로 부탁드립니다 !",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770098583.312639",
+      "datetime": "2026-02-03 15:03:03",
+      "date": "2026-02-03",
+      "text": "숙박 5시간 연장은 연결안하고숨겼습니다 나머진 다연결했고요",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770098602.060899",
+      "datetime": "2026-02-03 15:03:22",
+      "date": "2026-02-03",
+      "text": "대실이 전체 다 미지정일거라서",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770098612.577239",
+      "datetime": "2026-02-03 15:03:32",
+      "date": "2026-02-03",
+      "text": "엥 숙박 5시간 연장도파네;; 이거도스탠다드로하겠습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770098702.949159",
+      "datetime": "2026-02-03 15:05:02",
+      "date": "2026-02-03",
+      "text": "넵",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770098706.728579",
+      "datetime": "2026-02-03 15:05:06",
+      "date": "2026-02-03",
+      "text": "대실이 전부다 타입없이 생성되었을거라서;; 확인다눌러주도록하겠습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770098996.465969",
+      "datetime": "2026-02-03 15:09:56",
+      "date": "2026-02-03",
+      "text": "넵 감사합니다 ㅠ 다음엔 사용매장은 사용안하신다고해도 클라우드 재확인해서 진행해야겠네요 ㅠㅠ",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770099001.889119",
+      "datetime": "2026-02-03 15:10:01",
+      "date": "2026-02-03",
+      "text": "대표님이 VCMS는 2/2 총 25개 팔렸는데, 클라우드는 왜 27개냐고하면, 이런애들때문이라고 해주시고, 지금 중복된 예약들많거든요",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png",
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770099016.934769",
+      "datetime": "2026-02-03 15:10:16",
+      "date": "2026-02-03",
+      "text": "배정된애들은 중복인애들이니까 다 삭제해주고 동기화해야합니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770099109.269499",
+      "datetime": "2026-02-03 15:11:49",
+      "date": "2026-02-03",
+      "text": "어제 예약은 제가 다지울게요",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770099326.861899",
+      "datetime": "2026-02-03 15:15:26",
+      "date": "2026-02-03",
+      "text": "여기서 배정된거 다 맞추고 예약숫자 맞으면 동기화하는거에요 막누르면 그냥 다 틀린상태로 작동됩니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770099350.394229",
+      "datetime": "2026-02-03 15:15:50",
+      "date": "2026-02-03",
+      "text": "중복 예약 대표님하고 한번더 체킹하시고 동기화는 기간 30일단위로 몇일씩 열지 확인해서 연결해주세요",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770099378.849059",
+      "datetime": "2026-02-03 15:16:18",
+      "date": "2026-02-03",
+      "text": "야놀자 들어가보진않았지만 60일정도 동기화해서쓰시지않을까싶네요",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770099463.270239",
+      "datetime": "2026-02-03 15:17:43",
+      "date": "2026-02-03",
+      "text": "아까 동기화 기간 여쭤봤을때 90일로 확인하였습니다 감사합니다. 한번더 중복 체크 한 뒤에 동기화 진행하도록 하곘습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770099475.296109",
+      "datetime": "2026-02-03 15:17:55",
+      "date": "2026-02-03",
+      "text": "넵!",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770099578.630469",
+      "datetime": "2026-02-03 15:19:38",
+      "date": "2026-02-03",
+      "text": "<@U0A4WKB8A9L> 설날 연휴금액이 올라가지않았는데 의도된거면 둬도될거같아요",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770099586.998989",
+      "datetime": "2026-02-03 15:19:46",
+      "date": "2026-02-03",
+      "text": "삼일절 휴가도있습니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770099675.086009",
+      "datetime": "2026-02-03 15:21:15",
+      "date": "2026-02-03",
+      "text": "여긴설정이잘못된거아닌가요?",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770099690.112389",
+      "datetime": "2026-02-03 15:21:30",
+      "date": "2026-02-03",
+      "text": "비즈니스 주차불가가 비즈니스보다 금액이 낮을거같아서요",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770099733.927329",
+      "datetime": "2026-02-03 15:22:13",
+      "date": "2026-02-03",
+      "text": "모든 pkg에 주차 포함 미포함으로 나뉘었을듯해서요",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770099743.722369",
+      "datetime": "2026-02-03 15:22:23",
+      "date": "2026-02-03",
+      "text": "다똑같다고 확인받고 같이 진행했습니다 !",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770099757.535179",
+      "datetime": "2026-02-03 15:22:37",
+      "date": "2026-02-03",
+      "text": "컥 ㅋㅋ 그럼 상품이 왜 저런식으로 ; ㅋㅋㅋ",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770099763.348249",
+      "datetime": "2026-02-03 15:22:43",
+      "date": "2026-02-03",
+      "text": "진짜 근본없이파네요",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770099766.297149",
+      "datetime": "2026-02-03 15:22:46",
+      "date": "2026-02-03",
+      "text": "ㅋㅋㅋㅋㅋㅋ",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770099768.629169",
+      "datetime": "2026-02-03 15:22:48",
+      "date": "2026-02-03",
+      "text": "전객실이 주차불가라고 하시네용 ㅎㅎㅋㅋㅋ",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770099782.918379",
+      "datetime": "2026-02-03 15:23:02",
+      "date": "2026-02-03",
+      "text": "아 그럼 룸온니도 주차불가가 기본이군요 ㅠ",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770099785.745979",
+      "datetime": "2026-02-03 15:23:05",
+      "date": "2026-02-03",
+      "text": "그러면 이해했습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770099793.993629",
+      "datetime": "2026-02-03 15:23:13",
+      "date": "2026-02-03",
+      "text": "근데 상품을 저런식으로팔면 투숙객이오해할텐데;",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770099804.023589",
+      "datetime": "2026-02-03 15:23:24",
+      "date": "2026-02-03",
+      "text": "장사가잘안될거라 짐작해봅니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770099822.863909",
+      "datetime": "2026-02-03 15:23:42",
+      "date": "2026-02-03",
+      "text": "2/7 오버부킹난건지 비즈니스가 6갠데 8개팔려서 이건 업그레이드나 다운그레이드해줘야할거같아요",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770099843.301419",
+      "datetime": "2026-02-03 15:24:03",
+      "date": "2026-02-03",
+      "text": "설날, 3/1 과 같은 명절 금액을 금. 토. 가격으로 변경하는 특이사항없다면 동기화는 켜도될거같습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770099956.297409",
+      "datetime": "2026-02-03 15:25:56",
+      "date": "2026-02-03",
+      "text": "해당매장 각 타입별로 오버부킹해서 사용하는 매장이고 기간 별 특이사항은 현재 정해진게 없어서 만드는 방법 . 우선순위 등 교육해드렸고 다시 만들어보신다고 하셨습니다 ! 동기화 진행 까지 완료했습니다\n수고하셨습니다!",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770099998.388899",
+      "datetime": "2026-02-03 15:26:38",
+      "date": "2026-02-03",
+      "text": "4개채널 정상작동확인하고 종료해주세요",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770100015.879259",
+      "datetime": "2026-02-03 15:26:55",
+      "date": "2026-02-03",
+      "text": "네이버는 혹시 2년치 3년치 연동 기간인 90일을 초과하는 일정에 대해 삭제해주세요",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770100069.187859",
+      "datetime": "2026-02-03 15:27:49",
+      "date": "2026-02-03",
+      "text": "<@U0A4WKB8A9L> 이상태인데 작동이되었을리가없어요",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770100087.945509",
+      "datetime": "2026-02-03 15:28:07",
+      "date": "2026-02-03",
+      "text": "네네! 바꾸고있습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770100090.813389",
+      "datetime": "2026-02-03 15:28:10",
+      "date": "2026-02-03",
+      "text": "반드시 전채널 작동확인해주세요!",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770100092.977629",
+      "datetime": "2026-02-03 15:28:12",
+      "date": "2026-02-03",
+      "text": "감사합니다!",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770100140.582959",
+      "datetime": "2026-02-03 15:29:00",
+      "date": "2026-02-03",
+      "text": "전 보통 90일을 다합니다만 작동여부 한주라도 테스트해주세요",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770100188.502009",
+      "datetime": "2026-02-03 15:29:48",
+      "date": "2026-02-03",
+      "text": "그리고 네이버는 현재 예약을 받거나 , 따로 등록하신게 없다고 하셔서 ! 따로 진행안해고 다른 채널은 들어가서 확인해보도록하겠습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770100197.855369",
+      "datetime": "2026-02-03 15:29:57",
+      "date": "2026-02-03",
+      "text": "아하 그러면 패스하시죠!",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770100211.325669",
+      "datetime": "2026-02-03 15:30:11",
+      "date": "2026-02-03",
+      "text": "제가 삭제해달라고한 일정은 객실목록에 각 상품에 일정등록 리스트입니당!",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770100261.287019",
+      "datetime": "2026-02-03 15:31:01",
+      "date": "2026-02-03",
+      "text": "혹시네이버켜져있으면 설명한번드릴게여!",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770100381.819099",
+      "datetime": "2026-02-03 15:33:01",
+      "date": "2026-02-03",
+      "text": "<https://kibana.vendit.co.kr/app/discover#/?_g=(filters:!(),refreshInterval:(pause:!t,value:60000),time:(from:now-15m,to:now))&amp;_a=(columns:!(),dataSource:(dataViewId:c7c09ebb-3256-4b35-9d20-99cf14d435c9,type:dataView),filters:!(('$state':(store:appState),meta:(alias:!n,disabled:!f,index:c7c09ebb-3256-4b35-9d20-99cf14d435c9,key:_index,negate:!f,params:(query:vcms-satellite-production),type:phrase),query:(match_phrase:(_index:vcms-satellite-production)))),interval:auto,query:(language:kuery,query:''),sort:!(!(timestamp,desc)))|https://kibana.vendit.co.kr/app/discover#/?_g=(filters:!(),refreshInterval:(pause:!t,value:60[…](language:kuery,query:''),sort:!(!(timestamp,desc)))>",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770100390.571459",
+      "datetime": "2026-02-03 15:33:10",
+      "date": "2026-02-03",
+      "text": "<https://kibana.vendit.co.kr/app/dashboards#/view/6915c2a0-e599-476d-adfc-35b3eeb41e80?_g=(filters:!(),refreshInterval:(pause:!t,value:60000),time:(from:now-15m,to:now))|https://kibana.vendit.co.kr/app/dashboards#/view/6915c2a0-e599-476d-adfc-35b3eeb41e80?_g=(filt[…]:(pause:!t,value:60000),time:(from:now-15m,to:now))>",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770100428.683589",
+      "datetime": "2026-02-03 15:33:48",
+      "date": "2026-02-03",
+      "text": "dean.yu\ntest123!@#",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770100492.624139",
+      "datetime": "2026-02-03 15:34:52",
+      "date": "2026-02-03",
+      "text": "교육완료 / 동기화완료",
+      "is_thread_reply": true,
+      "parent_ts": "1769756848.830679",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "reactions": [
+        {
+          "name": "+1",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770100506.151009",
+      "datetime": "2026-02-03 15:35:06",
+      "date": "2026-02-03",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770097707.776479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770101727.707689",
+      "datetime": "2026-02-03 15:55:27",
+      "date": "2026-02-03",
+      "text": "<@U08DJPW6CCQ> 클라우드 테스트 예약 생성일이 1/10 인데, 요청이 너무 급작스럽게 온다고 생각합니다. 해당 업장 교육이 어제 마무리되어서 요청주신걸까요?",
+      "is_thread_reply": true,
+      "parent_ts": "1770009901.787289",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770101750.142789",
+      "datetime": "2026-02-03 15:55:50",
+      "date": "2026-02-03",
+      "text": "이거 부산에서 봉준님이 직접 디엠 주신건이라 등록안되어있습니다ㅑ!",
+      "is_thread_reply": true,
+      "parent_ts": "1770101579.974269",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770101882.271839",
+      "datetime": "2026-02-03 15:58:02",
+      "date": "2026-02-03",
+      "text": "<@U065APK35KP> 신규 요청이 있으면 번거로우시더라도 반드시 VCMS 대시보드 신청폼 작성 부탁드립니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770101579.974269",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770101883.338309",
+      "datetime": "2026-02-03 15:58:03",
+      "date": "2026-02-03",
+      "text": "VCMS 사용을 희망하는 숙박업소 정보는 신청폼을 통해 제출해주세요! \n \n :writing_hand: 신청폼 제출 바로가기 :point_right: <http://bit.ly/46f4oDS> \n \n :chart_with_upwards_trend: VCMS 사용 현황 바로가기 :point_right: <http://bit.ly/4gwQLmW> \n \n :phone: VCMS 비상 연락망 바로가기 :point_right: <https://bit.ly/3Lz9nqL>",
+      "is_thread_reply": true,
+      "parent_ts": "1770101579.974269",
+      "user_id": "USLACKBOT",
+      "user_name": "Slackbot"
+    },
+    {
+      "ts": "1770101931.182139",
+      "datetime": "2026-02-03 15:58:51",
+      "date": "2026-02-03",
+      "text": "아 ! 알겠습니다 확인했습니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770101579.974269",
+      "user_id": "U065APK35KP",
+      "user_name": "최봉준 부산 엔지니어",
+      "reactions": [
+        {
+          "name": "pray",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770102008.607579",
+      "datetime": "2026-02-03 16:00:08",
+      "date": "2026-02-03",
+      "text": "<@U0A4WKB8A9L> 연락처, 사용채널, 객실수써주시면 등록해둘게요!",
+      "is_thread_reply": true,
+      "parent_ts": "1770101579.974269",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770102177.584659",
+      "datetime": "2026-02-03 16:02:57",
+      "date": "2026-02-03",
+      "text": "온코리아의 경우 업장에서 TL린칸을 사용할지, VCMS를 사용할지 고민중이었는데, VCMS를 먼저 사용해본 후 결정하기로 해서 설치일정 이후에 신청하게 되었습니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770009901.787289",
+      "user_id": "U08DJPW6CCQ",
+      "user_name": "김은주 슈퍼바이저",
+      "reactions": [
+        {
+          "name": "woman-gesturing-ok",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770102300.127429",
+      "datetime": "2026-02-03 16:05:00",
+      "date": "2026-02-03",
+      "text": "그 결정이 어제난건가요?",
+      "is_thread_reply": true,
+      "parent_ts": "1770009901.787289",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770102374.185959",
+      "datetime": "2026-02-03 16:06:14",
+      "date": "2026-02-03",
+      "text": "네에 어제 신청한시간에 결정하셨습니다!",
+      "is_thread_reply": true,
+      "parent_ts": "1770009901.787289",
+      "user_id": "U08DJPW6CCQ",
+      "user_name": "김은주 슈퍼바이저"
+    },
+    {
+      "ts": "1770102390.288959",
+      "datetime": "2026-02-03 16:06:30",
+      "date": "2026-02-03",
+      "text": "급건은 어쩔수가없겠네요.",
+      "is_thread_reply": true,
+      "parent_ts": "1770009901.787289",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "cry",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770102453.291229",
+      "datetime": "2026-02-03 16:07:33",
+      "date": "2026-02-03",
+      "text": "요청받는 키오스크 설치된건들이 1~2주씩 밀려서 요청받는다고생각들어서 교육일정이 확정될때 올려주시면 어떨지 제안드립니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770009901.787289",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770102519.996299",
+      "datetime": "2026-02-03 16:08:39",
+      "date": "2026-02-03",
+      "text": "온코리아도 설치가 1/3, 교육이 1/10이네여; 주말에하셨나보네",
+      "is_thread_reply": true,
+      "parent_ts": "1770009901.787289",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770103000.814709",
+      "datetime": "2026-02-03 16:16:40",
+      "date": "2026-02-03",
+      "text": "에어비앤비가 특이사항이 있어서 재고 조절 어렵다고 안내 드렸습니다. /cc <@U03J0VDNB6Y> <@U08DJPW6CCQ> 어제발견되서 오늘 추가 확산이 어렵다고 결정된거라서 오주영 대표님이 열내시길래 영업에서는 잘못전달한개아니라고 말바꾼게아니라 기술개발팀에서 안되는걸 되게할순없어서 드린 특이사항이라 죄송하다고 말씀드리고 명함넣어놨습니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770009901.787289",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "넵",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "ts": "1770103055.333929",
+      "datetime": "2026-02-03 16:17:35",
+      "date": "2026-02-03",
+      "text": "네에 어제 신청 당시에는 되는것으로 알고 있어서 신청 넣었는데, 금일 공유 주신 이후에는 에어비앤비 불가하다고 업장 안내중입니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770009901.787289",
+      "user_id": "U08DJPW6CCQ",
+      "user_name": "김은주 슈퍼바이저"
+    },
+    {
+      "ts": "1770103408.304509",
+      "datetime": "2026-02-03 16:23:28",
+      "date": "2026-02-03",
+      "text": "<@U0A4WKB8A9L> 여긴제가하겠습니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770009901.787289",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "muscle",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770103458.331029",
+      "datetime": "2026-02-03 16:24:18",
+      "date": "2026-02-03",
+      "text": "황오스테이, 9객실",
+      "is_thread_reply": true,
+      "parent_ts": "1770101579.974269",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770103475.786259",
+      "datetime": "2026-02-03 16:24:35",
+      "date": "2026-02-03",
+      "text": "전번이랑 채널만좀 써주세요",
+      "is_thread_reply": true,
+      "parent_ts": "1770101579.974269",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770103615.017839",
+      "datetime": "2026-02-03 16:26:55",
+      "date": "2026-02-03",
+      "text": "에, 네, 마리틀, 스테이폴리오, 야모, 정도 쓰는거같네요",
+      "is_thread_reply": true,
+      "parent_ts": "1770101579.974269",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770103752.044209",
+      "datetime": "2026-02-03 16:29:12",
+      "date": "2026-02-03",
+      "text": "2/3 16시 교육 by 혜진님",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770105199.696949",
+      "datetime": "2026-02-03 16:53:19",
+      "date": "2026-02-03",
+      "text": "작명이 굿이네여 저의 VCMS도 되주십시오 하면서연락해야겠네",
+      "is_thread_reply": true,
+      "parent_ts": "1770090707.156109",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "joy",
+          "count": 2
+        },
+        {
+          "name": "muscle::skin-tone-2",
+          "count": 1
+        },
+        {
+          "name": "muscle",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770105543.970119",
+      "datetime": "2026-02-03 16:59:03",
+      "date": "2026-02-03",
+      "text": "네,야 연동 진행중입니다 완료되고 말씀드릴게요!",
+      "is_thread_reply": true,
+      "parent_ts": "1770101579.974269",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "reactions": [
+        {
+          "name": "+1",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770106001.985569",
+      "datetime": "2026-02-03 17:06:41",
+      "date": "2026-02-03",
+      "text": "요즘 n잡은 필수인가보네요.",
+      "is_thread_reply": true,
+      "parent_ts": "1770105839.216949",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인",
+      "has_files": true,
+      "file_names": [
+        "스크린샷 2026-02-03 17.06.20.png"
+      ],
+      "reactions": [
+        {
+          "name": "astonished",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770106658.258809",
+      "datetime": "2026-02-03 17:17:38",
+      "date": "2026-02-03",
+      "text": "1차부재",
+      "is_thread_reply": true,
+      "parent_ts": "1770090707.156109",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1770107770.079229",
+      "datetime": "2026-02-03 17:36:10",
+      "date": "2026-02-03",
+      "text": "<@U044Z9ZG2AX> 010-3479-0128 정유리\n\n경주 황오스테이 확인부탁드립니다\n1.네이버 , 야놀자 연동 진행 완료\n\n에어비앤비에서 수기로 작성한것들은 vcms 에서 다시 방막기 진행해놨습니다\n확인해주시고 문제 없으면 동기화 진행 하겠습니다 .\n\n네이버는 공휴일 일정 삭제된다고 안내 완료 했습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770107859.629169",
+      "datetime": "2026-02-03 17:37:39",
+      "date": "2026-02-03",
+      "text": "근데 황오스테이는 왜 네이버 미연결상품이 9개죠?",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770107885.351809",
+      "datetime": "2026-02-03 17:38:05",
+      "date": "2026-02-03",
+      "text": "저도 그게 궁금해요 ..여기 대실상품도 안만들었고\n매핑 제대로했는데 9개로 뜨더라구요",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770107914.914119",
+      "datetime": "2026-02-03 17:38:34",
+      "date": "2026-02-03",
+      "text": "황오스테이 2개중에 1546970이맞는거죠?",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770107927.825069",
+      "datetime": "2026-02-03 17:38:47",
+      "date": "2026-02-03",
+      "text": "네넵 숙소번호 확인했습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770107935.359339",
+      "datetime": "2026-02-03 17:38:55",
+      "date": "2026-02-03",
+      "text": "둘다연결했었나",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770107989.059099",
+      "datetime": "2026-02-03 17:39:49",
+      "date": "2026-02-03",
+      "text": "맞아요 처음엔 둘다 연결해달라해서 연결해드렸었습니다\n근데 ㅠㅋ 하나만쓰신다고 정정하셔서 지금쓰시는 채널로 숙소번호 확인해서 매핑진행했습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770108046.885369",
+      "datetime": "2026-02-03 17:40:46",
+      "date": "2026-02-03",
+      "text": "둘다연결해서 밑에꺼 숨기니까되네요",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770108073.129829",
+      "datetime": "2026-02-03 17:41:13",
+      "date": "2026-02-03",
+      "text": "재고자동보충설정은 왜되어있나여 ㅋㅋ 없어도되긴해요 ㅋㅋ 확인했습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770108079.835699",
+      "datetime": "2026-02-03 17:41:19",
+      "date": "2026-02-03",
+      "text": "금액만한번보시죠",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770108099.960019",
+      "datetime": "2026-02-03 17:41:39",
+      "date": "2026-02-03",
+      "text": "설날가격변경안해도되나요?",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770108128.807019",
+      "datetime": "2026-02-03 17:42:08",
+      "date": "2026-02-03",
+      "text": "ㅋㅋㅋㅋㅋㅋ 해달라고 하셔섴ㅋㅋㅋㅋ 우선해놨습니다\n설날 가격변경은 동업자랑 상의후 하신다고하셨습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770108143.527729",
+      "datetime": "2026-02-03 17:42:23",
+      "date": "2026-02-03",
+      "text": "그럼 마감이라도 해둬야하지않을까싶어서요",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770108154.910629",
+      "datetime": "2026-02-03 17:42:34",
+      "date": "2026-02-03",
+      "text": "앞으로사장님이 아직결정안되었다고하면 그냥 마감쳐나라고하면좋을거같습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770108155.098739",
+      "datetime": "2026-02-03 17:42:35",
+      "date": "2026-02-03",
+      "text": "엇 마감해드린다고했는데 괜찮으시대염",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770108159.389019",
+      "datetime": "2026-02-03 17:42:39",
+      "date": "2026-02-03",
+      "text": "오",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770108164.549789",
+      "datetime": "2026-02-03 17:42:44",
+      "date": "2026-02-03",
+      "text": "그럼 고하시죠",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770108171.390849",
+      "datetime": "2026-02-03 17:42:51",
+      "date": "2026-02-03",
+      "text": "고치는게빠르다고생각하시나보네 잘쓰실건가봐요",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770108171.826559",
+      "datetime": "2026-02-03 17:42:51",
+      "date": "2026-02-03",
+      "text": "네동기화 진행하겠습니다 !",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770108175.745529",
+      "datetime": "2026-02-03 17:42:55",
+      "date": "2026-02-03",
+      "text": "네압",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770108181.223979",
+      "datetime": "2026-02-03 17:43:01",
+      "date": "2026-02-03",
+      "text": "이제잘하시네요",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770108187.812999",
+      "datetime": "2026-02-03 17:43:07",
+      "date": "2026-02-03",
+      "text": "맞아요 구축부터 교육까지 한시간 20분 걸렸네염...",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770108582.300699",
+      "datetime": "2026-02-03 17:49:42",
+      "date": "2026-02-03",
+      "text": "굳굳 사장님이랑 합맞고 잘되면 빨리도되는날이있죠! ㅋㅋ 고생하셨습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770103727.462309",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770110244.561719",
+      "datetime": "2026-02-03 18:17:24",
+      "date": "2026-02-03",
+      "text": "<https://youagit.com/reservation02?idx=106>",
+      "is_thread_reply": true,
+      "parent_ts": "1770090707.156109",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅",
+      "has_attachments": true
+    },
+    {
+      "ts": "1770110279.846899",
+      "datetime": "2026-02-03 18:17:59",
+      "date": "2026-02-03",
+      "text": "연락을 안받으시네여\n진영님 여기 이렇게 자체 홈페이지에서만 예약을 받는데 저희가 들어갈만한 걸까요? 자체 홈페이지 예약 + 네이버로만 판매하시는 것같은데",
+      "is_thread_reply": true,
+      "parent_ts": "1770090707.156109",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1770110805.665379",
+      "datetime": "2026-02-03 18:26:45",
+      "date": "2026-02-03",
+      "text": "통화완료 /2월 12~13일 진행 예정 입니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770083699.568179",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "reactions": [
+        {
+          "name": "bow",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770112263.847289",
+      "datetime": "2026-02-03 18:51:03",
+      "date": "2026-02-03",
+      "text": "자체는따로하시고 네이버만 연동하겠다해도 직계약쓰는곳은 실효성있죠. 객실이 10개면 상품이 10개고 상품 10개를 네이버 스마트플레이스에서 조작해보셨잖아여 ㅋㅋ",
+      "is_thread_reply": true,
+      "parent_ts": "1770090707.156109",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770112286.723559",
+      "datetime": "2026-02-03 18:51:26",
+      "date": "2026-02-03",
+      "text": "29객실이면 네이버만쓰면 위험하긴하겠네요",
+      "is_thread_reply": true,
+      "parent_ts": "1770090707.156109",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770112310.166419",
+      "datetime": "2026-02-03 18:51:50",
+      "date": "2026-02-03",
+      "text": "저는 3번 연락안되거나 펑크내시면 추후연락으로 다 뺴긴했습니다 ㅠ",
+      "is_thread_reply": true,
+      "parent_ts": "1770090707.156109",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770114693.656429",
+      "datetime": "2026-02-03 19:31:33",
+      "date": "2026-02-03",
+      "text": "흠 내일 다시 해볼게용",
+      "is_thread_reply": true,
+      "parent_ts": "1770090707.156109",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1770115527.923699",
+      "datetime": "2026-02-03 19:45:27",
+      "date": "2026-02-03",
+      "text": "네이버 플레이스 등록된 사업장이 연결 가능한 숙소에 뜨는 건가요?",
+      "is_thread_reply": true,
+      "parent_ts": "1770105839.216949",
+      "user_id": "U02C46H1REK",
+      "user_name": "이선호 경영지원",
+      "reactions": [
+        {
+          "name": "woman-gesturing-ok",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770115809.683249",
+      "datetime": "2026-02-03 19:50:09",
+      "date": "2026-02-03",
+      "text": "해당계정에 연결된 모든 프로퍼티가뜹니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770105839.216949",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "아하",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770115838.524889",
+      "datetime": "2026-02-03 19:50:38",
+      "date": "2026-02-03",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770105839.216949",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770169712.029379",
+      "datetime": "2026-02-04 10:48:32",
+      "date": "2026-02-04",
+      "text": "3차 부재. 드랍할게용",
+      "is_thread_reply": true,
+      "parent_ts": "1770090707.156109",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1770197062.770709",
+      "datetime": "2026-02-04 18:24:22",
+      "date": "2026-02-04",
+      "text": "카멜호텔특이사항\n1. 현재 야놀자 - 호실 로 판매 / 여기어때 - 타입별로판매\n2. pms 타입별로 객실관리중 \n안내 : 호실 / 타입별로 판매할지 정해서 재교육하기로함\n\n해당매장 현재 교육이 어려워 업장 판매방식을 확실하게 정한뒤에 교육예정입니다\n*호실별로 판매시 pms 도 호실별로 나눠서 진행할 예정입니다.*",
+      "is_thread_reply": true,
+      "parent_ts": "1769764091.686039",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770260414.728249",
+      "datetime": "2026-02-05 12:00:14",
+      "date": "2026-02-05",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770260025.769659",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770260423.326789",
+      "datetime": "2026-02-05 12:00:23",
+      "date": "2026-02-05",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770260025.769659",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "destroyer-reservations-backup-1770260418116-50.json.gz"
+      ]
+    },
+    {
+      "ts": "1770269249.186269",
+      "datetime": "2026-02-05 14:27:29",
+      "date": "2026-02-05",
+      "text": "<@U044Z9ZG2AX> <@U0A4WKB8A9L>\n위 업장 2월 11일 키오스크 설치업장이라 일정 공유드립니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U08DJPW6CCQ",
+      "user_name": "김은주 슈퍼바이저"
+    },
+    {
+      "ts": "1770269501.807719",
+      "datetime": "2026-02-05 14:31:41",
+      "date": "2026-02-05",
+      "text": "클라우드만들어지면 말씀해주세요그냥 연결해버리게요",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "white_check_mark",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770274362.564729",
+      "datetime": "2026-02-05 15:52:42",
+      "date": "2026-02-05",
+      "text": "2/11 강제변경타입",
+      "is_thread_reply": true,
+      "parent_ts": "1770274350.973509",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770274384.086339",
+      "datetime": "2026-02-05 15:53:04",
+      "date": "2026-02-05",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770274350.973509",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770274566.030069",
+      "datetime": "2026-02-05 15:56:06",
+      "date": "2026-02-05",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770274350.973509",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "destroyer-reservations-backup-1770274509016-353.json.gz"
+      ]
+    },
+    {
+      "ts": "1770284557.204859",
+      "datetime": "2026-02-05 18:42:37",
+      "date": "2026-02-05",
+      "text": "18시 42분 통화완료  /2월 11일 교육 진행 예정\n<@U08DJPW6CCQ> 은주님 대략적인 시간알수있을까요?",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770289564.907009",
+      "datetime": "2026-02-05 20:06:04",
+      "date": "2026-02-05",
+      "text": "그건 설치전날 알수있어용",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U08DJPW6CCQ",
+      "user_name": "김은주 슈퍼바이저"
+    },
+    {
+      "ts": "1770293768.671319",
+      "datetime": "2026-02-05 21:16:08",
+      "date": "2026-02-05",
+      "text": "클라우드만 먼저만들어주세요 담당자연결해서 그냥 설치해두면 될거같은데여 ㅋㅋㅋ",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770293782.791959",
+      "datetime": "2026-02-05 21:16:22",
+      "date": "2026-02-05",
+      "text": "저스트, 이쁘다 이런애들은 그냥 미리 다 해놔도됩니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770377480.341259",
+      "datetime": "2026-02-06 20:31:20",
+      "date": "2026-02-06",
+      "text": "연동완료\n• 트립은 ARI 푸시과정에서 방을 몇일이라도 재고열어줘야 열리는케이스가있음. 구례 까사베르데도 동일했고, 스탠다드 상품을 트립 캘린더에서 일주일치 열고 동기화치니까 전체 다 열림.",
+      "is_thread_reply": true,
+      "parent_ts": "1770354092.728999",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770377497.483759",
+      "datetime": "2026-02-06 20:31:37",
+      "date": "2026-02-06",
+      "text": "<@U0A4WKB8A9L> 트립연동시 참고해주세요 :slightly_smiling_face:",
+      "is_thread_reply": true,
+      "parent_ts": "1770354092.728999",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "saluting_face",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770381014.447529",
+      "datetime": "2026-02-06 21:30:14",
+      "date": "2026-02-06",
+      "text": "시연완료 -&gt; 펑크내서 21시에 옴 ㅋㅋ\n\n<mailto:buicinc1@gmail.com|buicinc1@gmail.com>\nbuicinc1!!!!\n\n떠나요 에어비앤비 예약거의없길래 쓰지말라고함.\n부, 익 제외, 아, 트, 여, 야모, 야호, 네, 여파 연동 예정\n벤디트 부킹엔진 기준으로 요금세팅\n\n2/11 13:00 교육 예정",
+      "is_thread_reply": true,
+      "parent_ts": "1770373646.620989",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ],
+      "reactions": [
+        {
+          "name": "+1",
+          "count": 2
+        },
+        {
+          "name": "shibasalute",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770606592.680909",
+      "datetime": "2026-02-09 12:09:52",
+      "date": "2026-02-09",
+      "text": "네 확인해볼게요!\n지금 에어비앤비 연동이막혀서 구 CMS에서도 에어비앤비가 안되고있어요 :cry:",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770606621.916439",
+      "datetime": "2026-02-09 12:10:21",
+      "date": "2026-02-09",
+      "text": "네 ! 설명드려서 특이사항 없을거같습니다 !",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770606644.320899",
+      "datetime": "2026-02-09 12:10:44",
+      "date": "2026-02-09",
+      "text": "아 재고만 사용합니다 !",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770606755.035239",
+      "datetime": "2026-02-09 12:12:35",
+      "date": "2026-02-09",
+      "text": "네, 네이버는 재고만사용시 특이사항입니다. 그리고 요금을 안쓰면 네이버도 야놀자처럼 00:00 되면 하루치씩 자동으로열리게가능한데, 왠만하면 돈을 더받고싶어서가아니라 네이버도 요금쓰시는게좋은데, 아쉽네요\n<https://docs.vcms.io/ko/channels/naver>",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ],
+      "has_attachments": true
+    },
+    {
+      "ts": "1770606827.956929",
+      "datetime": "2026-02-09 12:13:47",
+      "date": "2026-02-09",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770606844.661739",
+      "datetime": "2026-02-09 12:14:04",
+      "date": "2026-02-09",
+      "text": "그러게요 ㅠㅠㅠㅠㅠ 네이버 공휴일 등 설정해두신게 많아서 대표님이 설정하셨으면\n그부분 으로 밀어서 요금도 같이쓰게하려했는데 , 네이버에서 자동으로 넣어준거라 없어져도 상관없다고하네요 흑흑",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770606924.400589",
+      "datetime": "2026-02-09 12:15:24",
+      "date": "2026-02-09",
+      "text": "없어지는게문제라기보다 기본적으로 공휴일에 일정을 등록하면 공휴일설정이 기본값이라 그걸로 설정했다가 요금다 삭제되는 경우떔에 말씀드린거긴합니다.\n삭제되면 안팔리니까 문제없겠지만, 이상한요금제걸려있어가지고 잘못팔렸다가 논란거리라",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "destroyer-reservations-backup-1770606835970-25.json.gz"
+      ]
+    },
+    {
+      "ts": "1770606995.088479",
+      "datetime": "2026-02-09 12:16:35",
+      "date": "2026-02-09",
+      "text": "연동은다되었는데, 강제 배정된게 없어졌네요 이거 값보고 잠시수정해볼게요",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ],
+      "reactions": [
+        {
+          "name": "bow",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770607064.703269",
+      "datetime": "2026-02-09 12:17:44",
+      "date": "2026-02-09",
+      "text": "네 강제 배정해두신거 따로 남겨놓긴했습니다 ! 오버부킹 받으셔서 따로 배정 넣으시더라구요 !",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770607138.307229",
+      "datetime": "2026-02-09 12:18:58",
+      "date": "2026-02-09",
+      "text": "아하 알겠습니다 그럼 마무리교육해주시고, 야놀자, 네이버 재고 정상변경만 확인해주세요",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770607157.307499",
+      "datetime": "2026-02-09 12:19:17",
+      "date": "2026-02-09",
+      "text": "네네 감사합니다 !",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770607214.104059",
+      "datetime": "2026-02-09 12:20:14",
+      "date": "2026-02-09",
+      "text": "항상 VCMS 사용자로 되어있는 <mailto:rrot@vcms.io|rrot@vcms.io> 계정은 내보내기 해주세여 ㅋㅋ 항상 제가 체킹은 하는데 놓칠까봐요",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770607231.797929",
+      "datetime": "2026-02-09 12:20:31",
+      "date": "2026-02-09",
+      "text": "내보내기 완료",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770607254.193859",
+      "datetime": "2026-02-09 12:20:54",
+      "date": "2026-02-09",
+      "text": "더웨이브 진짜 구 CMS부터 오래쓰셨는데, 대박이네여 ㅋㅋ",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770607262.379959",
+      "datetime": "2026-02-09 12:21:02",
+      "date": "2026-02-09",
+      "text": "네 교육끝나고 마무리할때 내보내긴 하는데 앞으로는 진행할때 내보내놓겠습니다 !",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770607269.269669",
+      "datetime": "2026-02-09 12:21:09",
+      "date": "2026-02-09",
+      "text": "아마 신뢰도가 바닥일거라",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770607272.111919",
+      "datetime": "2026-02-09 12:21:12",
+      "date": "2026-02-09",
+      "text": "보여드리면 좋아하실거에요",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770607279.595309",
+      "datetime": "2026-02-09 12:21:19",
+      "date": "2026-02-09",
+      "text": "일주일정도 마감하는거나이런거시연해주세요",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770607284.534969",
+      "datetime": "2026-02-09 12:21:24",
+      "date": "2026-02-09",
+      "text": "넵",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770607284.577739",
+      "datetime": "2026-02-09 12:21:24",
+      "date": "2026-02-09",
+      "text": "아예 안믿을거라 ㅋㅋ",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770607303.612709",
+      "datetime": "2026-02-09 12:21:43",
+      "date": "2026-02-09",
+      "text": "구 CMS 쓰셨던분들은 체감효용이 말도안되게 다를텐데, 보여드리면 좋을거같네요 :slightly_smiling_face:",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "+1",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770608080.755379",
+      "datetime": "2026-02-09 12:34:40",
+      "date": "2026-02-09",
+      "text": "교육완 , 에어테이블 기재 , 이전 리드건이라 외부요청설치로 남겨놨습니다!",
+      "is_thread_reply": true,
+      "parent_ts": "1770606437.996739",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "reactions": [
+        {
+          "name": "+1",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770609342.065209",
+      "datetime": "2026-02-09 12:55:42",
+      "date": "2026-02-09",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770609334.853509",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770610964.549789",
+      "datetime": "2026-02-09 13:22:44",
+      "date": "2026-02-09",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770610944.170229",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png",
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770617996.280539",
+      "datetime": "2026-02-09 15:19:56",
+      "date": "2026-02-09",
+      "text": "해당 업장 25년 8월 22일 vcms 설치 / 25년 12월 22일에 무료 체험 종료된 업장입니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770617345.664719",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인",
+      "reactions": [
+        {
+          "name": "sob",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770619101.741599",
+      "datetime": "2026-02-09 15:38:21",
+      "date": "2026-02-09",
+      "text": "무료체험을 두번할려고하시네요.",
+      "is_thread_reply": true,
+      "parent_ts": "1770617345.664719",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "face_holding_back_tears",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "ts": "1770619768.659329",
+      "datetime": "2026-02-09 15:49:28",
+      "date": "2026-02-09",
+      "text": "오 비번알아냄 kiuda2025!@@ 연결해둘게요",
+      "is_thread_reply": true,
+      "parent_ts": "1770619677.864069",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "saluting_face",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770629986.083249",
+      "datetime": "2026-02-09 18:39:46",
+      "date": "2026-02-09",
+      "text": "<https://venditinc.slack.com/archives/C0813A1AR1A/p1770629924501449>",
+      "is_thread_reply": true,
+      "parent_ts": "1770629776.891739",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_attachments": true,
+      "reactions": [
+        {
+          "name": "+1",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770689435.309609",
+      "datetime": "2026-02-10 11:10:35",
+      "date": "2026-02-10",
+      "text": ":arrow_up: 이런 유사품에 주의하십시오. 두번씩 체험할려는 애들이있습니다 ㅋㅋ 구독 결제 화면 나오면 이런 프리라이더들은 화면에서 확인하실수있게 걸러드리겠습니다. <@U0A4WKB8A9L> <@U08D5T61VU0> <@U07SC5S7B96>\n\n차라리 무료체험을 했었는데 한번더할수있나요?라고 물어볼것이지;;",
+      "is_thread_reply": true,
+      "parent_ts": "1770617345.664719",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770689465.201629",
+      "datetime": "2026-02-10 11:11:05",
+      "date": "2026-02-10",
+      "text": "헉",
+      "is_thread_reply": true,
+      "parent_ts": "1770617345.664719",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1770689685.611499",
+      "datetime": "2026-02-10 11:14:45",
+      "date": "2026-02-10",
+      "text": "헉...",
+      "is_thread_reply": true,
+      "parent_ts": "1770617345.664719",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770690086.357119",
+      "datetime": "2026-02-10 11:21:26",
+      "date": "2026-02-10",
+      "text": "<@U08DJPW6CCQ> 은주님 저스트 스위트 다산로데오점 대략적인 시간 알수있을까요!",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "reactions": [
+        {
+          "name": "eyes",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770690107.209199",
+      "datetime": "2026-02-10 11:21:47",
+      "date": "2026-02-10",
+      "text": "<@U08FJCF2AJK> 님, 다산로데오점 언제쯤 도착예정일까요?",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U08DJPW6CCQ",
+      "user_name": "김은주 슈퍼바이저"
+    },
+    {
+      "ts": "1770690179.524069",
+      "datetime": "2026-02-10 11:22:59",
+      "date": "2026-02-10",
+      "text": "클라우드만들어져있으면 바로 셋업하시져",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770690191.165929",
+      "datetime": "2026-02-10 11:23:11",
+      "date": "2026-02-10",
+      "text": "윤재님 설치하고 관련이없어서 바로진행하셔도되겄네용!",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770690209.150299",
+      "datetime": "2026-02-10 11:23:29",
+      "date": "2026-02-10",
+      "text": "팀저스트 업장이 꽤많네여 ㅋㅋ",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770690243.381559",
+      "datetime": "2026-02-10 11:24:03",
+      "date": "2026-02-10",
+      "text": "나쁜,,사람,,",
+      "is_thread_reply": true,
+      "parent_ts": "1770617345.664719",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX"
+    },
+    {
+      "ts": "1770690256.049419",
+      "datetime": "2026-02-10 11:24:16",
+      "date": "2026-02-10",
+      "text": "클라우드계정이먼가요?",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770690349.759189",
+      "datetime": "2026-02-10 11:25:49",
+      "date": "2026-02-10",
+      "text": "넵 확인했습니다.\n좀 전에 현장담당자분께 11시 ~12시 사이 도착예정이라 안내드렸습니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U08FJCF2AJK",
+      "user_name": "신윤재 엔지니어",
+      "reactions": [
+        {
+          "name": "감사_합니다",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "ts": "1770699338.765019",
+      "datetime": "2026-02-10 13:55:38",
+      "date": "2026-02-10",
+      "text": "<@U0A4WKB8A9L> 님 위 업장 어디까지 진행 되었는지 알 수 있을까요",
+      "is_thread_reply": true,
+      "parent_ts": "1769764091.686039",
+      "user_id": "U08DJPW6CCQ",
+      "user_name": "김은주 슈퍼바이저"
+    },
+    {
+      "ts": "1770699410.546049",
+      "datetime": "2026-02-10 13:56:50",
+      "date": "2026-02-10",
+      "text": "금주내로 연락주시기로 하셨고 ,아직 연락없으십니다!",
+      "is_thread_reply": true,
+      "parent_ts": "1769764091.686039",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770699467.661219",
+      "datetime": "2026-02-10 13:57:47",
+      "date": "2026-02-10",
+      "text": "금일 저에게 연락 주셔서 여기어때 플랫폼 열었는데 정상적으로 VCMS 작동하는지 여쭤보셔서요.\n연락 한번 부탁드려요.",
+      "is_thread_reply": true,
+      "parent_ts": "1769764091.686039",
+      "user_id": "U08DJPW6CCQ",
+      "user_name": "김은주 슈퍼바이저"
+    },
+    {
+      "ts": "1770699479.909769",
+      "datetime": "2026-02-10 13:57:59",
+      "date": "2026-02-10",
+      "text": "네알겠습니다!",
+      "is_thread_reply": true,
+      "parent_ts": "1769764091.686039",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770702792.920429",
+      "datetime": "2026-02-10 14:53:12",
+      "date": "2026-02-10",
+      "text": "해당 업장 구 cms 재고 조절 종료 안내 문자에 무료 체험 내용이 있어서 착각하셨다고 방금 연락 오셨습니다. <@U044Z9ZG2AX>",
+      "is_thread_reply": true,
+      "parent_ts": "1770617345.664719",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인"
+    },
+    {
+      "ts": "1770702848.879369",
+      "datetime": "2026-02-10 14:54:08",
+      "date": "2026-02-10",
+      "text": "미국대표탓하고 맨날 회피하는모습에서 별로좋지않았던 기억이라 띠껍게 바라보게되네요 ㅋㅋㅋㅋㅋ",
+      "is_thread_reply": true,
+      "parent_ts": "1770617345.664719",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "crying_cat_face",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770708347.918839",
+      "datetime": "2026-02-10 16:25:47",
+      "date": "2026-02-10",
+      "text": "풀사이드 펜션 부재 중입니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770705905.138559",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인"
+    },
+    {
+      "ts": "1770708924.554409",
+      "datetime": "2026-02-10 16:35:24",
+      "date": "2026-02-10",
+      "text": "풀사이드 다시 연결하였습니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770705905.138559",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인",
+      "reactions": [
+        {
+          "name": "+1",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770709975.429869",
+      "datetime": "2026-02-10 16:52:55",
+      "date": "2026-02-10",
+      "text": "네 진영님 전일 계정은 생성해두었는데 말씀을 못드렸습니다.\n클라우드 계정은 justsleep006 입니다.!",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U08FJCF2AJK",
+      "user_name": "신윤재 엔지니어"
+    },
+    {
+      "ts": "1770710082.354919",
+      "datetime": "2026-02-10 16:54:42",
+      "date": "2026-02-10",
+      "text": "여기아직세팅안되었죠?",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770710089.468669",
+      "datetime": "2026-02-10 16:54:49",
+      "date": "2026-02-10",
+      "text": "담당자 연락처좀주세요",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770710112.935289",
+      "datetime": "2026-02-10 16:55:12",
+      "date": "2026-02-10",
+      "text": "통화해서 계정정보받았습니다 금일 제가 세팅해두겠습니다 !",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770710149.328409",
+      "datetime": "2026-02-10 16:55:49",
+      "date": "2026-02-10",
+      "text": "네 여기 타입이 많으면 좀 빡세게설정되어서 보통은 서산 호수공원 호텔이나 스테이 대산점 참고하시면됩니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770710211.396009",
+      "datetime": "2026-02-10 16:56:51",
+      "date": "2026-02-10",
+      "text": "네 확인했습니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "reactions": [
+        {
+          "name": "muscle",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770710236.878269",
+      "datetime": "2026-02-10 16:57:16",
+      "date": "2026-02-10",
+      "text": "타입 3개이하면 간단하실거같습니다 막히면 바로전화주셔요!",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770710448.693919",
+      "datetime": "2026-02-10 17:00:48",
+      "date": "2026-02-10",
+      "text": "클라우드에는 저스트 슬립으로 되어있던데 저스트 슬립 / 스위트도 같은 곳이 맞나요?",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770710488.724189",
+      "datetime": "2026-02-10 17:01:28",
+      "date": "2026-02-10",
+      "text": "이거 지점이 너무늘어서 최소한의 규칙이좀있으면좋을거같아요 다 저스트슬립이나 저스트스테이라 ㅋㅋㅋ",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770710499.587289",
+      "datetime": "2026-02-10 17:01:39",
+      "date": "2026-02-10",
+      "text": "다른곳으로 알고있습니다.\n익일 설치건은 저스트스위트입니다.!",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U08FJCF2AJK",
+      "user_name": "신윤재 엔지니어"
+    },
+    {
+      "ts": "1770710525.697189",
+      "datetime": "2026-02-10 17:02:05",
+      "date": "2026-02-10",
+      "text": "justsleep006 이 계정은요 저스트스위트호텔 다산로데오점 이긴합니다 ㅋㅋ",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "man-gesturing-ok::skin-tone-2",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770710541.702889",
+      "datetime": "2026-02-10 17:02:21",
+      "date": "2026-02-10",
+      "text": "그래서 혜찐님께서 스위트와 다산로데오가 같은데냐고 여쭈어보신거같아요",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770710558.624169",
+      "datetime": "2026-02-10 17:02:38",
+      "date": "2026-02-10",
+      "text": "저스트스테이호텔, 저스트 슬립호텔, 저스트스위트호텔 이렇게 등급인가요이거?ㅋㅋ",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770710564.087699",
+      "datetime": "2026-02-10 17:02:44",
+      "date": "2026-02-10",
+      "text": "ㅋㅋㅋㅋㅋ",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U08FJCF2AJK",
+      "user_name": "신윤재 엔지니어"
+    },
+    {
+      "ts": "1770710565.848829",
+      "datetime": "2026-02-10 17:02:45",
+      "date": "2026-02-10",
+      "text": "그런것같아요",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U08FJCF2AJK",
+      "user_name": "신윤재 엔지니어"
+    },
+    {
+      "ts": "1770710568.395439",
+      "datetime": "2026-02-10 17:02:48",
+      "date": "2026-02-10",
+      "text": "네네 확인했습ㄴ디다!!",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770710576.934099",
+      "datetime": "2026-02-10 17:02:56",
+      "date": "2026-02-10",
+      "text": "우선 클라우드 도 참고해서 만들게요!",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770711665.073149",
+      "datetime": "2026-02-10 17:21:05",
+      "date": "2026-02-10",
+      "text": "<@U044Z9ZG2AX>\n저스트 다산점 채널은 타입까지 만들어놓고 , 요금은 내일 같이 설정하면서 교육진행 하기로 했습니다 !",
+      "is_thread_reply": true,
+      "parent_ts": "1770268683.051059",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "reactions": [
+        {
+          "name": "+1",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770712457.825999",
+      "datetime": "2026-02-10 17:34:17",
+      "date": "2026-02-10",
+      "text": "카멜호텔 현재 14:00시 부재 1\n17:00 부재 2\n남겨드렸고 문자 남겨드렸는데 답변이 없으셔서 연락오는대로 답변 하겠습니다 !",
+      "is_thread_reply": true,
+      "parent_ts": "1769764091.686039",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770720933.103199",
+      "datetime": "2026-02-10 19:55:33",
+      "date": "2026-02-10",
+      "text": "통화 완료\n• 재고/요금 한달 무료 체험\n• 2월 11일(목) 오전 11시 교육",
+      "is_thread_reply": true,
+      "parent_ts": "1770179731.139549",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인"
+    },
+    {
+      "ts": "1770730193.040869",
+      "datetime": "2026-02-10 22:29:53",
+      "date": "2026-02-10",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770730041.414149",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png",
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770730226.855209",
+      "datetime": "2026-02-10 22:30:26",
+      "date": "2026-02-10",
+      "text": "아, 야펜, 야모, 여모, 네",
+      "is_thread_reply": true,
+      "parent_ts": "1770730041.414149",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770730321.634329",
+      "datetime": "2026-02-10 22:32:01",
+      "date": "2026-02-10",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770730041.414149",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "destroyer-reservations-backup-1770730306856-291.json.gz"
+      ]
+    },
+    {
+      "ts": "1770736106.985559",
+      "datetime": "2026-02-11 00:08:26",
+      "date": "2026-02-11",
+      "text": "180일 연동 \n• 유료안내\n• 기능안내\n• 기간별 요금 설정이 빡세서 월별로만 사용하시라고 제안해서 변경함",
+      "is_thread_reply": true,
+      "parent_ts": "1770440504.727569",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770775406.614639",
+      "datetime": "2026-02-11 11:03:26",
+      "date": "2026-02-11",
+      "text": "<https://booking.vendit.co.kr/%EC%88%98%EC%95%88%EB%B3%B4%EC%98%A8%EC%B2%9C%ED%9E%90%EB%A7%81%ED%98%B8%ED%85%94>",
+      "is_thread_reply": true,
+      "parent_ts": "1770373646.620989",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_attachments": true
+    },
+    {
+      "ts": "1770785482.665489",
+      "datetime": "2026-02-11 13:51:22",
+      "date": "2026-02-11",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770785117.972109",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png",
+        "image.png",
+        "image.png",
+        "image.png",
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770787667.899789",
+      "datetime": "2026-02-11 14:27:47",
+      "date": "2026-02-11",
+      "text": "통화완료 / 비용 문제로 생각해보기로함",
+      "is_thread_reply": true,
+      "parent_ts": "1770268433.433159",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770787740.420739",
+      "datetime": "2026-02-11 14:29:00",
+      "date": "2026-02-11",
+      "text": "통화완료 / 중복리드  / 금액 문제로 생각해보기로함",
+      "is_thread_reply": true,
+      "parent_ts": "1770451688.320439",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770788047.483119",
+      "datetime": "2026-02-11 14:34:07",
+      "date": "2026-02-11",
+      "text": "통화완료  / 금주 목요일 교육 진행예정",
+      "is_thread_reply": true,
+      "parent_ts": "1770603791.319769",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770788179.990749",
+      "datetime": "2026-02-11 14:36:19",
+      "date": "2026-02-11",
+      "text": "전화하겠습니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770788162.543599",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인",
+      "reactions": [
+        {
+          "name": "넵",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770788260.011529",
+      "datetime": "2026-02-11 14:37:40",
+      "date": "2026-02-11",
+      "text": "담당자 외출 중으로 복귀하면 바로 확인 예정입니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770788162.543599",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인",
+      "reactions": [
+        {
+          "name": "+1",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770788501.793969",
+      "datetime": "2026-02-11 14:41:41",
+      "date": "2026-02-11",
+      "text": "통화완료  /금주 금요일 교육 예정",
+      "is_thread_reply": true,
+      "parent_ts": "1770623115.074199",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770791248.974019",
+      "datetime": "2026-02-11 15:27:28",
+      "date": "2026-02-11",
+      "text": "윈도우 업데이트로 컴퓨터가 꺼졌었다고 하네요. 정상 조치하였습니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770788162.543599",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인",
+      "reactions": [
+        {
+          "name": "+1",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770795694.757059",
+      "datetime": "2026-02-11 16:41:34",
+      "date": "2026-02-11",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770795686.163669",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770797148.741509",
+      "datetime": "2026-02-11 17:05:48",
+      "date": "2026-02-11",
+      "text": "b82f9510-0598-11f1-942b-4b781e2242b7",
+      "is_thread_reply": true,
+      "parent_ts": "1770796508.467859",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770797235.252879",
+      "datetime": "2026-02-11 17:07:15",
+      "date": "2026-02-11",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770796508.467859",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "destroyer-reservations-backup-1770797218864-0.json.gz"
+      ]
+    },
+    {
+      "ts": "1770799082.341959",
+      "datetime": "2026-02-11 17:38:02",
+      "date": "2026-02-11",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770785117.972109",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770799533.962689",
+      "datetime": "2026-02-11 17:45:33",
+      "date": "2026-02-11",
+      "text": "예약이 1시간, 2시간, 45분과 같이 대실로 보여지는 숙박예약들의 입/퇴실시간을 잘조정하시면 숫자가 제대로 맞을거에요 지금 예약차이는 전부다 오 생성된 수기 예약의 입.퇴실 시간때문입니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770796508.467859",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770799556.124289",
+      "datetime": "2026-02-11 17:45:56",
+      "date": "2026-02-11",
+      "text": "물론 저희 제품들이니 기준을 맞춰야하는데, 기준 상이로 인함이 주원인입니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770796508.467859",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770800694.309599",
+      "datetime": "2026-02-11 18:04:54",
+      "date": "2026-02-11",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770785117.972109",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770860549.565299",
+      "datetime": "2026-02-12 10:42:29",
+      "date": "2026-02-12",
+      "text": "통화완료 / 차주 목요일 19일 교육",
+      "is_thread_reply": true,
+      "parent_ts": "1770624524.134309",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770860795.306009",
+      "datetime": "2026-02-12 10:46:35",
+      "date": "2026-02-12",
+      "text": "통화완료  / 차주 금요일 진행예정",
+      "is_thread_reply": true,
+      "parent_ts": "1770629836.767289",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770864856.877459",
+      "datetime": "2026-02-12 11:54:16",
+      "date": "2026-02-12",
+      "text": "교육 완료, 1시 스크립트 연동 후 채널 동기화 예정",
+      "is_thread_reply": true,
+      "parent_ts": "1770179731.139549",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인"
+    },
+    {
+      "ts": "1770866411.081609",
+      "datetime": "2026-02-12 12:20:11",
+      "date": "2026-02-12",
+      "text": "교육 완료\n• 프리미엄 4객실 / 디럭스 1객실 유지 보수로 운영 중지\n• 클라우드 수기 변경 내역 확인 후 14시 스크립트 작업 및 채널 동기화 예정",
+      "is_thread_reply": true,
+      "parent_ts": "1770179731.139549",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인",
+      "reactions": [
+        {
+          "name": "완료",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770873727.234639",
+      "datetime": "2026-02-12 14:22:07",
+      "date": "2026-02-12",
+      "text": "채널 동기화 완료\n• 현재 무료 체험 기간이고, 3월 유료화 예정 안내",
+      "is_thread_reply": true,
+      "parent_ts": "1770179731.139549",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인"
+    },
+    {
+      "ts": "1770874863.393879",
+      "datetime": "2026-02-12 14:41:03",
+      "date": "2026-02-12",
+      "text": "스크립트 친 이력 기록용으로 남겨주세요!",
+      "is_thread_reply": true,
+      "parent_ts": "1770179731.139549",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "white_check_mark",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770875398.989209",
+      "datetime": "2026-02-12 14:49:58",
+      "date": "2026-02-12",
+      "text": "• 야모, 여모 스크립트 진행했습니다.아고다는 신규 입점으로 구 cms 미연동 채널이어서 스크립트 대상에서 제외하였습니다.\n• 채널 동기화 완료",
+      "is_thread_reply": true,
+      "parent_ts": "1770875237.825779",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인"
+    },
+    {
+      "ts": "1770875978.248819",
+      "datetime": "2026-02-12 14:59:38",
+      "date": "2026-02-12",
+      "text": "• 구 cms 지점 비활성화 완료",
+      "is_thread_reply": true,
+      "parent_ts": "1770875237.825779",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인"
+    },
+    {
+      "ts": "1770882933.439809",
+      "datetime": "2026-02-12 16:55:33",
+      "date": "2026-02-12",
+      "text": "예약 연동만 사용합니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770882909.830679",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770882947.107679",
+      "datetime": "2026-02-12 16:55:47",
+      "date": "2026-02-12",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770882909.830679",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770891207.313809",
+      "datetime": "2026-02-12 19:13:27",
+      "date": "2026-02-12",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770874937.727549",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770946721.497039",
+      "datetime": "2026-02-13 10:38:41",
+      "date": "2026-02-13",
+      "text": "<@U044Z9ZG2AX> 진영님! 호텔오름 업장 에어비앤비 VCMS 연동 실패되서 업장 PC에 구CMS 설치해드리려고하는데 이후 진행 작업 어떤게 필요할까요!?",
+      "is_thread_reply": true,
+      "parent_ts": "1770022256.895529",
+      "user_id": "U0960DVABCH",
+      "user_name": "박재윤 CX"
+    },
+    {
+      "ts": "1770946810.019429",
+      "datetime": "2026-02-13 10:40:10",
+      "date": "2026-02-13",
+      "text": "에어비앤비 연결삭제하고 중복된건 삭제하면됩니다. VCMS는 제가 삭제해버릴게요",
+      "is_thread_reply": true,
+      "parent_ts": "1770022256.895529",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770946911.065989",
+      "datetime": "2026-02-13 10:41:51",
+      "date": "2026-02-13",
+      "text": "VCMS 채널에서 에어비앤비를 삭제하게되면 발생하는 일\n1. VCMS에서 에어비앤비가 사라짐(당연)\n2. VCMS 의 에어비앤비 예약이, 연동서비스(VCLOUD)로 예약처가 변경됨.\n3. 구 CMS 연결하고, 중복된 에약 삭제하기",
+      "is_thread_reply": true,
+      "parent_ts": "1770022256.895529",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770947060.119159",
+      "datetime": "2026-02-13 10:44:20",
+      "date": "2026-02-13",
+      "text": "VCMS에서는 에어비앤비 예약 확인이 불가하지만, 클라우드에는 남아있는 상황이고, 이걸 연동서비스에서 예약동기화해주면 예약처가 에어비앤비가 아닌 연동서비스가 됩니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770022256.895529",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "image.png"
+      ]
+    },
+    {
+      "ts": "1770949763.905869",
+      "datetime": "2026-02-13 11:29:23",
+      "date": "2026-02-13",
+      "text": "<@U0960DVABCH> 이미 알고계시겠지만, 네이버로 로그인쓰는애들 구 CMS에서 이메일로그인이안될때, 그냥 비밀번호 없어서 네이버로만 로그인되는거니까 비밀번호 하나 계쩡관리에서만들어주면됩니다",
+      "is_thread_reply": true,
+      "parent_ts": "1770022256.895529",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "넵",
+          "count": 1
+        },
+        {
+          "name": "exclamation",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770949998.602679",
+      "datetime": "2026-02-13 11:33:18",
+      "date": "2026-02-13",
+      "text": "걍 네이버비번하고 똑같이해놨습니다; Snrntpdy1@ 이걸로;",
+      "is_thread_reply": true,
+      "parent_ts": "1770022256.895529",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770950160.737759",
+      "datetime": "2026-02-13 11:36:00",
+      "date": "2026-02-13",
+      "text": "예약연동주기",
+      "is_thread_reply": true,
+      "parent_ts": "1770022256.895529",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM"
+    },
+    {
+      "ts": "1770950162.007609",
+      "datetime": "2026-02-13 11:36:02",
+      "date": "2026-02-13",
+      "text": ":white_check_mark: 2025-05-20 기준 CMS 채널별 연동 시간\n\n:stopwatch: 야놀자: 1 ~ 3분 \n:stopwatch: 여기어때 마케팅센터: 3분 \n:stopwatch: 여기어때 파트너센터: 2분 \n:stopwatch: 여기어때 호스트하우스: 1분\n:stopwatch: 아고다: 8분 \n:stopwatch: 에어비앤비: 10분 \n:stopwatch: 부킹닷컴: 8분 \n:stopwatch: 꿀스테이: 4분 \n:stopwatch: 떠나요: 2분 \n:stopwatch: 익스피디아: 8분 \n:stopwatch: 네이버: 5분 \n:stopwatch: 온다플러스: 3분 \n:stopwatch: 트립닷컴: 8분 \n 채널 연동 정보 도움말: <https://www.notion.so/vendit/OTA-a50cccfb3fc54436aff721e4ffb5f0b0>",
+      "is_thread_reply": true,
+      "parent_ts": "1770022256.895529",
+      "user_id": "USLACKBOT",
+      "user_name": "Slackbot"
+    },
+    {
+      "ts": "1770950549.218449",
+      "datetime": "2026-02-13 11:42:29",
+      "date": "2026-02-13",
+      "text": "배정된애들제외하고 VCMS 에어비앤비 예약 삭제해서 수량맞췃습니다. 대표자에게는 전환했다고 안내해주면될거같습니다 그과정에 에어비앤비 이메일로그인가능하게 되었고 <mailto:hoteloreum@naver.com|hoteloreum@naver.com>/Snrntpdy1@ 요롷게하면 이제 이메일로그인 또는 네이버로그인선택이되는상태입니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770022256.895529",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "woman-bowing::skin-tone-5",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770962721.301039",
+      "datetime": "2026-02-13 15:05:21",
+      "date": "2026-02-13",
+      "text": "[연결 보류]\n• 10월에 기존 숙소(132405066) 트립닷컴 연동 진행하고, 동일한 업장 신규로 다시 입점(133627074)\n• 이전 숙소(132405066)에 2월 28일까지 예약 3건이 있어서 신규 숙소(133627074)는 3월에 연동하는 것으로 점주와 소통하였습니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770888806.075729",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인"
+    },
+    {
+      "ts": "1770965243.773639",
+      "datetime": "2026-02-13 15:47:23",
+      "date": "2026-02-13",
+      "text": "비밀번호 변경, 네이버 숙소 미검수는 기술 이슈가 아닌 것 같습니다..!",
+      "is_thread_reply": true,
+      "parent_ts": "1770964730.486479",
+      "user_id": "U07FU9LTJ9X",
+      "user_name": "김윤후 개발"
+    },
+    {
+      "ts": "1770965514.752479",
+      "datetime": "2026-02-13 15:51:54",
+      "date": "2026-02-13",
+      "text": "무시하세요 피드백은 다음에 추가하겠습니다 ㅋㅋㅋ",
+      "is_thread_reply": true,
+      "parent_ts": "1770964730.486479",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "reactions": [
+        {
+          "name": "+1",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1770969514.822509",
+      "datetime": "2026-02-13 16:58:34",
+      "date": "2026-02-13",
+      "text": "<@U0A4WKB8A9L> 시연 영상은 보내드렸는데 세팅할 때, 아르코로 작동하는거 보여드린다고 했습니다\n\n기존에는 블로그 후기(?)통해 들어오는 전화예약만 받았는데 예약이 많아지면서 예약 관리할 필요성을 느끼셨다합니다.\n\n아직 아무 ota도 가입이 안된상태라 네이버만 먼저 권유 드렸고 미팅때까지 네이버 계정 생성 후에 온보딩 진행하시는걸로 이야기했습니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1770969211.763739",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1770971393.668119",
+      "datetime": "2026-02-13 17:29:53",
+      "date": "2026-02-13",
+      "text": "",
+      "is_thread_reply": true,
+      "parent_ts": "1770970797.178979",
+      "user_id": "U044Z9ZG2AX",
+      "user_name": "유진영 PM",
+      "has_files": true,
+      "file_names": [
+        "destroyer-reservations-backup-1770971370670-0.json.gz"
+      ]
+    },
+    {
+      "ts": "1770977665.907239",
+      "datetime": "2026-02-13 19:14:25",
+      "date": "2026-02-13",
+      "text": "<@U07SC5S7B96>진짜 한객실맞아요?",
+      "is_thread_reply": true,
+      "parent_ts": "1770969211.763739",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770977918.807319",
+      "datetime": "2026-02-13 19:18:38",
+      "date": "2026-02-13",
+      "text": "그렇다는데요 왜요?",
+      "is_thread_reply": true,
+      "parent_ts": "1770969211.763739",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1770977934.131169",
+      "datetime": "2026-02-13 19:18:54",
+      "date": "2026-02-13",
+      "text": "너무좋아서요",
+      "is_thread_reply": true,
+      "parent_ts": "1770969211.763739",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770977945.148309",
+      "datetime": "2026-02-13 19:19:05",
+      "date": "2026-02-13",
+      "text": "오늘 28개 상품을 진행했더니",
+      "is_thread_reply": true,
+      "parent_ts": "1770969211.763739",
+      "user_id": "U0A4WKB8A9L",
+      "user_name": "유혜진 슈퍼바이저"
+    },
+    {
+      "ts": "1770977995.574999",
+      "datetime": "2026-02-13 19:19:55",
+      "date": "2026-02-13",
+      "text": "근데 교육할게 많아보였습니다\n프로그램이나 ota를 한번도 이용안해보셨다보니 ㅋㅋ",
+      "is_thread_reply": true,
+      "parent_ts": "1770969211.763739",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    },
+    {
+      "ts": "1771048047.272179",
+      "datetime": "2026-02-14 14:47:27",
+      "date": "2026-02-14",
+      "text": "포항 에일라호텔도 다시 연결해두었습니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1771047878.185679",
+      "user_id": "U066X6B5AUF",
+      "user_name": "최정주 디자인"
+    },
+    {
+      "ts": "1771489896.796859",
+      "datetime": "2026-02-19 17:31:36",
+      "date": "2026-02-19",
+      "text": "트립 추가로 계약했다고 함\n커넥티비티 설정 및 주의사항 안내 예정",
+      "is_thread_reply": true,
+      "parent_ts": "1770730041.414149",
+      "user_id": "U08D5T61VU0",
+      "user_name": "이하영 CX",
+      "reactions": [
+        {
+          "name": "완료",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ts": "1771491935.297629",
+      "datetime": "2026-02-19 18:05:35",
+      "date": "2026-02-19",
+      "text": "예약, 재고, 요금 전부 사용합니다.\n아드님이 문의했고 주고 관리는 어머님이 다만 교육자체는 아드님이 받으신다고 합니다.",
+      "is_thread_reply": true,
+      "parent_ts": "1771491816.568759",
+      "user_id": "U07SC5S7B96",
+      "user_name": "이종혁 마케팅"
+    }
+  ],
+  "seen_ts": [
+    "1772101489.130359",
+    "1772090413.648259",
+    "1772088569.175699",
+    "1772088613.869669",
+    "1772088802.483489",
+    "1772088865.634719",
+    "1772089055.573389",
+    "1772091335.088749",
+    "1772083141.334049",
+    "1772075534.769659",
+    "1772070836.035449",
+    "1772070997.798819",
+    "1772071016.019909",
+    "1772071026.986029",
+    "1772071040.094959",
+    "1772071049.916849",
+    "1772071051.504839",
+    "1772071126.760899",
+    "1772071174.495529",
+    "1772014456.440859",
+    "1772013975.292239",
+    "1772014001.284369",
+    "1772014348.326089",
+    "1771988354.905749",
+    "1771926320.792749",
+    "1771926962.887149",
+    "1771930162.772729",
+    "1772015115.673169",
+    "1772015221.245709",
+    "1772017419.049299",
+    "1771924143.580889",
+    "1771923351.843239",
+    "1771923385.640869",
+    "1771923478.481099",
+    "1772007255.455639",
+    "1771922643.235069",
+    "1771922680.625959",
+    "1771923381.878829",
+    "1772015256.138729",
+    "1771917959.660029",
+    "1771918134.282509",
+    "1771918199.321719",
+    "1771918203.556219",
+    "1771918217.648899",
+    "1771918239.006619",
+    "1771918254.907849",
+    "1771918256.236999",
+    "1771918257.827289",
+    "1771913808.261729",
+    "1771913861.548249",
+    "1771911548.010819",
+    "1771911547.229309",
+    "1771911521.352859",
+    "1771905325.135309",
+    "1771905360.305909",
+    "1771905426.297759",
+    "1771905446.090489",
+    "1771905452.462249",
+    "1771905553.936919",
+    "1771905558.761899",
+    "1771905589.387069",
+    "1771905643.944669",
+    "1771905671.269049",
+    "1771905687.237019",
+    "1771905692.245899",
+    "1771905886.613259",
+    "1771905957.775779",
+    "1771906022.412179",
+    "1771906037.830859",
+    "1771906105.640569",
+    "1771906128.008129",
+    "1771906220.720319",
+    "1771906243.302119",
+    "1771906248.272319",
+    "1771906315.260119",
+    "1771906368.881519",
+    "1771906466.551299",
+    "1771906480.163679",
+    "1771906678.069759",
+    "1771907827.543269",
+    "1771911728.580419",
+    "1771900596.832379",
+    "1771900647.996409",
+    "1771900657.432639",
+    "1771900661.322149",
+    "1771900662.428799",
+    "1771900663.467739",
+    "1771900664.432699",
+    "1771900743.713459",
+    "1771900873.985609",
+    "1771901160.615539",
+    "1771901513.971609",
+    "1771901530.560369",
+    "1771901535.060329",
+    "1771901666.186469",
+    "1771901714.826049",
+    "1771900113.590989",
+    "1771900213.755699",
+    "1771843310.457359",
+    "1771844905.450039",
+    "1771841660.563689",
+    "1771841406.091779",
+    "1771841404.965549",
+    "1771841489.297779",
+    "1771841640.383269",
+    "1771841682.150229",
+    "1771841693.384419",
+    "1771834251.401919",
+    "1771830557.551529",
+    "1771829089.260009",
+    "1771829100.296319",
+    "1771829276.682489",
+    "1771829343.113339",
+    "1771817866.965029",
+    "1771817904.488509",
+    "1771817976.224819",
+    "1771817717.718739",
+    "1771817718.011249",
+    "1771811378.778399",
+    "1771811394.073209",
+    "1771819814.053339",
+    "1771819826.797679",
+    "1771821173.853749",
+    "1771821218.196059",
+    "1771821670.571259",
+    "1771733742.893319",
+    "1771733521.450699",
+    "1771653593.410289",
+    "1771648835.568839",
+    "1771641709.034819",
+    "1771569594.034659",
+    "1771557999.461139",
+    "1771557999.630999",
+    "1771491816.568759",
+    "1771491935.297629",
+    "1771482933.676119",
+    "1771482141.753389",
+    "1771481343.223229",
+    "1771471908.309929",
+    "1771471908.448639",
+    "1771568296.261349",
+    "1771817855.037729",
+    "1771817919.933089",
+    "1771316242.264669",
+    "1771579721.008869",
+    "1771579750.763149",
+    "1771582437.004799",
+    "1771815488.168559",
+    "1771828334.511969",
+    "1771828983.989149",
+    "1771047878.185679",
+    "1771048047.272179",
+    "1771043108.595899",
+    "1770993241.853879",
+    "1770973523.886979",
+    "1770972520.307169",
+    "1770970797.178979",
+    "1770971393.668119",
+    "1770969211.763739",
+    "1770969514.822509",
+    "1770977665.907239",
+    "1770977918.807319",
+    "1770977934.131169",
+    "1770977945.148309",
+    "1770977995.574999",
+    "1771731141.405549",
+    "1770964730.486479",
+    "1770965243.773639",
+    "1770965514.752479",
+    "1770892770.679649",
+    "1770888839.581269",
+    "1770888806.075729",
+    "1770962721.301039",
+    "1770882909.830679",
+    "1770882933.439809",
+    "1770882947.107679",
+    "1770875237.825779",
+    "1770875398.989209",
+    "1770875978.248819",
+    "1770874937.727549",
+    "1770891207.313809",
+    "1770866411.081609",
+    "1770805747.530429",
+    "1770802797.548279",
+    "1770800597.881399",
+    "1772005561.483049",
+    "1770796508.467859",
+    "1770797148.741509",
+    "1770797235.252879",
+    "1770799533.962689",
+    "1770799556.124289",
+    "1770795686.163669",
+    "1770795694.757059",
+    "1770793718.162979",
+    "1770792351.260729",
+    "1770788162.543599",
+    "1770788179.990749",
+    "1770788260.011529",
+    "1770791248.974019",
+    "1770785117.972109",
+    "1770785482.665489",
+    "1770799082.341959",
+    "1770800694.309599",
+    "1770783717.429399",
+    "1770782957.428609",
+    "1772005508.407339",
+    "1772017761.411659",
+    "1770730041.414149",
+    "1770730193.040869",
+    "1770730226.855209",
+    "1770730321.634329",
+    "1771489896.796859",
+    "1770705905.138559",
+    "1770708347.918839",
+    "1770708924.554409",
+    "1770699196.543949",
+    "1770696481.511429",
+    "1772005393.410969",
+    "1770690227.818429",
+    "1771817598.158649",
+    "1772005177.230939",
+    "1772005255.185509",
+    "1772079128.532519",
+    "1772088182.701599",
+    "1772088376.223139",
+    "1770629836.767289",
+    "1770860795.306009",
+    "1770629776.891739",
+    "1770629986.083249",
+    "1770624524.134309",
+    "1770860549.565299",
+    "1770623115.074199",
+    "1770788501.793969",
+    "1770619677.864069",
+    "1770619768.659329",
+    "1770617345.664719",
+    "1770617996.280539",
+    "1770619101.741599",
+    "1770689435.309609",
+    "1770689465.201629",
+    "1770689685.611499",
+    "1770690243.381559",
+    "1770702792.920429",
+    "1770702848.879369",
+    "1770610944.170229",
+    "1770610964.549789",
+    "1770609334.853509",
+    "1770609342.065209",
+    "1770608080.755379",
+    "1770606437.996739",
+    "1770606592.680909",
+    "1770606621.916439",
+    "1770606644.320899",
+    "1770606755.035239",
+    "1770606827.956929",
+    "1770606844.661739",
+    "1770606924.400589",
+    "1770606995.088479",
+    "1770607064.703269",
+    "1770607138.307229",
+    "1770607157.307499",
+    "1770607214.104059",
+    "1770607231.797929",
+    "1770607254.193859",
+    "1770607262.379959",
+    "1770607269.269669",
+    "1770607272.111919",
+    "1770607279.595309",
+    "1770607284.534969",
+    "1770607284.577739",
+    "1770607303.612709",
+    "1770603791.319769",
+    "1770788047.483119",
+    "1770451688.320439",
+    "1770787740.420739",
+    "1770440504.727569",
+    "1770736106.985559",
+    "1770381014.447529",
+    "1770373646.620989",
+    "1770775406.614639",
+    "1770354092.728999",
+    "1770377480.341259",
+    "1770377497.483759",
+    "1770274350.973509",
+    "1770274362.564729",
+    "1770274384.086339",
+    "1770274566.030069",
+    "1770271466.930929",
+    "1770268683.051059",
+    "1770269249.186269",
+    "1770269501.807719",
+    "1770284557.204859",
+    "1770289564.907009",
+    "1770293768.671319",
+    "1770293782.791959",
+    "1770690086.357119",
+    "1770690107.209199",
+    "1770690179.524069",
+    "1770690191.165929",
+    "1770690209.150299",
+    "1770690256.049419",
+    "1770690349.759189",
+    "1770709975.429869",
+    "1770710082.354919",
+    "1770710089.468669",
+    "1770710112.935289",
+    "1770710149.328409",
+    "1770710211.396009",
+    "1770710236.878269",
+    "1770710448.693919",
+    "1770710488.724189",
+    "1770710499.587289",
+    "1770710525.697189",
+    "1770710541.702889",
+    "1770710558.624169",
+    "1770710564.087699",
+    "1770710565.848829",
+    "1770710568.395439",
+    "1770710576.934099",
+    "1770711665.073149",
+    "1770268433.433159",
+    "1770787667.899789",
+    "1770260025.769659",
+    "1770260414.728249",
+    "1770260423.326789",
+    "1770179731.139549",
+    "1770720933.103199",
+    "1770864856.877459",
+    "1770873727.234639",
+    "1770874863.393879",
+    "1770172208.269889",
+    "1770105839.216949",
+    "1770106001.985569",
+    "1770115527.923699",
+    "1770115809.683249",
+    "1770115838.524889",
+    "1770103727.462309",
+    "1770103752.044209",
+    "1770107770.079229",
+    "1770107859.629169",
+    "1770107885.351809",
+    "1770107914.914119",
+    "1770107927.825069",
+    "1770107935.359339",
+    "1770107989.059099",
+    "1770108046.885369",
+    "1770108073.129829",
+    "1770108079.835699",
+    "1770108099.960019",
+    "1770108128.807019",
+    "1770108143.527729",
+    "1770108154.910629",
+    "1770108155.098739",
+    "1770108159.389019",
+    "1770108164.549789",
+    "1770108171.390849",
+    "1770108171.826559",
+    "1770108175.745529",
+    "1770108181.223979",
+    "1770108187.812999",
+    "1770108582.300699",
+    "1770101882.271839",
+    "1770101579.974269",
+    "1770101750.142789",
+    "1770101883.338309",
+    "1770101931.182139",
+    "1770102008.607579",
+    "1770103458.331029",
+    "1770103475.786259",
+    "1770103615.017839",
+    "1770105543.970119",
+    "1770097707.776479",
+    "1770097730.472209",
+    "1770097799.872499",
+    "1770097810.116849",
+    "1770097822.730329",
+    "1770097846.994359",
+    "1770097904.016519",
+    "1770097926.098449",
+    "1770097935.325059",
+    "1770097940.341159",
+    "1770097966.767869",
+    "1770098000.593209",
+    "1770098033.588609",
+    "1770098040.931199",
+    "1770098067.928439",
+    "1770098083.030309",
+    "1770098094.270249",
+    "1770098131.578029",
+    "1770098135.501469",
+    "1770098146.078679",
+    "1770098166.103079",
+    "1770098176.333619",
+    "1770098184.222649",
+    "1770098187.603019",
+    "1770098235.293899",
+    "1770098253.233839",
+    "1770098273.612109",
+    "1770098306.853759",
+    "1770098315.558459",
+    "1770098333.406179",
+    "1770098342.449339",
+    "1770098351.396969",
+    "1770098421.589189",
+    "1770098434.853789",
+    "1770098445.660309",
+    "1770098458.842869",
+    "1770098475.787419",
+    "1770098583.312639",
+    "1770098602.060899",
+    "1770098612.577239",
+    "1770098702.949159",
+    "1770098706.728579",
+    "1770098996.465969",
+    "1770099001.889119",
+    "1770099016.934769",
+    "1770099109.269499",
+    "1770099326.861899",
+    "1770099350.394229",
+    "1770099378.849059",
+    "1770099463.270239",
+    "1770099475.296109",
+    "1770099578.630469",
+    "1770099586.998989",
+    "1770099675.086009",
+    "1770099690.112389",
+    "1770099733.927329",
+    "1770099743.722369",
+    "1770099757.535179",
+    "1770099763.348249",
+    "1770099766.297149",
+    "1770099768.629169",
+    "1770099782.918379",
+    "1770099785.745979",
+    "1770099793.993629",
+    "1770099804.023589",
+    "1770099822.863909",
+    "1770099843.301419",
+    "1770099956.297409",
+    "1770099998.388899",
+    "1770100015.879259",
+    "1770100069.187859",
+    "1770100087.945509",
+    "1770100090.813389",
+    "1770100092.977629",
+    "1770100140.582959",
+    "1770100188.502009",
+    "1770100197.855369",
+    "1770100211.325669",
+    "1770100261.287019",
+    "1770100381.819099",
+    "1770100390.571459",
+    "1770100428.683589",
+    "1770100506.151009",
+    "1770090707.156109",
+    "1770091180.859529",
+    "1770105199.696949",
+    "1770106658.258809",
+    "1770110244.561719",
+    "1770110279.846899",
+    "1770112263.847289",
+    "1770112286.723559",
+    "1770112310.166419",
+    "1770114693.656429",
+    "1770169712.029379",
+    "1770085664.214829",
+    "1770085803.017369",
+    "1770083699.568179",
+    "1770085377.994059",
+    "1770085911.548159",
+    "1770085917.191569",
+    "1770085958.230539",
+    "1770086085.477349",
+    "1770086151.703959",
+    "1770086152.744899",
+    "1770086159.749239",
+    "1770086183.914799",
+    "1770086875.429849",
+    "1770087512.512019",
+    "1770090663.796159",
+    "1770110805.665379",
+    "1770025353.127129",
+    "1770026402.078849",
+    "1770026408.507339",
+    "1770023534.288769",
+    "1770023568.150889",
+    "1770023006.289529",
+    "1770023138.124919",
+    "1770022256.895529",
+    "1770022303.791949",
+    "1770946721.497039",
+    "1770946810.019429",
+    "1770946911.065989",
+    "1770947060.119159",
+    "1770949763.905869",
+    "1770949998.602679",
+    "1770950160.737759",
+    "1770950162.007609",
+    "1770950549.218449",
+    "1770020421.512189",
+    "1770020219.745899",
+    "1770017631.396199",
+    "1770010592.741929",
+    "1770009901.787289",
+    "1770101727.707689",
+    "1770102177.584659",
+    "1770102300.127429",
+    "1770102374.185959",
+    "1770102390.288959",
+    "1770102453.291229",
+    "1770102519.996299",
+    "1770103000.814709",
+    "1770103055.333929",
+    "1770103408.304509",
+    "1770009243.713349",
+    "1770009611.685429",
+    "1769766314.457749",
+    "1769764091.686039",
+    "1769764111.787889",
+    "1770080259.361129",
+    "1770197062.770709",
+    "1770699338.765019",
+    "1770699410.546049",
+    "1770699467.661219",
+    "1770699479.909769",
+    "1770712457.825999",
+    "1769759429.096739",
+    "1769761579.877739",
+    "1769761604.195469",
+    "1769761621.298769",
+    "1769761637.634539",
+    "1769761654.295109",
+    "1769761678.593619",
+    "1769761693.732139",
+    "1769763323.483929",
+    "1769764214.663649",
+    "1769764446.165139",
+    "1769756848.830679",
+    "1769758366.621189",
+    "1769991821.904999",
+    "1770100492.624139",
+    "1769745104.729579",
+    "1769748710.908829",
+    "1769733647.217529",
+    "1769689627.512319",
+    "1769688826.759139",
+    "1769688747.533749",
+    "1769686618.647339",
+    "1769680744.608999",
+    "1769677162.875609",
+    "1769681237.112509",
+    "1769681365.461199",
+    "1769674520.524589",
+    "1769674595.775289",
+    "1769674982.504889",
+    "1769674216.283819",
+    "1769669582.778129",
+    "1769666483.481289",
+    "1769666703.343329",
+    "1769669567.290639",
+    "1769669582.191859",
+    "1769664204.033849",
+    "1769585696.904829",
+    "1769580028.431899"
+  ]
+}
