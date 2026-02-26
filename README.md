@@ -20,7 +20,7 @@ VCMS 슬랙 채널(`#system-vcms-noti`)의 메시지를 AI가 자동으로 읽�
   |
   +-- 1. 백업 JSON에서 메시지 로드 (없으면 Slack API 직접 수집)
   +-- 2. 팀원들이 남긴 피드백 반영
-  +-- 3. AI(Gemini)가 주간 리포트 작성
+  +-- 3. AI(Claude Sonnet)가 주간 리포트 작성
   +-- 4. 슬랙에 리포트 + 피드백 버튼 게시
 ```
 
@@ -140,8 +140,8 @@ my-prompts/
 | 구성요소 | 역할 | 비용 |
 |---------|------|------|
 | GitHub Actions | 매주 금 00:00 백업 + 10:00 리포트 | 무료 |
-| Gemini API | 리포트 작성 AI (2.0 Flash) | 무료 |
+| Claude API | 리포트 작성 AI (Sonnet 4.5) | ~$0.08/월 |
 | Cloudflare Workers | 피드백 버튼 처리 | 무료 |
 | Cloudflare KV | 피드백 저장소 | 무료 |
 
-**월 운영 비용: $0 (전체 무료)**
+**월 운영 비용: ~$0.08 (연 ~$1)**
