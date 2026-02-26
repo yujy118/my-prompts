@@ -4,7 +4,7 @@ Flow:
 1. Holiday/business day check
 2. Fetch weekly feedback from Cloudflare Worker
 3. Load messages from backup JSON (fallback: Slack API direct fetch)
-4. Generate report via Gemini API
+4. Generate report via Claude API (Anthropic)
 5. Post to Slack with feedback button
 """
 
@@ -15,7 +15,7 @@ import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-import google.generativeai as genai
+import anthropic
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 import requests
@@ -26,12 +26,12 @@ from korean_holidays import is_business_day, is_korean_holiday
 KST = timezone(timedelta(hours=9))
 SLACK_BOT_TOKEN = os.environ["SLACK_BOT_TOKEN"]
 SLACK_CHANNEL_ID = os.environ.get("SLACK_CHANNEL_ID", "C0884BV1KNV")
-GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
+ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 
 FEEDBACK_WORKER_URL = os.environ.get("FEEDBACK_WORKER_URL", "")
 
 slack_client = WebClient(token=SLACK_BOT_TOKEN)
-genai.configure(api_key=GEMINI_API_KEY)
+claude_client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
 BACKUP_DIR = Path(__file__).parent.parent / "backups"
 DAY_NAMES = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
@@ -114,7 +114,7 @@ def load_from_backup(start_dt):
     """Try to load messages from backup JSON file.
 
     Returns (messages_text, success) tuple.
-    messages_text: formatted string ready for Gemini prompt
+    messages_text: formatted string ready for prompt
     success: True if backup was used
     """
     filename = f"{start_dt.strftime('%Y-%m-%d')}.json"
@@ -175,19 +175,11 @@ def load_from_backup(start_dt):
 # -- Slack History (fallback) --
 
 def fetch_slack_history(start_dt, end_dt):
-    """Fetch channel messages with 1-month parent window + thread replies.
-
-    Strategy:
-    - Fetch parent messages from 30 days before start_dt to end_dt
-    - For any parent with replies, fetch thread replies within report period
-    - Include parent for context if it has activity in report period
-    - Deduplicate and sort
-    """
+    """Fetch channel messages with 1-month parent window + thread replies."""
     wide_oldest = str((start_dt - timedelta(days=30)).timestamp())
     latest = str(end_dt.timestamp())
     report_oldest = str(start_dt.timestamp())
 
-    # 1. Fetch all parent messages from wide window
     parent_messages = []
     cursor = None
     while True:
@@ -215,7 +207,6 @@ def fetch_slack_history(start_dt, end_dt):
 
     print(f"  Parents fetched (1mo window): {len(parent_messages)}")
 
-    # 2. Collect messages within report period + thread replies
     all_messages = []
     start_ts = start_dt.timestamp()
     end_ts = end_dt.timestamp()
@@ -224,11 +215,9 @@ def fetch_slack_history(start_dt, end_dt):
         msg_ts = float(msg["ts"])
         parent_in_range = start_ts <= msg_ts <= end_ts
 
-        # Add parent if within report period
         if parent_in_range:
             all_messages.append(msg)
 
-        # Check threads regardless of parent date
         if msg.get("reply_count", 0) > 0:
             try:
                 thread_result = slack_client.conversations_replies(
@@ -240,7 +229,6 @@ def fetch_slack_history(start_dt, end_dt):
                 )
                 replies_in_range = []
                 for reply in thread_result.get("messages", []):
-                    # Skip parent message itself (handled above)
                     if reply["ts"] == msg["ts"]:
                         continue
                     reply_ts = float(reply["ts"])
@@ -248,8 +236,6 @@ def fetch_slack_history(start_dt, end_dt):
                         replies_in_range.append(reply)
 
                 if replies_in_range:
-                    # If parent is outside range but has replies in range,
-                    # include parent for context
                     if not parent_in_range:
                         all_messages.append(msg)
                     all_messages.extend(replies_in_range)
@@ -257,7 +243,6 @@ def fetch_slack_history(start_dt, end_dt):
             except SlackApiError as e:
                 print(f"WARNING: thread fetch failed: {e.response['error']}")
 
-    # 3. Deduplicate by ts
     seen = set()
     unique = []
     for msg in all_messages:
@@ -271,7 +256,6 @@ def fetch_slack_history(start_dt, end_dt):
 
 
 def get_bot_user_id():
-    """Get this bot's own user ID to filter out self-messages."""
     try:
         result = slack_client.auth_test()
         return result.get("bot_id") or result.get("user_id")
@@ -279,13 +263,12 @@ def get_bot_user_id():
         return None
 
 
-BOT_ID = None  # initialized in main()
+BOT_ID = None
 
 
 def format_slack_messages(messages):
     lines = []
     for msg in messages:
-        # Skip this bot's own messages (previous reports)
         if BOT_ID and msg.get("bot_id") == BOT_ID:
             continue
         ts = datetime.fromtimestamp(float(msg["ts"]), tz=KST)
@@ -302,13 +285,8 @@ def format_slack_messages(messages):
 # -- Report Logic --
 
 def get_date_range(today):
-    """Weekly: previous Friday 00:00 ~ this Thursday 23:59:59 KST.
-
-    If today is Friday, report covers:
-      (today - 7) 00:00 KST  ~  (today - 1) 23:59:59 KST
-    """
-    # Calculate days back to last Friday
-    days_since_friday = (today.weekday() - 4) % 7  # 0 if today is Friday
+    """Weekly: previous Friday 00:00 ~ this Thursday 23:59:59 KST."""
+    days_since_friday = (today.weekday() - 4) % 7
     this_friday = today - timedelta(days=days_since_friday)
     prev_friday = this_friday - timedelta(days=7)
     this_thursday = this_friday - timedelta(days=1)
@@ -338,10 +316,10 @@ def convert_to_slack_mrkdwn(text):
     return '\n'.join(result)
 
 
-# -- Gemini API --
+# -- Claude API --
 
-def generate_report_with_gemini(slack_text, date_label, guide, feedback_text):
-    system_instruction = (
+def generate_report_with_claude(slack_text, date_label, guide, feedback_text):
+    system_prompt = (
         "You are a senior manager of VCMS (accommodation channel manager) operations team.\n"
         "Analyze Slack channel messages and write a weekly summary report.\n\n"
         "Follow this guide:\n\n"
@@ -400,20 +378,17 @@ def generate_report_with_gemini(slack_text, date_label, guide, feedback_text):
         f"---SLACK MESSAGES END---"
     )
 
-    model = genai.GenerativeModel(
-        "gemini-2.0-flash",
-        system_instruction=system_instruction,
+    response = claude_client.messages.create(
+        model="claude-sonnet-4-5-20250514",
+        max_tokens=2000,
+        temperature=0.3,
+        system=system_prompt,
+        messages=[
+            {"role": "user", "content": user_prompt}
+        ],
     )
 
-    response = model.generate_content(
-        user_prompt,
-        generation_config=genai.types.GenerationConfig(
-            max_output_tokens=2000,
-            temperature=0.3,
-        ),
-    )
-
-    return response.text
+    return response.content[0].text
 
 
 # -- Slack Posting with Block Kit --
@@ -422,7 +397,6 @@ def post_to_slack(report_text, date_label):
     full_message = f"*주간 리포트*  |  {date_label}\n───\n\n{report_text}"
 
     try:
-        # 1. Post report as main message
         result = slack_client.chat_postMessage(
             channel=SLACK_CHANNEL_ID,
             text=full_message,
@@ -431,7 +405,6 @@ def post_to_slack(report_text, date_label):
         report_ts = result["ts"]
         print(f"OK Slack posted: ts={report_ts}")
 
-        # 2. Post feedback button as thread reply
         feedback_blocks = [
             {
                 "type": "actions",
@@ -440,7 +413,7 @@ def post_to_slack(report_text, date_label):
                         "type": "button",
                         "text": {
                             "type": "plain_text",
-                            "text": "💬 피드백 하기",
+                            "text": "\ud83d\udcac \ud53c\ub4dc\ubc31 \ud558\uae30",
                             "emoji": True,
                         },
                         "action_id": "feedback_button",
@@ -452,7 +425,7 @@ def post_to_slack(report_text, date_label):
         slack_client.chat_postMessage(
             channel=SLACK_CHANNEL_ID,
             thread_ts=report_ts,
-            text="피드백을 남겨주세요",
+            text="\ud53c\ub4dc\ubc31\uc744 \ub0a8\uaca8\uc8fc\uc138\uc694",
             blocks=feedback_blocks,
         )
         print("OK Feedback button posted in thread")
@@ -478,7 +451,6 @@ def main():
         print("Not a business day. Skipping.")
         return
 
-    # Init bot ID for self-message filtering
     global BOT_ID
     BOT_ID = get_bot_user_id()
     print(f"Bot ID: {BOT_ID}")
@@ -519,10 +491,10 @@ def main():
 
     print(f"Formatted text: {len(slack_text)} chars")
 
-    # 4. Generate report with Gemini
+    # 4. Generate report with Claude
     guide = load_guide()
-    print("Calling Gemini API...")
-    report = generate_report_with_gemini(slack_text, date_label, guide, feedback_text)
+    print("Calling Claude API...")
+    report = generate_report_with_claude(slack_text, date_label, guide, feedback_text)
     report = convert_to_slack_mrkdwn(report)
     print(f"Report generated ({len(report)} chars)")
 
