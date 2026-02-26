@@ -21,7 +21,7 @@ jobs:
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           SLACK_CHANNEL_ID: 'C0884BV1KNV'
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           FEEDBACK_WORKER_URL: ${{ secrets.FEEDBACK_WORKER_URL }}
           TZ: Asia/Seoul
         run: python scripts/generate_report.py
