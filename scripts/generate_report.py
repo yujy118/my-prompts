@@ -379,7 +379,7 @@ def generate_report_with_claude(slack_text, date_label, guide, feedback_text):
     )
 
     response = claude_client.messages.create(
-        model="claude-sonnet-4-5-20250514",
+        model="claude-sonnet-4-5-20250929",
         max_tokens=2000,
         temperature=0.3,
         system=system_prompt,
